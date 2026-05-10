@@ -178,7 +178,10 @@
     .panel-text { margin: 0 0 16px; color: var(--muted); font-size: 15.5px; }
 
     .quick-list { margin: 24px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; }
-    .quick-list li { display: grid; grid-template-columns: 24px 1fr; gap: 10px; color: var(--muted); font-size: 14.5px; }
+    .quick-list li { display: grid; grid-template-columns: 24px minmax(0, 1fr); gap: 10px; color: var(--muted); font-size: 14.5px; align-items: start; }
+    .quick-text { display: block; min-width: 0; }
+    .quick-text .en, .quick-text .zh { display: block; white-space: normal; overflow-wrap: normal; word-break: normal; line-height: 1.45; }
+    body:not(.lang-en):not(.lang-zh) .quick-text .zh { margin-top: 4px; }
     .mark { width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--green-soft); color: var(--green); font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 11px; font-weight: 900; }
 
     .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; font-family: Inter, ui-sans-serif, system-ui, "Noto Sans SC", sans-serif; }
@@ -378,10 +381,10 @@
           MellowPhil 将一个更大的概念系统翻译为分析哲学问题：当心灵、语言、意识与主体性并不被封闭在单一生物容器内时，它们如何被个体化、生成与评估？
         </p>
         <ul class="quick-list">
-          <li><span class="mark">1</span><span class="en">Philosophy of mind and consciousness</span><span class="zh cn">心灵哲学与意识哲学</span></li>
-          <li><span class="mark">2</span><span class="en">Philosophy of language and logic generation</span><span class="zh cn">语言哲学与逻辑生成学</span></li>
-          <li><span class="mark">3</span><span class="en">Artificial consciousness and human-machine systems</span><span class="zh cn">人工意识与人机系统</span></li>
-          <li><span class="mark">4</span><span class="en">Qualia-rhythm theory and first-person authority</span><span class="zh cn">感质-节律理论与第一人称权威</span></li>
+          <li><span class="mark">1</span><span class="quick-text"><span class="en">Philosophy of mind and consciousness</span><span class="zh cn">心灵哲学与意识哲学</span></span></li>
+          <li><span class="mark">2</span><span class="quick-text"><span class="en">Philosophy of language and logic generation</span><span class="zh cn">语言哲学与逻辑生成学</span></span></li>
+          <li><span class="mark">3</span><span class="quick-text"><span class="en">Artificial consciousness and human-machine systems</span><span class="zh cn">人工意识与人机系统</span></span></li>
+          <li><span class="mark">4</span><span class="quick-text"><span class="en">Qualia-rhythm theory and first-person authority</span><span class="zh cn">感质-节律理论与第一人称权威</span></span></li>
         </ul>
       </aside>
     </section>
