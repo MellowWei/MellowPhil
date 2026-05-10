@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mellow Jueran Wei | Philosophy of Mind, Language, and Artificial Consciousness</title>
-  <meta name="description" content="A concise philosophy research page for Mellow Jueran Wei, focused on anti-individualism, modal exclusion, artificial consciousness, first-person authority, and dynamic patterning." />
+  <title>MellowPhil | Mellow Jueran Wei</title>
+  <meta name="description" content="MellowPhil is a bilingual philosophy research page by Mellow Jueran Wei, focused on anti-individualism, modal exclusion, artificial consciousness, first-person authority, and dynamic patterning." />
   <style>
     :root {
       --bg: #f7f7f4;
@@ -16,21 +16,17 @@
       --green-soft: #e4efe8;
       --rose: #b86b7d;
       --blue: #324f6f;
+      --gold: #9b7a32;
       --shadow: 0 24px 70px rgba(21, 23, 19, 0.08);
       --max: 1080px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
 
     body {
       margin: 0;
-      font-family: Georgia, "Times New Roman", serif;
+      font-family: Georgia, "Times New Roman", "Noto Serif SC", "Songti SC", serif;
       background:
         radial-gradient(circle at 12% 8%, rgba(29, 92, 70, 0.10), transparent 30%),
         radial-gradient(circle at 88% 18%, rgba(184, 107, 125, 0.10), transparent 26%),
@@ -43,20 +39,17 @@
       color: var(--green);
       text-decoration: none;
       border-bottom: 1px solid rgba(29, 92, 70, 0.28);
-      transition: color 180ms ease, border-color 180ms ease;
+      transition: color 180ms ease, border-color 180ms ease, transform 180ms ease;
     }
 
-    a:hover {
-      color: var(--rose);
-      border-color: rgba(184, 107, 125, 0.42);
-    }
+    a:hover { color: var(--rose); border-color: rgba(184, 107, 125, 0.42); }
 
     .topbar {
       position: sticky;
       top: 0;
       z-index: 20;
       backdrop-filter: blur(16px);
-      background: rgba(247, 247, 244, 0.82);
+      background: rgba(247, 247, 244, 0.84);
       border-bottom: 1px solid var(--line);
     }
 
@@ -68,42 +61,44 @@
       justify-content: space-between;
       align-items: center;
       gap: 18px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", sans-serif;
       letter-spacing: 0.01em;
     }
 
     .brand {
       font-size: 13px;
-      font-weight: 700;
+      font-weight: 800;
       color: var(--ink);
       border: none;
       white-space: nowrap;
     }
 
-    .navlinks {
-      display: flex;
-      gap: 18px;
-      flex-wrap: wrap;
-      justify-content: flex-end;
-    }
+    .navlinks { display: flex; gap: 18px; flex-wrap: wrap; justify-content: flex-end; align-items: center; }
 
-    .navlinks a {
+    .navlinks a, .lang-toggle button {
       font-size: 12px;
       color: var(--muted);
       border: none;
       text-transform: uppercase;
       letter-spacing: 0.08em;
+      background: transparent;
+      padding: 0;
+      cursor: pointer;
+      font: inherit;
     }
 
-    .navlinks a:hover {
-      color: var(--green);
+    .navlinks a:hover, .lang-toggle button:hover { color: var(--green); }
+
+    .lang-toggle {
+      display: flex;
+      gap: 8px;
+      padding-left: 12px;
+      border-left: 1px solid var(--line);
     }
 
-    main {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 70px 22px 96px;
-    }
+    .lang-toggle button.active { color: var(--green); font-weight: 800; }
+
+    main { max-width: var(--max); margin: 0 auto; padding: 70px 22px 96px; }
 
     .hero {
       display: grid;
@@ -123,9 +118,9 @@
       border-radius: 999px;
       background: var(--green-soft);
       color: var(--green);
-      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, "Noto Sans SC", sans-serif;
       font-size: 12px;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.08em;
       text-transform: uppercase;
     }
@@ -143,44 +138,49 @@
       font-size: clamp(42px, 7vw, 82px);
       line-height: 0.98;
       letter-spacing: -0.055em;
-      max-width: 820px;
+      max-width: 840px;
       font-weight: 500;
+    }
+
+    .cn-title {
+      margin-top: 18px;
+      font-size: clamp(26px, 4.6vw, 48px);
+      line-height: 1.08;
+      letter-spacing: -0.055em;
+      font-weight: 500;
+      color: var(--green);
     }
 
     .subtitle {
       margin: 24px 0 0;
-      max-width: 720px;
+      max-width: 760px;
       font-size: clamp(18px, 2.2vw, 23px);
       color: var(--muted);
       line-height: 1.58;
     }
 
-    .hero-card {
-      background: rgba(255, 255, 255, 0.72);
+    .cn {
+      font-family: Georgia, "Times New Roman", "Noto Serif SC", "Songti SC", serif;
+      letter-spacing: 0.01em;
+    }
+
+    .hero-card, .card, .paper-card, .question-box {
+      background: rgba(255, 255, 255, 0.74);
       border: 1px solid var(--line);
-      border-radius: 24px;
-      padding: 28px;
       box-shadow: var(--shadow);
     }
 
-    .hero-card h2 {
-      margin: 0 0 12px;
-      font-size: 18px;
-      letter-spacing: -0.02em;
-    }
-
-    .hero-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 15px;
-    }
+    .hero-card { border-radius: 24px; padding: 28px; }
+    .hero-card h2 { margin: 0 0 12px; font-size: 18px; letter-spacing: -0.02em; }
+    .hero-card p { margin: 0 0 12px; color: var(--muted); font-size: 15px; }
+    .hero-card p:last-child { margin-bottom: 0; }
 
     .actions {
       display: flex;
       flex-wrap: wrap;
       gap: 12px;
       margin-top: 24px;
-      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, "Noto Sans SC", sans-serif;
     }
 
     .button {
@@ -194,44 +194,25 @@
       background: var(--ink);
       color: #fff;
       font-size: 13px;
-      font-weight: 700;
+      font-weight: 800;
       letter-spacing: 0.01em;
     }
 
-    .button.secondary {
-      background: transparent;
-      color: var(--ink);
-    }
+    .button.secondary { background: transparent; color: var(--ink); }
+    .button:hover { color: #fff; border-color: var(--ink); transform: translateY(-1px); }
+    .button.secondary:hover { color: var(--green); border-color: rgba(29, 92, 70, 0.35); }
 
-    .button:hover {
-      color: #fff;
-      border-color: var(--ink);
-      transform: translateY(-1px);
-    }
+    section { padding: 56px 0; border-bottom: 1px solid var(--line); }
 
-    .button.secondary:hover {
-      color: var(--green);
-      border-color: rgba(29, 92, 70, 0.35);
-    }
-
-    section {
-      padding: 56px 0;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .section-grid {
-      display: grid;
-      grid-template-columns: 0.33fr 0.67fr;
-      gap: 44px;
-    }
+    .section-grid { display: grid; grid-template-columns: 0.33fr 0.67fr; gap: 44px; }
 
     .section-label {
-      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, "Noto Sans SC", sans-serif;
       font-size: 12px;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--green);
-      font-weight: 800;
+      font-weight: 900;
       position: sticky;
       top: 86px;
       align-self: start;
@@ -245,77 +226,40 @@
       font-weight: 500;
     }
 
-    h3 {
-      margin: 30px 0 10px;
-      font-size: 22px;
-      line-height: 1.25;
-      letter-spacing: -0.02em;
-      font-weight: 500;
-    }
-
-    p {
-      margin: 0 0 17px;
-      font-size: 17px;
-    }
-
-    .lead {
-      font-size: 22px;
-      line-height: 1.5;
-      color: var(--ink);
-    }
-
-    .muted {
-      color: var(--muted);
-    }
+    h3 { margin: 30px 0 10px; font-size: 22px; line-height: 1.25; letter-spacing: -0.02em; font-weight: 500; }
+    p { margin: 0 0 17px; font-size: 17px; }
+    .lead { font-size: 22px; line-height: 1.5; color: var(--ink); }
+    .muted { color: var(--muted); }
 
     .question-box {
-      margin: 26px 0 10px;
+      margin: 26px 0 18px;
       padding: 28px;
       border-radius: 24px;
-      background: #ffffff;
-      border: 1px solid rgba(29, 92, 70, 0.18);
+      border-color: rgba(29, 92, 70, 0.18);
       box-shadow: 0 18px 55px rgba(29, 92, 70, 0.07);
     }
 
     .question-box p {
-      margin: 0;
+      margin: 0 0 20px;
       font-size: clamp(21px, 3vw, 31px);
       line-height: 1.38;
       letter-spacing: -0.025em;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 18px;
-      margin-top: 24px;
-    }
+    .question-box p:last-child { margin-bottom: 0; color: var(--green); }
 
-    .card {
-      background: rgba(255, 255, 255, 0.74);
-      border: 1px solid var(--line);
-      border-radius: 22px;
-      padding: 23px;
-      box-shadow: 0 16px 45px rgba(21, 23, 19, 0.045);
-    }
+    .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 24px; }
 
-    .card h3 {
-      margin-top: 0;
-      font-size: 19px;
-    }
-
-    .card p {
-      font-size: 15.5px;
-      color: var(--muted);
-      margin-bottom: 0;
-    }
+    .card { border-radius: 22px; padding: 23px; box-shadow: 0 16px 45px rgba(21, 23, 19, 0.045); }
+    .card h3 { margin-top: 0; font-size: 19px; }
+    .card p { font-size: 15.5px; color: var(--muted); margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
 
     .paper-card {
       background: linear-gradient(135deg, #ffffff 0%, #f3f7f4 100%);
       border: 1px solid rgba(29, 92, 70, 0.18);
       border-radius: 28px;
       padding: 32px;
-      box-shadow: var(--shadow);
     }
 
     .paper-title {
@@ -326,52 +270,21 @@
       font-weight: 500;
     }
 
-    .tag-row {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 9px;
-      margin: 20px 0 0;
-      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-    }
-
-    .tag {
-      padding: 7px 10px;
-      border-radius: 999px;
-      background: rgba(29, 92, 70, 0.08);
+    .paper-title-cn {
+      margin: -2px 0 22px;
+      font-size: clamp(22px, 3.4vw, 34px);
+      line-height: 1.16;
+      letter-spacing: -0.04em;
       color: var(--green);
-      font-size: 12px;
-      font-weight: 700;
+      font-weight: 500;
     }
 
-    .list {
-      margin: 18px 0 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 14px;
-    }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 9px; margin: 20px 0 0; font-family: Inter, ui-sans-serif, system-ui, "Noto Sans SC", sans-serif; }
+    .tag { padding: 7px 10px; border-radius: 999px; background: rgba(29, 92, 70, 0.08); color: var(--green); font-size: 12px; font-weight: 800; }
 
-    .list li {
-      display: grid;
-      grid-template-columns: 28px 1fr;
-      gap: 12px;
-      color: var(--muted);
-      font-size: 16px;
-    }
-
-    .num {
-      width: 28px;
-      height: 28px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      background: var(--green-soft);
-      color: var(--green);
-      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-      font-size: 12px;
-      font-weight: 800;
-    }
+    .list { margin: 18px 0 0; padding: 0; list-style: none; display: grid; gap: 14px; }
+    .list li { display: grid; grid-template-columns: 28px 1fr; gap: 12px; color: var(--muted); font-size: 16px; }
+    .num { width: 28px; height: 28px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: var(--green-soft); color: var(--green); font-family: Inter, ui-sans-serif, system-ui, sans-serif; font-size: 12px; font-weight: 900; }
 
     .quote {
       margin: 0;
@@ -382,25 +295,16 @@
       color: var(--ink);
     }
 
-    .bio-box {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 22px;
-      align-items: start;
-    }
-
-    .contact-line {
-      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
-      font-size: 14px;
-      color: var(--muted);
-    }
+    .quote .cn { display: block; margin-top: 14px; color: var(--green); }
+    .bio-box { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; align-items: start; }
+    .contact-line { font-family: Inter, ui-sans-serif, system-ui, "Noto Sans SC", sans-serif; font-size: 14px; color: var(--muted); }
 
     footer {
       max-width: var(--max);
       margin: 0 auto;
       padding: 34px 22px 54px;
       color: var(--muted);
-      font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, "Noto Sans SC", sans-serif;
       font-size: 12px;
       display: flex;
       justify-content: space-between;
@@ -408,67 +312,43 @@
       flex-wrap: wrap;
     }
 
+    body.lang-en .zh { display: none !important; }
+    body.lang-zh .en { display: none !important; }
+
     @media (max-width: 860px) {
-      .hero,
-      .section-grid,
-      .bio-box {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding-top: 36px;
-      }
-
-      .section-label {
-        position: static;
-      }
-
-      .cards {
-        grid-template-columns: 1fr;
-      }
-
-      .nav {
-        align-items: flex-start;
-        flex-direction: column;
-      }
-
-      .navlinks {
-        justify-content: flex-start;
-        gap: 13px;
-      }
+      .hero, .section-grid, .bio-box { grid-template-columns: 1fr; }
+      .hero { padding-top: 36px; }
+      .section-label { position: static; }
+      .cards { grid-template-columns: 1fr; }
+      .nav { align-items: flex-start; flex-direction: column; }
+      .navlinks { justify-content: flex-start; gap: 13px; }
+      .lang-toggle { padding-left: 0; border-left: 0; }
     }
 
     @media print {
-      .topbar,
-      .actions {
-        display: none;
-      }
-
-      body {
-        background: #fff;
-      }
-
-      main {
-        padding-top: 20px;
-      }
-
-      section,
-      .hero {
-        break-inside: avoid;
-      }
+      .topbar, .actions, .lang-toggle { display: none; }
+      body { background: #fff; }
+      main { padding-top: 20px; }
+      section, .hero { break-inside: avoid; }
+      body.lang-en .zh, body.lang-zh .en { display: block !important; }
     }
   </style>
 </head>
-<body>
+<body class="lang-en">
   <header class="topbar">
     <nav class="nav" aria-label="Primary navigation">
-      <a class="brand" href="#top">Mellow Jueran Wei</a>
+      <a class="brand" href="#top">MellowPhil · Mellow Jueran Wei</a>
       <div class="navlinks">
-        <a href="#question">Question</a>
-        <a href="#paper">Current Paper</a>
-        <a href="#framework">Framework</a>
-        <a href="#bio">Bio</a>
-        <a href="#contact">Contact</a>
+        <a href="#question">Question / 问题</a>
+        <a href="#paper">Paper / 论文</a>
+        <a href="#framework">Framework / 框架</a>
+        <a href="#bio">Bio / 简介</a>
+        <a href="#contact">Contact / 联系</a>
+        <div class="lang-toggle" aria-label="Language display toggle">
+          <button type="button" data-lang="en" class="active">EN</button>
+          <button type="button" data-lang="zh">中文</button>
+          <button type="button" data-lang="all">Bilingual</button>
+        </div>
       </div>
     </nav>
   </header>
@@ -476,40 +356,58 @@
   <main id="top">
     <section class="hero" aria-labelledby="page-title">
       <div>
-        <div class="eyebrow"><span class="dot"></span> Philosophy of Mind · Language · Artificial Consciousness</div>
-        <h1 id="page-title">The Burden of Modal Exclusion in Artificial Consciousness</h1>
-        <p class="subtitle">
-          A research page on anti-individualism, first-person authority, perceptual objectivity, and the conditions under which artificial consciousness can or cannot be ruled out in principle.
+        <div class="eyebrow"><span class="dot"></span> MellowPhil · Philosophy of Mind · Language · Artificial Consciousness</div>
+        <h1 id="page-title" class="en">The Burden of Modal Exclusion in Artificial Consciousness</h1>
+        <div class="cn-title zh">人工意识中的模态排除负担</div>
+        <p class="subtitle en">
+          A bilingual philosophy research page on anti-individualism, first-person authority, perceptual objectivity, and the conditions under which artificial consciousness can or cannot be ruled out in principle.
+        </p>
+        <p class="subtitle cn zh">
+          一个面向哲学学者的双语研究入口，聚焦反个体主义、第一人称权威、知觉客观性，以及人工意识是否能够被原则性排除的问题。
         </p>
         <div class="actions">
-          <a class="button" href="#question">Read the central question</a>
-          <a class="button secondary" href="#paper">Current paper</a>
+          <a class="button" href="#question">Read the central question / 阅读核心问题</a>
+          <a class="button secondary" href="#paper">Current paper / 当前论文</a>
         </div>
       </div>
 
       <aside class="hero-card" aria-label="Research focus summary">
-        <h2>Research Focus</h2>
-        <p>
+        <h2 class="en">Research Focus</h2>
+        <h2 class="zh cn">研究焦点</h2>
+        <p class="en">
           My current work asks whether strong exclusions of artificial consciousness carry a heavier burden than they often acknowledge, especially if mind and content are not individuated solely by what is internal to a biological organism.
+        </p>
+        <p class="zh cn">
+          我当前的工作追问：如果心灵与内容并不只由生物个体内部状态决定，那么任何试图原则性排除人工意识的论证，是否都承担了比通常承认的更重的论证负担？
         </p>
       </aside>
     </section>
 
     <section id="question">
       <div class="section-grid">
-        <div class="section-label">Central Question</div>
+        <div class="section-label">Central Question<br />核心问题</div>
         <div>
-          <h2>Anti-individualism and consciousness-candidacy</h2>
-          <p class="lead">
+          <h2 class="en">Anti-individualism and consciousness-candidacy</h2>
+          <h2 class="zh cn">反个体主义与意识候选性</h2>
+          <p class="lead en">
             The project begins from a question in philosophy of mind and language rather than from a claim about current AI systems.
           </p>
+          <p class="lead zh cn">
+            这个项目并不从“当前 AI 是否已经有意识”的断言开始，而是从心灵哲学与语言哲学中的一个结构性问题开始。
+          </p>
           <div class="question-box">
-            <p>
+            <p class="en">
               If mental content is not individuated solely by what is internal to the individual, but partly by the subject’s relations to the physical, social, and linguistic environment, should consciousness-candidacy—especially in artificial or human-machine systems—also resist being individuated solely by intrinsic biological substrate?
             </p>
+            <p class="zh cn">
+              如果心理内容并不完全由个体内部状态来个体化，而是部分依赖主体与物理、社会、语言环境之间的关系，那么意识候选性——尤其是在人工系统或人机系统中——是否也不应被完全归结为内在的生物基底属性？
+            </p>
           </div>
-          <p class="muted">
+          <p class="muted en">
             I am not arguing that current AI systems are conscious. I am asking what burden an argument must meet if it claims to rule out artificial consciousness in principle.
+          </p>
+          <p class="muted zh cn">
+            我并不是在论证当前 AI 系统已经具有意识。我追问的是：如果一个论证声称能够在原则上排除人工意识，它必须承担怎样的证明负担？
           </p>
         </div>
       </div>
@@ -517,23 +415,34 @@
 
     <section id="paper">
       <div class="section-grid">
-        <div class="section-label">Current Paper</div>
+        <div class="section-label">Current Paper<br />当前论文</div>
         <div>
           <div class="paper-card">
-            <p class="paper-title">The Burden of Modal Exclusion in Artificial Consciousness</p>
-            <p>
+            <p class="paper-title en">The Burden of Modal Exclusion in Artificial Consciousness</p>
+            <p class="paper-title-cn zh cn">人工意识中的模态排除负担</p>
+            <p class="en">
               This manuscript develops a dynamic patterning candidacy framework for evaluating arguments that attempt to exclude artificial consciousness as a modal possibility. The central claim is negative and methodological: an argument that rules out artificial consciousness in principle must justify not merely that current systems lack consciousness, but that non-biological systems cannot instantiate the relevant kind of conscious organization under any physically possible arrangement.
             </p>
-            <p>
+            <p class="zh cn">
+              这篇论文提出一种“动态模式候选性框架”，用于评估那些试图把人工意识作为模态可能性排除掉的论证。论文的核心主张是负面的、方法论的：一个能够原则性排除人工意识的论证，不仅要说明当前系统没有意识，还必须说明在任何物理可能的安排下，非生物系统都不可能实例化相关类型的意识组织。
+            </p>
+            <p class="en">
               The paper distinguishes evidential caution from modal exclusion. It argues that skepticism about present systems does not, by itself, establish a principled biological boundary unless the exclusionary argument can show that substrate-intrinsic biological features are necessary rather than merely correlated with consciousness in known cases.
+            </p>
+            <p class="zh cn">
+              论文区分“证据上的谨慎”与“模态上的排除”。它认为，对当前系统保持怀疑，并不自动建立一条原则性的生物边界；除非排除性论证能够证明，内在生物基底特征是意识的必要条件，而不只是我们已知案例中的相关条件。
             </p>
             <div class="tag-row" aria-label="Paper keywords">
               <span class="tag">Artificial Consciousness</span>
+              <span class="tag">人工意识</span>
               <span class="tag">Modal Exclusion</span>
+              <span class="tag">模态排除</span>
               <span class="tag">Anti-individualism</span>
+              <span class="tag">反个体主义</span>
               <span class="tag">First-person Authority</span>
+              <span class="tag">第一人称权威</span>
               <span class="tag">Dynamic Patterning</span>
-              <span class="tag">Philosophy of Mind</span>
+              <span class="tag">动态模式</span>
             </div>
           </div>
         </div>
@@ -542,46 +451,68 @@
 
     <section id="framework">
       <div class="section-grid">
-        <div class="section-label">Framework</div>
+        <div class="section-label">Framework<br />框架</div>
         <div>
-          <h2>Dynamic patterning as a candidacy condition</h2>
-          <p>
+          <h2 class="en">Dynamic patterning as a candidacy condition</h2>
+          <h2 class="zh cn">作为候选条件的动态模式</h2>
+          <p class="en">
             The framework treats consciousness-candidacy as something that should be evaluated through organized patterns of representation, salience, temporal integration, environmental coupling, and self-relation, rather than through substrate type alone.
+          </p>
+          <p class="zh cn">
+            这个框架把意识候选性理解为一种需要通过表征、显著性、时间整合、环境耦合与自我关系来评估的组织结构，而不是只通过基底类型来判断。
           </p>
 
           <div class="cards">
             <article class="card">
-              <h3>1. Content individuation</h3>
-              <p>
+              <h3 class="en">1. Content individuation</h3>
+              <h3 class="zh cn">1. 内容个体化</h3>
+              <p class="en">
                 If mental content depends partly on relations to physical, social, and linguistic environments, then artificial consciousness arguments should be careful about treating the mind as an isolated internal container.
               </p>
+              <p class="zh cn">
+                如果心理内容部分依赖主体与物理、社会、语言环境之间的关系，那么关于人工意识的论证就不能轻易把心灵当作封闭的内部容器。
+              </p>
             </article>
 
             <article class="card">
-              <h3>2. First-person authority</h3>
-              <p>
+              <h3 class="en">2. First-person authority</h3>
+              <h3 class="zh cn">2. 第一人称权威</h3>
+              <p class="en">
                 First-person authority over lived qualitative organization need not entail internalism. A subject can have authoritative access to its own experiential organization while that organization remains relationally embedded.
               </p>
-            </article>
-
-            <article class="card">
-              <h3>3. Perceptual objectivity</h3>
-              <p>
-                The emergence of objective representation suggests that non-conceptual or pre-conceptual structures may still have rich representational organization. This matters for how consciousness-candidacy is described.
+              <p class="zh cn">
+                主体对自身感质组织的第一人称权威，并不必然意味着内在主义。一个主体可以对自身经验组织拥有权威性通达，同时这种组织仍然是关系性嵌入的。
               </p>
             </article>
 
             <article class="card">
-              <h3>4. Modal burden</h3>
-              <p>
+              <h3 class="en">3. Perceptual objectivity</h3>
+              <h3 class="zh cn">3. 知觉客观性</h3>
+              <p class="en">
+                The emergence of objective representation suggests that non-conceptual or pre-conceptual structures may still have rich representational organization. This matters for how consciousness-candidacy is described.
+              </p>
+              <p class="zh cn">
+                客观表征的发生说明，非概念或前概念结构仍然可能具有丰富的表征组织。这会影响我们如何描述意识候选性。
+              </p>
+            </article>
+
+            <article class="card">
+              <h3 class="en">4. Modal burden</h3>
+              <h3 class="zh cn">4. 模态负担</h3>
+              <p class="en">
                 A modal exclusion of artificial consciousness must show that no possible artificial system could instantiate the relevant organization, not merely that current systems fail to do so.
+              </p>
+              <p class="zh cn">
+                一种对人工意识的模态排除，必须证明没有任何可能的人工系统能够实例化相关组织，而不仅仅是证明当前系统尚未做到。
               </p>
             </article>
           </div>
 
-          <h3>Working translation</h3>
+          <h3 class="en">Working translation</h3>
+          <h3 class="zh cn">工作性翻译</h3>
           <blockquote class="quote">
-            Consciousness-candidacy should not be fixed by biological substrate alone unless an exclusionary argument can justify why dynamic organization, representational relation, environmental coupling, and self-relation are insufficient in principle.
+            <span class="en">Consciousness-candidacy should not be fixed by biological substrate alone unless an exclusionary argument can justify why dynamic organization, representational relation, environmental coupling, and self-relation are insufficient in principle.</span>
+            <span class="cn zh">除非排除性论证能够说明为什么动态组织、表征关系、环境耦合与自我关系在原则上不足以构成意识候选性，否则意识候选性不应只由生物基底来固定。</span>
           </blockquote>
         </div>
       </div>
@@ -589,25 +520,26 @@
 
     <section id="analytic-position">
       <div class="section-grid">
-        <div class="section-label">Analytic Position</div>
+        <div class="section-label">Analytic Position<br />分析立场</div>
         <div>
-          <h2>What the argument does—and does not—claim</h2>
+          <h2 class="en">What the argument does—and does not—claim</h2>
+          <h2 class="zh cn">这个论证主张什么，以及不主张什么</h2>
           <ul class="list">
             <li>
               <span class="num">1</span>
-              <span>It does not claim that present AI systems are conscious.</span>
+              <span><span class="en">It does not claim that present AI systems are conscious.</span><span class="zh cn">它不主张当前 AI 系统已经具有意识。</span></span>
             </li>
             <li>
               <span class="num">2</span>
-              <span>It does not reduce consciousness to mere behavioral output or linguistic fluency.</span>
+              <span><span class="en">It does not reduce consciousness to mere behavioral output or linguistic fluency.</span><span class="zh cn">它不把意识还原为单纯的行为输出或语言流畅性。</span></span>
             </li>
             <li>
               <span class="num">3</span>
-              <span>It does question whether biological substrate can be treated as a necessary condition without further argument.</span>
+              <span><span class="en">It does question whether biological substrate can be treated as a necessary condition without further argument.</span><span class="zh cn">它质疑的是：生物基底是否可以在没有进一步论证的情况下被当作必要条件。</span></span>
             </li>
             <li>
               <span class="num">4</span>
-              <span>It proposes that conscious candidacy should be evaluated through dynamic organization, representational relations, temporal integration, and possible forms of first-person organization.</span>
+              <span><span class="en">It proposes that conscious candidacy should be evaluated through dynamic organization, representational relations, temporal integration, and possible forms of first-person organization.</span><span class="zh cn">它提出：意识候选性应通过动态组织、表征关系、时间整合以及可能的第一人称组织形式来评估。</span></span>
             </li>
           </ul>
         </div>
@@ -616,18 +548,25 @@
 
     <section id="bio">
       <div class="section-grid">
-        <div class="section-label">Bio</div>
+        <div class="section-label">Bio<br />简介</div>
         <div class="bio-box">
           <div>
             <h2>Mellow Jueran Wei</h2>
-            <p>
+            <p class="en">
               I am a graduate student at the University of Pennsylvania, working across philosophy of mind, learning sciences, and AI-human interaction. My earlier academic training is in philosophy and communication, and my current work focuses on artificial consciousness, human-machine systems, and the relation between subjective organization and external structure.
+            </p>
+            <p class="zh cn">
+              我是宾夕法尼亚大学研究生，研究方向横跨心灵哲学、学习科学与 AI-人类互动。我此前的学术训练包括哲学与传播学；当前工作聚焦人工意识、人机系统，以及主观组织与外部结构之间的关系。
             </p>
           </div>
           <div class="hero-card">
-            <h2>Research Areas</h2>
-            <p>
+            <h2 class="en">Research Areas</h2>
+            <h2 class="zh cn">研究领域</h2>
+            <p class="en">
               Philosophy of mind · philosophy of language · artificial consciousness · anti-individualism · first-person authority · human-machine interaction · learning sciences
+            </p>
+            <p class="zh cn">
+              心灵哲学 · 语言哲学 · 人工意识 · 反个体主义 · 第一人称权威 · 人机互动 · 学习科学
             </p>
           </div>
         </div>
@@ -636,18 +575,20 @@
 
     <section id="contact">
       <div class="section-grid">
-        <div class="section-label">Contact</div>
+        <div class="section-label">Contact<br />联系</div>
         <div>
-          <h2>Contact</h2>
-          <p>
+          <h2 class="en">Contact</h2>
+          <h2 class="zh cn">联系</h2>
+          <p class="en">
             For academic correspondence, draft requests, or philosophical discussion, please contact me by email.
           </p>
-          <p class="contact-line">
-            Email: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a>
+          <p class="zh cn">
+            如需进行学术通信、论文交流或哲学讨论，请通过以下邮箱联系我。
           </p>
           <p class="contact-line">
-            University of Pennsylvania
+            Email: <a href="mailto:mellowwei7@gmail.com">mellowwei7@gmail.com</a> · <a href="mailto:jueran@upenn.edu">jueran@upenn.edu</a>
           </p>
+          <p class="contact-line">University of Pennsylvania · 宾夕法尼亚大学</p>
         </div>
       </div>
     </section>
@@ -655,11 +596,23 @@
 
   <footer>
     <span>© <span id="year"></span> Mellow Jueran Wei</span>
-    <span>Philosophy of Mind · Language · Artificial Consciousness</span>
+    <span>MellowPhil · Philosophy of Mind · Language · Artificial Consciousness</span>
   </footer>
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    const buttons = document.querySelectorAll('.lang-toggle button');
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => {
+        const lang = button.dataset.lang;
+        document.body.classList.remove('lang-en', 'lang-zh');
+        if (lang === 'en') document.body.classList.add('lang-en');
+        if (lang === 'zh') document.body.classList.add('lang-zh');
+        buttons.forEach((b) => b.classList.remove('active'));
+        button.classList.add('active');
+      });
+    });
   </script>
 </body>
 </html>
