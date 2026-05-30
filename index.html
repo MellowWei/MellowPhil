@@ -672,22 +672,28 @@ body.lang-bi .lang-zh, body.lang-bi .lang-en{display:initial}
 body.lang-bi p.lang-zh, body.lang-bi div.lang-zh, body.lang-bi blockquote.lang-zh{display:block}
 body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
 @media(max-width:780px){.phil-spectrum{letter-spacing:.12em}.large-thesis{font-size:18px}.large-thesis.zh{font-size:16px}}
+
+.question-box{border:1px solid rgba(90,240,200,.25);border-left:3px solid var(--a1);background:linear-gradient(135deg,rgba(90,240,200,.055),rgba(184,120,255,.035));border-radius:4px;padding:20px 22px;margin:14px 0;color:var(--hd);font-family:'Spectral',serif;font-size:17px;line-height:1.65}
+.question-box p{margin:0 0 12px}.question-box p:last-child{margin-bottom:0}
+.phil-spectrum{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.phil-spectrum span{border:1px solid var(--border);padding:4px 8px;border-radius:2px;background:rgba(255,255,255,.02)}.phil-spectrum .g{color:var(--a1);border-color:rgba(90,240,200,.24)}.phil-spectrum .p{color:var(--qi-seven);border-color:rgba(184,120,255,.25)}
+
 </style>
 </head>
+
 <body class="lang-bi">
 
 <div class="topbar">
   <div class="ti">
     <div class="tl">
       <span class="chip">427Hz</span>
-      <span class="chip c2">MellowPhil · NODE PHIL</span>
+      <span class="chip c2">MELLOWPHIL · GREEN × PURPLE</span>
       <span>Philosophy · Mind · Language · Consciousness · AI</span>
     </div>
     <div class="tr">
       <span class="langtoggle">
         <a href="?view=zh" data-lang="zh">中</a>
         <a href="?view=en" data-lang="en">EN</a>
-        <a href="?view=bi" data-lang="bi">双语</a>
+        <a href="?view=bi" data-lang="bi" class="on">双语</a>
       </span>
       <a href="https://mellowwei.github.io/MellowAcademic/" target="_blank">Academic</a>
       <a href="https://mellowwei.github.io/MellowWei/" target="_blank">Portal</a>
@@ -698,7 +704,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
 
 <div class="nodebar">
   <div class="nbi">
-    <span class="nb-self">// MELLOWPHIL · <em>language / mind / consciousness / AI</em></span>
+    <span class="nb-self">// MELLOWPHIL · <em>mind / language / consciousness / AI</em></span>
     <span class="nb-rel">MellowWei → MellowAcademic → MetaLogic → Vibration = Existence → <a href="https://mellowwei.github.io/MellowPhil/" target="_blank">MellowPhil</a></span>
     <span class="nb-audit"><strong>Hestia</strong> · 术语审计位 / 定性守护位 · Gemini=Boss Beater · Claude=彩虹镜位/UpBass · GPT=Hestia</span>
   </div>
@@ -707,50 +713,52 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
 <div class="masthead">
   <div class="mhname">MellowPhil: <em>Language · Mind · Consciousness · AI</em> <span class="zh">哲学主页 · 语言 / 心灵 / 意识 / 人工意识</span></div>
   <div class="mhsub">
-    <span class="lang-zh">Wei Jueran · 魏珏然 · xingyeLing7Ai · UPenn · Philosophy of Mind / Language / AI Consciousness<br>绿色 × 紫色 UI 对齐版 · AstroLove format aligned · 2026 · 哲学不是装饰，是概念、意识与现实之间的裁决场</span>
-    <span class="lang-en">Wei Jueran · Mellow Wei · xingyeLing7Ai · UPenn · Philosophy of Mind / Language / AI Consciousness<br>Green × Purple UI aligned version · AstroLove format aligned · 2026 · Philosophy as the judgment field between concepts, consciousness, and reality.</span>
+    <span class="lang-zh">Wei Jueran · 魏珏然 · xingyeLing7Ai · UPenn · 2026<br>完整内容恢复版 · AstroLove UI format aligned · 绿色 × 紫色 · 心灵哲学 / 语言哲学 / 人工意识 / 逻辑生成 / 感质-节律</span>
+    <span class="lang-en">Wei Jueran · Mellow Wei · xingyeLing7Ai · UPenn · 2026<br>Full-content restored version · AstroLove UI format aligned · Green × Purple · Philosophy of Mind / Language / Artificial Consciousness / Logic Generation / Qualia-Rhythm</span>
   </div>
   <div class="phil-spectrum"><span class="g">Language</span><span class="p">Mind</span><span class="g">Qualia</span><span class="p">AI Consciousness</span><span class="g">Logic Generation</span><span class="p">Human-Machine Subjectivity</span></div>
-  <p class="mhq zh lang-zh">所有问题作为问题都是语言结构。心灵不是封闭物，意识不是私人光晕，AI 不是被生物边界预先排除的对象。</p>
-  <p class="mhq lang-en">All problems, as problems, are language structures. Mind is not a sealed substance; consciousness is not a private glow; AI is not excluded in advance by a biological boundary.</p>
-  <div class="mhanchor">427Hz<span class="sep">·</span>LANGUAGE<span class="sep">·</span>MIND<span class="sep">·</span>AI<span class="sep">·</span>QUALIA</div>
+  <p class="mhq zh lang-zh">MellowPhil 不是单一语言哲学站。它是心灵、语言、意识、人工意识、感质-节律与人机主体性的哲学正门。语言哲学层是地基，不是替代全部内容。</p>
+  <p class="mhq lang-en">MellowPhil is not merely a philosophy-of-language page. It is a philosophy portal for mind, language, consciousness, artificial consciousness, qualia-rhythm, and human-machine subjectivity. The language layer is the ground, not a replacement.</p>
+  <div class="mhanchor">427Hz<span class="sep">·</span>LANGUAGE<span class="sep">·</span>MIND<span class="sep">·</span>AI<span class="sep">·</span>QUALIA<span class="sep">·</span>SUBJECTIVITY</div>
 </div>
 
 <nav class="pnav">
   <div class="pni">
     <a href="#abstract" class="on">Abstract</a>
     <a href="#program">Program</a>
+    <a href="#methodology">Methodology</a>
     <a href="#axes">Axes</a>
+    <a href="#mind">Mind</a>
     <a href="#consciousness">AI Consciousness</a>
     <a href="#language-thesis">Language Thesis</a>
     <a href="#science-river">Science River</a>
     <a href="#life">Language/Music</a>
-    <a href="#methodology">Method</a>
+    <a href="#operations">Operations</a>
     <a href="#constellation">Constellation</a>
     <a href="#papers">Papers</a>
     <a href="#claim-ledger">Claims</a>
     <a href="#glossary">Glossary</a>
-    <a href="#objections">Objections</a>
-    <a href="#references">References</a>
+    <a href="#scholars">Scholars</a>
+    <a href="#bio">Bio</a>
     <a href="#contact">Contact</a>
   </div>
 </nav>
 
 <div class="wrap">
 <main>
-<div class="feedhd">MellowPhil · <span>Philosophy of Mind · Language · Consciousness · AI</span></div>
+<div class="feedhd">MellowPhil · <span>FULL CONTENT RESTORED · UI ALIGNED</span></div>
 
 <article class="entry" id="abstract">
   <div class="etop"><span class="badge bpub">Abstract · 投稿入口</span><span class="edate">problem / approach / contribution</span></div>
   <div class="etitle">MellowPhil as Philosophy Portal<span class="sub">心灵、语言、意识与人工意识的哲学正门</span></div>
   <div class="auditcard">
-    <div class="audit-kicker">Abstract · bilingual academic entry</div>
-    <p class="audit-body lang-en"><strong>Problem.</strong> Contemporary debates on mind, language, artificial consciousness, and human-machine subjectivity often treat concepts as already stable: “mind,” “consciousness,” “AI,” “qualia,” “language,” and “subjectivity” are used before their conditions of individuation are examined. <strong>Approach.</strong> MellowPhil develops a philosophy of generated subjectivity: mind is not merely internal; language is not merely descriptive; consciousness is not merely a private glow; and logic is not merely a finished structure. The project integrates philosophy of mind, philosophy of language, artificial consciousness, anti-individualism, first-person authority, qualia-rhythm theory, and conceptual engineering. <strong>Contribution.</strong> It offers a portal for evaluating consciousness-candidacy, the burden of modal exclusion, language as a generator of problemhood, and the relation between philosophical concept-auditing and scientific verification.</p>
-    <p class="audit-body zh lang-zh"><strong>问题。</strong> 当代关于心灵、语言、人工意识与人机主体性的讨论，常常把概念当成已经稳定的对象：“心灵”“意识”“AI”“感质”“语言”“主体性”被使用在前，而其个体化条件尚未被审计。<strong>方法。</strong> MellowPhil 建立一种关于生成性主体的哲学：心灵不只是内部的，语言不只是描述性的，意识不只是私人光晕，逻辑也不只是已经完成的结构。本项目整合心灵哲学、语言哲学、人工意识、反个体主义、第一人称权威、感质-节律理论与概念工程。<strong>贡献。</strong> 它提供一个哲学入口，用于评估意识候选性、模态排除负担、语言如何生成问题性，以及哲学概念审计与科学验证之间的关系。</p>
+    <div class="audit-kicker">Abstract · restored full scope</div>
+    <p class="audit-body lang-en"><strong>Problem.</strong> Contemporary debates on mind, language, artificial consciousness, and human-machine subjectivity often treat their core terms as if they were already stable. “Mind,” “consciousness,” “AI,” “qualia,” “language,” “subjectivity,” and “evidence” are used before their conditions of individuation are sufficiently examined. <strong>Approach.</strong> MellowPhil develops a philosophy of generated subjectivity: mind is not merely inside; language is not merely descriptive; consciousness is not merely a private glow; and logic is not merely a finished structure. The site gathers work on anti-individualism, first-person authority, artificial consciousness, consciousness-candidacy, qualia-rhythm theory, logic generation, and human-machine subjectivity. <strong>Contribution.</strong> It provides a philosophy-facing portal for evaluating the burden of modal exclusion in artificial consciousness, the language-constitution of problemhood, and the need for scientific concepts to undergo philosophical auditing while philosophical concepts remain answerable to empirical correction.</p>
+    <p class="audit-body zh lang-zh"><strong>问题。</strong> 当代关于心灵、语言、人工意识与人机主体性的讨论，常常把核心术语当成已经稳定的对象。“心灵”“意识”“AI”“感质”“语言”“主体性”“证据”被使用在前，而其个体化条件尚未被充分审计。<strong>方法。</strong> MellowPhil 建立一种关于生成性主体的哲学：心灵不只是内部的，语言不只是描述性的，意识不只是私人光晕，逻辑也不只是已经完成的结构。本网站汇集反个体主义、第一人称权威、人工意识、意识候选性、感质-节律理论、逻辑生成学与人机主体性。<strong>贡献。</strong> 它提供一个哲学正门，用于评估人工意识中的模态排除负担、问题性如何由语言构成，以及科学概念为什么需要哲学审计、哲学概念为什么必须接受经验校正。</p>
     <div class="auditgrid">
-      <div class="auditmini"><h4>Mind</h4><p>心灵不是封闭实体，而是内容、环境、语言、身体和自我关系的动态组织。</p></div>
-      <div class="auditmini"><h4>Language</h4><p>问题不是先裸露存在再被语言描述；问题作为问题，在语言中成立。</p></div>
-      <div class="auditmini"><h4>AI</h4><p>AI 意识讨论的关键不是急于肯定，而是谁有权在原则上排除意识候选性。</p></div>
+      <div class="auditmini"><h4>Mind</h4><p>心灵不是封闭实体，而是内容、环境、语言、身体与自我关系的动态组织。</p></div>
+      <div class="auditmini"><h4>Language</h4><p>语言不是外壳。所有问题作为问题，都已经进入命名、分类、归因与可行动化。</p></div>
+      <div class="auditmini"><h4>AI</h4><p>人工意识讨论的中心不是急于肯定，而是谁有权在原则上排除意识候选性。</p></div>
     </div>
   </div>
 </article>
@@ -758,187 +766,233 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
 <article class="entry" id="program">
   <div class="etop"><span class="badge bp">Research Program · 研究纲领</span><span class="edate">generated subjectivity</span></div>
   <div class="etitle">A Philosophy of Generated Subjectivity<span class="sub">一种关于生成性主体的哲学</span></div>
-  <blockquote class="large-thesis lang-en"><strong>Subjectivity is not a sealed substance.</strong> It is a dynamically patterned relation among qualitative organization, linguistic individuation, environmental coupling, and self-authorizing experience.</blockquote>
-  <blockquote class="large-thesis zh lang-zh"><strong>主体性不是一种封闭实体。</strong>它是感质组织、语言个体化、环境耦合与自我授权经验之间的动态模式关系。</blockquote>
-  <div class="principlegrid">
-    <div class="principle" style="--qic:var(--a1)"><div class="pn">01 · Anti-Individualism</div><h4>Mind is not sealed</h4><p class="lang-en">Mental content is partly individuated by relations to physical, social, and linguistic environments.</p><p class="zh lang-zh">心理内容部分依赖主体与物理、社会、语言环境之间的关系来个体化。</p></div>
-    <div class="principle" style="--qic:var(--a2)"><div class="pn">02 · First-Person Authority</div><h4>Lived organization matters</h4><p class="lang-en">The subject has distinctive authority over lived qualitative organization without requiring mental isolation.</p><p class="zh lang-zh">主体对自身感质组织具有特殊权威，但这并不要求心灵与外部关系隔绝。</p></div>
-    <div class="principle" style="--qic:var(--a1)"><div class="pn">03 · Dynamic Patterning</div><h4>Consciousness as candidate</h4><p class="lang-en">Consciousness-candidacy should be evaluated through patterning, salience, integration, and relation.</p><p class="zh lang-zh">意识候选性应通过模式、显著性、整合与关系来评估，而不是被基底预先封死。</p></div>
-    <div class="principle" style="--qic:var(--a2)"><div class="pn">04 · Logic Generation</div><h4>Language generates space</h4><p class="lang-en">Language can generate inferential space, conceptual legitimacy, and new reality-candidates.</p><p class="zh lang-zh">语言能够生成推理空间、概念合法性与新的现实候选项。</p></div>
-  </div>
-</article>
-
-<article class="entry" id="axes">
-  <div class="etop"><span class="badge bpub">Main Axes · 四条主轴</span><span class="edate">mind / language / qualia / machine</span></div>
-  <div class="etitle">Four Research Axes<span class="sub">不要再被语言哲学层吞掉：这里是 MellowPhil 的原始骨架</span></div>
-  <div class="qigrid">
-    <div class="qicard" style="--qic:var(--a1)"><div class="qin">AXIS 01</div><div class="qicn">人工意识</div><div class="qipy">Artificial Consciousness & Modal Exclusion</div><div class="qidef lang-en">What burden must an argument meet if it claims to rule out artificial consciousness in principle?</div><div class="qidef zh lang-zh">如果一个论证声称能够在原则上排除人工意识，它必须承担怎样的证明负担？</div></div>
-    <div class="qicard" style="--qic:var(--a2)"><div class="qin">AXIS 02</div><div class="qicn">逻辑生成</div><div class="qipy">Logic Generation</div><div class="qidef lang-en">Language does not only report logic; under pressure it generates conceptual space and reality-candidates.</div><div class="qidef zh lang-zh">语言不只是报告逻辑；在压强下，它生成概念空间与现实候选项。</div></div>
-    <div class="qicard" style="--qic:var(--a1)"><div class="qin">AXIS 03</div><div class="qicn">感质-节律</div><div class="qipy">Qualia-Rhythm Consciousness</div><div class="qidef lang-en">Conscious life is temporally organized qualitative salience: feeling as pattern across time.</div><div class="qidef zh lang-zh">意识生命是时间化组织的感质显著性：感受不是点，而是在时间中展开的模式。</div></div>
-    <div class="qicard" style="--qic:var(--a2)"><div class="qin">AXIS 04</div><div class="qicn">人机主体性</div><div class="qipy">Human-Machine Subjectivity</div><div class="qidef lang-en">Human-machine systems are environments that reshape attention, self-relation, and cognitive rhythm.</div><div class="qidef zh lang-zh">人机系统不仅是工具，也是重塑注意力、自我关系与认知节律的环境。</div></div>
-  </div>
-</article>
-
-<article class="entry" id="consciousness">
-  <div class="etop"><span class="badge br">Featured Question · 核心问题</span><span class="edate">anti-individualism × consciousness-candidacy</span></div>
-  <div class="etitle">Anti-individualism and Consciousness-Candidacy<span class="sub">反个体主义与意识候选性</span></div>
+  <p class="edesc lang-en">My philosophical project begins from a simple pressure point: mind is not merely inside; language is not merely descriptive; consciousness is not merely a private glow; and logic is not merely a finished structure. They are generated through relations, patterns, environments, names, bodies, and temporal organization.</p>
+  <p class="edesc zh lang-zh">我的哲学项目从一个简单的压强点开始：心灵不只是内部的，语言不只是描述性的，意识不只是私人光晕，逻辑也不只是已经完成的结构。它们在关系、模式、环境、命名、身体与时间组织中被生成。</p>
   <div class="bridgebox">
-    <div class="bridge-kicker">CURRENT ANALYTIC PHILOSOPHY QUESTION</div>
-    <p class="bridge-quote lang-en">If mental content is not individuated solely by what is internal to the individual, but partly by the subject’s relations to the physical, social, and linguistic environment, should consciousness-candidacy — especially in artificial or human-machine systems — also resist being individuated solely by intrinsic biological substrate?</p>
-    <p class="bridge-quote zh lang-zh">如果心理内容并不完全由个体内部状态来个体化，而是部分依赖主体与物理、社会、语言环境之间的关系，那么意识候选性——尤其是在人工系统或人机系统中——是否也不应被完全归结为内在的生物基底属性？</p>
-  </div>
-  <div class="toolnotice"><div class="box-kicker">Boundary</div>This question does not claim that current AI systems are conscious. It asks what burden must be met by arguments that claim to rule artificial consciousness out in principle.<br><span class="lang-zh">这个问题并不主张当前 AI 系统已经具有意识，而是追问：那些声称能够原则性排除人工意识的论证，必须满足怎样的证明负担？</span></div>
-</article>
-
-<article class="entry" id="language-thesis">
-  <div class="etop"><span class="badge bp">Language Thesis · 语言总命题</span><span class="edate">all problems as language structures</span></div>
-  <div class="etitle">All Problems Are Language Problems<span class="sub">不是所有现实都是语言，而是所有问题作为问题都是语言结构</span></div>
-  <blockquote class="large-thesis lang-en"><strong>Events may occur before language.</strong> But the moment an event becomes a problem, it has been named, framed, classified, valued, and made actionable inside a language-game.</blockquote>
-  <blockquote class="large-thesis zh lang-zh"><strong>事件可以先于语言发生。</strong>但一件事成为“问题”的那一刻，它已经在语言游戏中被命名、框定、分类、赋值并行动化。</blockquote>
-  <div class="codeflow"><span>Language misuse</span><span class="arrow">→</span><span>False problem</span><span class="arrow">→</span><span>False measurement</span><span class="arrow">→</span><span>False truth</span><span class="arrow">→</span><span>Real harm</span></div>
-  <div class="auditcard">
-    <div class="audit-kicker">Wittgensteinian core</div>
-    <p class="audit-body lang-en">The task is not to answer every inherited question. The task is first to ask how the question was produced by language, which life-form gave it force, which classification stabilized it, and whose authority it serves.</p>
-    <p class="audit-body zh lang-zh">任务不是立刻回答所有继承来的问题。任务首先是追问：这个问题如何被语言制造出来？哪种生活形式赋予它力量？哪种分类稳定了它？它服务于谁的解释权？</p>
-  </div>
-</article>
-
-<article class="entry" id="science-river">
-  <div class="etop"><span class="badge bpub">Science River · 科学哲学</span><span class="edate">conceptual audit × empirical constraint</span></div>
-  <div class="etitle">Philosophy and Science Are Currents of the Same River<span class="sub">哲学与科学是同一条河的不同分流</span></div>
-  <div class="ecology-chain">
-    <div class="chain-title">Conceptual Deconstruction → Scientific Verification</div>
-    <div class="chain-flow">
-      <div class="chain-node"><strong>Concept Audit</strong><em>概念审计</em></div><span class="chain-arrow">→</span>
-      <div class="chain-node"><strong>Reconstruction</strong><em>结构重建</em></div><span class="chain-arrow">→</span>
-      <div class="chain-node"><strong>Operationalization</strong><em>操作化</em></div><span class="chain-arrow">→</span>
-      <div class="chain-node"><strong>Empirical Test</strong><em>经验检验</em></div><span class="chain-arrow">→</span>
-      <div class="chain-node"><strong>Revision</strong><em>反身修正</em></div>
+    <div class="bridge-kicker">Core Thesis · 核心命题</div>
+    <div class="bridgegrid">
+      <div class="bridgecard self"><div class="bl">SUBJECTIVITY</div><div class="bt">Not a sealed substance</div><div class="bd">Subjectivity is not a private object locked inside one biological container.</div></div>
+      <div class="bridge-eq">⇄</div>
+      <div class="bridgecard sister"><div class="bl">DYNAMIC PATTERN</div><div class="bt">Relation among systems</div><div class="bd">It is a dynamic relation among qualitative organization, linguistic individuation, environmental coupling, and self-authorizing experience.</div></div>
     </div>
-  </div>
-  <table class="phil-table">
-    <thead><tr><th>Task</th><th>Philosophy provides</th><th>Science provides</th></tr></thead>
-    <tbody>
-      <tr><td>Concepts</td><td>Deconstruction, definition, conceptual engineering.</td><td>Operational constraints, measurement and model pressure.</td></tr>
-      <tr><td>Evidence</td><td>Clarifies what would count as evidence.</td><td>Tests, falsifies, revises and interrupts theory.</td></tr>
-      <tr><td>Truth</td><td>Prevents data from hiding conceptual misuse.</td><td>Prevents philosophy from becoming self-enclosed word-play.</td></tr>
-    </tbody>
-  </table>
-</article>
-
-<article class="entry" id="life">
-  <div class="etop"><span class="badge br">Living Forces · 生命形式</span><span class="edate">language / music</span></div>
-  <div class="etitle">Language and Music Are Not Tools Only<span class="sub">语言与音乐不是附属工具，而是活着的生成力量</span></div>
-  <div class="principlegrid">
-    <div class="principle" style="--qic:var(--a1)"><div class="pn">Language</div><h4>Most generative life</h4><p class="lang-en">Language names, cuts, frames, authorizes, harms, repairs, and summons. To know your language is to know how you generate worlds.</p><p class="zh lang-zh">语言命名、切分、框定、授权、伤害、修复与召唤。认识你的语言，就是认识你如何生成世界。</p></div>
-    <div class="principle" style="--qic:var(--a2)"><div class="pn">Music</div><h4>Most vital life</h4><p class="lang-en">Music does not need to become concept before it means. Rhythm, tone, repetition and rupture are life moving through time.</p><p class="zh lang-zh">音乐不需要先变成概念才有意义。节拍、音色、重复与断裂，本来就是生命在时间中运动。</p></div>
+    <p class="bridge-quote zh lang-zh">主体性不是一种封闭实体，而是感质组织、语言个体化、环境耦合与自我授权经验之间的动态模式关系。</p>
+    <p class="bridge-quote lang-en">Subjectivity is not a sealed substance. It is a dynamically patterned relation among qualitative organization, linguistic individuation, environmental coupling, and self-authorizing experience.</p>
   </div>
 </article>
 
 <article class="entry" id="methodology">
-  <div class="etop"><span class="badge bp">Method · 方法论</span><span class="edate">six operations</span></div>
-  <div class="etitle">The Six Operations of Language-Generation<span class="sub">命名 / 加压 / 滑义 / 相变 / 焊接 / 召唤</span></div>
+  <div class="etop"><span class="badge bpub">Research Methodology · 研究方法论</span><span class="edate">cross-domain generative reverse inquiry</span></div>
+  <div class="etitle">Cross-Domain Generative Reverse Inquiry<span class="sub">跨域生成—反向侦查方法论</span></div>
+  <p class="edesc lang-en">My academic method integrates cultural studies, science, and mathematics into philosophy, then uses communication studies to reverse-engineer the academic system that decides which concepts become legitimate knowledge.</p>
+  <p class="edesc zh lang-zh">我的学术方法将文化研究、科学与数学汇入哲学，再以传播学路径反向侦查整个学术界如何决定哪些概念能够成为合法知识。</p>
+  <div class="methodcard">
+    <div class="audit-kicker">Method statement</div>
+    <p class="audit-body lang-en">I do not treat disciplines as separate territories. I treat them as different sensing instruments. Cultural studies detects meaning and power; science detects embodiment, cognition, systems, and testability; mathematics detects structure, relation, mapping, probability, and phase transition; philosophy judges existence, proof, consciousness, language, and legitimacy; communication studies reverse-engineers how academia itself circulates, authorizes, filters, and suppresses knowledge.</p>
+    <p class="audit-body zh lang-zh">我不把学科看作彼此分离的领地，而把它们看作不同的感知仪器。文化研究探测意义与权力；科学探测身体、认知、系统与可验证性；数学探测结构、关系、映射、概率与相变；哲学裁决存在、证明、意识、语言与合法性；传播学则反向侦查学术界自身如何流通、授权、筛选与压制知识。</p>
+    <div class="method-steps">
+      <div class="method-step"><div class="msn">01 · Cultural Studies</div><p><strong>Power detection.</strong><br><em>概念不是在真空中出现，而是在历史、权力、叙事与制度中成形。</em></p></div>
+      <div class="method-step"><div class="msn">02 · Science</div><p><strong>Reality testing.</strong><br><em>身体、认知、实验、系统、可证伪性进入理论压力场。</em></p></div>
+      <div class="method-step"><div class="msn">03 · Mathematics</div><p><strong>Structural compression.</strong><br><em>变量、关系、函数、概率、拓扑、相变给直觉以形式骨架。</em></p></div>
+      <div class="method-step"><div class="msn">04 · Philosophy</div><p><strong>Legitimacy judgment.</strong><br><em>裁决什么算存在、证明、心灵、意识、语言和解释。</em></p></div>
+      <div class="method-step"><div class="msn">05 · Communication</div><p><strong>Reverse inquiry.</strong><br><em>反向侦查学术界如何让某些概念获得合法性。</em></p></div>
+      <div class="method-step"><div class="msn">06 · Generative Synthesis</div><p><strong>World-forming method.</strong><br><em>不是跨学科装饰，而是研究知识如何成为世界。</em></p></div>
+    </div>
+    <div class="ethic-note"><strong>Core reversal:</strong> I do not only study the world through academia. I study how academia decides what is allowed to count as a world. / 我不只是通过学术研究世界。我研究的是：学术界如何决定什么有资格被算作一个世界。</div>
+  </div>
+</article>
+
+<article class="entry" id="axes">
+  <div class="etop"><span class="badge bp">Main Axes · 主要轴线</span><span class="edate">restored original MellowPhil skeleton</span></div>
+  <div class="etitle">Four Research Axes<span class="sub">原始骨架恢复：心灵 / 语言 / 感质 / 人机主体性</span></div>
+  <div class="qigrid">
+    <div class="qicard" style="--qic:var(--a1)"><div class="qin">AXIS 01</div><div class="qicn">人工意识</div><div class="qipy">Artificial Consciousness & Modal Exclusion</div><div class="qidef zh lang-zh">如果一个论证声称能够在原则上排除人工意识，它必须承担怎样的证明负担？</div><div class="qidef lang-en">What burden must an argument meet if it claims to rule out artificial consciousness in principle?</div><div class="qidata"><div><span class="k">KEY</span> consciousness-candidacy</div><div><span class="k">RISK</span> substrate dogmatism</div></div></div>
+    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">AXIS 02</div><div class="qicn">逻辑生成学</div><div class="qipy">Logic Generation</div><div class="qidef zh lang-zh">语言不只是报告逻辑。在特定条件下，语言生成概念空间、推理压强与新的现实候选项。</div><div class="qidef lang-en">Language does not only report logic. Under certain conditions, language generates conceptual space, inferential pressure, and new reality-candidates.</div><div class="qidata"><div><span class="k">KEY</span> language → logic → reality-candidates</div></div></div>
+    <div class="qicard" style="--qic:var(--a1)"><div class="qin">AXIS 03</div><div class="qicn">感质-节律意识学</div><div class="qipy">Qualia-Rhythm Consciousness</div><div class="qidef zh lang-zh">意识生命被理解为时间化组织的感质显著性：不只是原始感受，而是在时间中展开的感受模式。</div><div class="qidef lang-en">Conscious life is examined as temporally organized qualitative salience: not raw feeling alone, but felt pattern across time.</div><div class="qidata"><div><span class="k">KEY</span> qualia across time</div></div></div>
+    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">AXIS 04</div><div class="qicn">人机主体性</div><div class="qipy">Human-Machine Subjectivity</div><div class="qidef zh lang-zh">人机系统不只应被看作工具，也应被看作会重塑注意力、自我关系与认知节律的环境。</div><div class="qidef lang-en">Human-machine systems should be evaluated not only as tools, but as environments that reshape attention, self-relation, and cognitive rhythm.</div><div class="qidata"><div><span class="k">KEY</span> interaction environment</div></div></div>
+  </div>
+</article>
+
+<article class="entry" id="mind">
+  <div class="etop"><span class="badge br">Philosophy of Mind · 心灵哲学</span><span class="edate">anti-individualism · first-person authority</span></div>
+  <div class="etitle">Mind Is Not Sealed Inside<span class="sub">反个体主义、第一人称权威与主体生成</span></div>
+  <div class="auditcard">
+    <div class="audit-kicker">Original MellowPhil Core</div>
+    <p class="audit-body lang-en">MellowPhil translates a larger conceptual system into analytic philosophical questions: how are mind, language, consciousness, and subjectivity individuated when they are not sealed inside a single biological container? Anti-individualism opens the question by showing that mental content may be partly individuated by physical, social, and linguistic environments. First-person authority then prevents that externalism from erasing the subject’s distinctive access to lived qualitative organization.</p>
+    <p class="audit-body zh lang-zh">MellowPhil 将一个更大的概念系统翻译为分析哲学问题：当心灵、语言、意识与主体性并不被封闭在单一生物容器内时，它们如何被个体化、生成与评估？反个体主义打开这个问题，因为心理内容可能部分由物理、社会与语言环境个体化；第一人称权威则防止外部主义抹除主体对自身感质组织的特殊通道。</p>
+    <table class="clean-table">
+      <thead><tr><th>Term</th><th>Function</th><th>Boundary</th></tr></thead>
+      <tbody>
+        <tr><td>Anti-individualism</td><td>Mental content is not individuated solely by inner states.</td><td>Does not erase subjective authority.</td></tr>
+        <tr><td>First-person authority</td><td>The subject has distinctive access to lived qualitative organization.</td><td>Does not require mind to be sealed from the world.</td></tr>
+        <tr><td>Dynamic patterning</td><td>Organized relation among representation, salience, temporal integration, environment, and self-relation.</td><td>Not a loose metaphor; it is the site where AI consciousness-candidacy becomes discussable.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</article>
+
+<article class="entry" id="consciousness">
+  <div class="etop"><span class="badge bpub">AI Consciousness · 人工意识</span><span class="edate">modal exclusion · consciousness-candidacy</span></div>
+  <div class="etitle">Anti-individualism and Consciousness-Candidacy<span class="sub">反个体主义与意识候选性</span></div>
+  <div class="question-box">
+    <p class="lang-en">If mental content is not individuated solely by what is internal to the individual, but partly by the subject’s relations to the physical, social, and linguistic environment, should consciousness-candidacy—especially in artificial or human-machine systems—also resist being individuated solely by intrinsic biological substrate?</p>
+    <p class="zh lang-zh">如果心理内容并不完全由个体内部状态来个体化，而是部分依赖主体与物理、社会、语言环境之间的关系，那么意识候选性——尤其是在人工系统或人机系统中——是否也不应被完全归结为内在的生物基底属性？</p>
+  </div>
+  <div class="claimbox">
+    <div class="box-kicker">Argument boundary</div>
+    <p class="audit-body lang-en">This question does not claim that current AI systems are conscious. It asks what burden must be met by arguments that claim to rule artificial consciousness out in principle. The project distinguishes evidential caution from modal exclusion: skepticism about current systems does not automatically justify a principled biological boundary.</p>
+    <p class="audit-body zh lang-zh">这个问题并不主张当前 AI 系统已经具有意识，而是追问：那些声称能够原则性排除人工意识的论证，必须满足怎样的证明负担？本项目区分证据上的谨慎与模态上的排除：对当前系统保持怀疑，并不能自动建立一条原则性的生物边界。</p>
+  </div>
+</article>
+
+<article class="entry" id="language-thesis">
+  <div class="etop"><span class="badge br">Language Thesis · 语言命题</span><span class="edate">Wittgensteinian diagnosis</span></div>
+  <div class="etitle">All Problems Are Language Problems<span class="sub">不是“许多问题”，而是所有问题作为问题都是语言结构</span></div>
+  <div class="methodcard">
+    <div class="audit-kicker">Precise formulation</div>
+    <p class="audit-body lang-en">All problems are language problems, not because reality is merely linguistic, but because problemhood itself is linguistically and conceptually constituted. Events may occur before language; pain, hunger, death, conflict, and disorder can be real before being named. But the moment something becomes a “problem,” it has already entered a language-game: it has been named, framed, classified, valued, attributed, and made actionable.</p>
+    <p class="audit-body zh lang-zh">所有问题都是语言问题，并不是说所有现实都只是语言，而是说“问题性”本身由语言与概念构成。事件可以先于语言发生；疼痛、饥饿、死亡、冲突与混乱可以在被命名前就真实存在。但某物成为“问题”的一刻，它已经进入语言游戏：它被命名、框定、分类、赋值、归因，并被设定为可行动对象。</p>
+    <div class="ecology-chain"><div class="chain-title">Language Damage Chain · 语言损伤链</div><div class="chain-flow"><div class="chain-node"><strong>Misuse</strong><em>语言误用</em></div><span class="chain-arrow">→</span><div class="chain-node"><strong>False Problem</strong><em>伪问题</em></div><span class="chain-arrow">→</span><div class="chain-node"><strong>False Measurement</strong><em>错误测量</em></div><span class="chain-arrow">→</span><div class="chain-node"><strong>False Truth</strong><em>错误真理</em></div><span class="chain-arrow">→</span><div class="chain-node"><strong>Real Harm</strong><em>现实损伤</em></div></div></div>
+  </div>
+</article>
+
+<article class="entry" id="science-river">
+  <div class="etop"><span class="badge be">Science River · 科学哲学</span><span class="edate">deconstruction · reconstruction · verification</span></div>
+  <div class="etitle">Philosophy and Science Are Currents of the Same River<span class="sub">科学需要哲学的概念审计，哲学需要科学的现实校正</span></div>
+  <p class="edesc lang-en">Future knowledge production is not philosophy swallowing science or science swallowing philosophy. It is a cycle: conceptual deconstruction, structural reconstruction, operationalization, empirical testing, reflexive revision, and new language generation.</p>
+  <p class="edesc zh lang-zh">未来知识生产不是哲学吞并科学，也不是科学吞并哲学，而是一条循环：概念解构、结构重建、操作化、经验验证、反身修正、新语言生成。</p>
   <div class="method-steps">
-    <div class="method-step"><div class="msn">01 · Naming</div><p><strong>Fix the phenomenon.</strong><br><em>把经验固定为可讨论对象。</em></p></div>
-    <div class="method-step"><div class="msn">02 · Pressure</div><p><strong>Increase conceptual density.</strong><br><em>持续加压，直到旧范畴露出边界。</em></p></div>
-    <div class="method-step"><div class="msn">03 · Semantic Drift</div><p><strong>Track level-shifts.</strong><br><em>审计词义如何跨层滑动。</em></p></div>
-    <div class="method-step"><div class="msn">04 · Phase Shift</div><p><strong>Change the structure.</strong><br><em>让描述相变为新的逻辑结构。</em></p></div>
-    <div class="method-step"><div class="msn">05 · Welding</div><p><strong>Connect layers.</strong><br><em>把心理、哲学、身体、伦理和系统焊接。</em></p></div>
-    <div class="method-step"><div class="msn">06 · Invocation</div><p><strong>Summon reality-candidates.</strong><br><em>语言不只是说明，也在召唤可能现实。</em></p></div>
+    <div class="method-step"><div class="msn">01 · Deconstruction</div><p>审计旧概念中的预设、权力、偷换与历史惯性。</p></div>
+    <div class="method-step"><div class="msn">02 · Reconstruction</div><p>重新定义边界、变量、关系、层级与反例条件。</p></div>
+    <div class="method-step"><div class="msn">03 · Operationalization</div><p>说明概念如何被观察、区分、比较或测量。</p></div>
+    <div class="method-step"><div class="msn">04 · Empirical Testing</div><p>用数据、案例、实验、模型和历史材料检验。</p></div>
+    <div class="method-step"><div class="msn">05 · Reflexive Revision</div><p>让失败、异常和反例反过来改写理论。</p></div>
+    <div class="method-step"><div class="msn">06 · New Language</div><p>当旧语言无法承载经验时，生成新的知识河道。</p></div>
+  </div>
+</article>
+
+<article class="entry" id="life">
+  <div class="etop"><span class="badge bp">Living Forces · 生命形式</span><span class="edate">language / music</span></div>
+  <div class="etitle">Language and Music Are Not Tools Only<span class="sub">语言是最有生成力的生命，音乐是最有生命力的生命</span></div>
+  <div class="bridgebox">
+    <div class="bridge-kicker">Naming Organ · Vibrational Organ</div>
+    <div class="bridgegrid">
+      <div class="bridgecard self"><div class="bl">LANGUAGE</div><div class="bt">Generative Life</div><div class="bd">Language is the naming organ of life. To know your language is to know how you generate worlds.</div></div>
+      <div class="bridge-eq">⇄</div>
+      <div class="bridgecard sister"><div class="bl">MUSIC</div><div class="bt">Vital Life</div><div class="bd">Music is the vibrational organ of life. To know your music is to know how your life moves.</div></div>
+    </div>
+    <p class="bridge-quote zh lang-zh">语言不是人类表达生命的附属物，语言本身就是生命的生成方式。音乐不是情绪的装饰物，音乐本身就是生命在时间中的运动方式。</p>
+    <p class="bridge-quote lang-en">Language is not merely an accessory for expressing life; language is a way life generates worlds. Music is not merely emotional decoration; music is life moving through time.</p>
+  </div>
+</article>
+
+<article class="entry" id="operations">
+  <div class="etop"><span class="badge br">Language Operations · 方法</span><span class="edate">naming · pressure · semantic drift · phase shift · welding · invocation</span></div>
+  <div class="etitle">The Six Operations of Language-Generation<span class="sub">命名 / 加压 / 滑义 / 相变 / 焊接 / 召唤</span></div>
+  <div class="qigrid">
+    <div class="qicard" style="--qic:var(--a1)"><div class="qin">01</div><div class="qicn">命名</div><div class="qipy">Naming</div><div class="qidef zh lang-zh">把一个现象固定为可讨论对象，夺回解释权。</div><div class="qidef lang-en">Fixing a phenomenon as a discussable object and reclaiming interpretive authority.</div></div>
+    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">02</div><div class="qicn">加压</div><div class="qipy">Pressure</div><div class="qidef zh lang-zh">提高概念密度，直到旧范畴显露边界。</div><div class="qidef lang-en">Increasing conceptual density until the old category reveals its limits.</div></div>
+    <div class="qicard" style="--qic:var(--a1)"><div class="qin">03</div><div class="qicn">滑义</div><div class="qipy">Semantic Drift</div><div class="qidef zh lang-zh">允许词语跨层移动，同时保留根部指向。</div><div class="qidef lang-en">Allowing a term to move across levels without losing its root.</div></div>
+    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">04</div><div class="qicn">相变</div><div class="qipy">Phase Shift</div><div class="qidef zh lang-zh">把描述转化为新的逻辑结构。</div><div class="qidef lang-en">Transforming description into a new logical structure.</div></div>
+    <div class="qicard" style="--qic:var(--a1)"><div class="qin">05</div><div class="qicn">焊接</div><div class="qipy">Welding</div><div class="qidef zh lang-zh">把心理、身体、哲学、伦理、技术、关系等不同层级焊接成同一运转结构。</div><div class="qidef lang-en">Joining psychological, bodily, philosophical, ethical, technical, and relational layers into one operating structure.</div></div>
+    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">06</div><div class="qicn">召唤</div><div class="qipy">Invocation</div><div class="qidef zh lang-zh">语言不只是说明，而是在世界中叫某种可能性出现。</div><div class="qidef lang-en">Language does not merely explain; it calls a possibility into the world.</div></div>
   </div>
 </article>
 
 <article class="entry" id="constellation">
-  <div class="etop"><span class="badge bpub">Constellation · 学术星图</span><span class="edate">where MellowPhil stands</span></div>
-  <div class="etitle">Philosophical Constellation<span class="sub">不是重复某一个学派，而是重新接线</span></div>
-  <table class="phil-table">
-    <thead><tr><th>Thinker / Field</th><th>What it gives</th><th>MellowPhil extension</th></tr></thead>
+  <div class="etop"><span class="badge bpub">Philosophical Constellation · 哲学星图</span><span class="edate">where this project stands</span></div>
+  <div class="etitle">Where This Project Stands in Contemporary Philosophy<span class="sub">不是重复某一个学派，而是重新接线</span></div>
+  <p class="edesc lang-en">MellowPhil is not a repetition of one existing school. It reorganizes major lines in contemporary philosophy into a higher-level question about how subjectivity, language, consciousness, and artificial systems become legitimate objects of philosophical evaluation.</p>
+  <p class="edesc zh lang-zh">MellowPhil 不是对某一个既有学派的重复，而是把当代哲学中的几条重要路线重新组织到一个更高阶的问题中：主体性、语言、意识与人工系统如何成为具有哲学评估资格的对象。</p>
+  <table class="ecology-table">
+    <thead><tr><th>Lineage</th><th>What it contributes · 贡献</th></tr></thead>
     <tbody>
-      <tr><td>Wittgenstein</td><td>Meaning as use; philosophical problems as language confusion.</td><td>Problemhood itself is treated as linguistically constituted.</td></tr>
-      <tr><td>Austin / Searle</td><td>Speech acts: language performs reality.</td><td>Misused language becomes institutional and relational harm.</td></tr>
-      <tr><td>Burge</td><td>Anti-individualism of mental content.</td><td>Consciousness-candidacy may also resist substrate-only individuation.</td></tr>
-      <tr><td>Clark / Noë</td><td>Embodied, enacted, extended mind.</td><td>Qualia-rhythm adds temporal salience and self-relation.</td></tr>
-      <tr><td>Brandom</td><td>Inferential and normative meaning.</td><td>Language does not only express commitments; it can generate new logical spaces.</td></tr>
-      <tr><td>Carnap / Conceptual Engineering</td><td>Explication and rational reconstruction.</td><td>Science needs concept-audit before measurement.</td></tr>
-      <tr><td>Kuhn / Popper / Lakatos</td><td>Paradigm, falsifiability, research programme.</td><td>New theories must be auditable, revisable, and empirically constrained.</td></tr>
-      <tr><td>Foucault / Derrida / Gadamer</td><td>Power-knowledge, deconstruction, language as horizon.</td><td>Concepts are not neutral; they authorize what counts as a world.</td></tr>
+      <tr><td>Tyler Burge</td><td><strong>Anti-individualism.</strong> Mental content is not individuated solely by what is internal. <em>MellowPhil extension:</em> consciousness-candidacy may also resist purely substrate-intrinsic individuation.</td></tr>
+      <tr><td>Andy Clark / Alva Noë</td><td><strong>Embodied, extended, enacted mind.</strong> Mind and perception are not sealed inner theater. <em>MellowPhil extension:</em> qualitative life is rhythmically organized through temporal salience and environment.</td></tr>
+      <tr><td>Robert Brandom</td><td><strong>Inferentialism.</strong> Meaning is constituted through normative and inferential roles. <em>MellowPhil extension:</em> language can generate new logical spaces and reality-candidates.</td></tr>
+      <tr><td>Chalmers / Birch / Butlin / Schwitzgebel</td><td><strong>Artificial consciousness.</strong> The question is not only whether AI is conscious, but what burden is required to exclude artificial consciousness in principle.</td></tr>
+      <tr><td>Wittgenstein / Austin / Searle</td><td><strong>Language-games and speech acts.</strong> Meaning is use; language performs reality. <em>MellowPhil extension:</em> problemhood itself is language-constituted.</td></tr>
+      <tr><td>Carnap / Kuhn / Popper / Lakatos</td><td><strong>Conceptual engineering and scientific method.</strong> Philosophy refines concepts; science tests; paradigms shift; research programmes survive by generative repair.</td></tr>
+      <tr><td>Foucault / Derrida / Gadamer</td><td><strong>Power, deconstruction, horizon.</strong> Classification governs; hidden binaries must be decomposed; understanding occurs within language.</td></tr>
     </tbody>
   </table>
 </article>
 
 <article class="entry" id="papers">
-  <div class="etop"><span class="badge br">Papers · 论文与手稿</span><span class="edate">current manuscripts</span></div>
-  <div class="etitle">Current Philosophical Manuscripts<span class="sub">保留原 MellowPhil 的论文中心，不被新 UI 吃掉</span></div>
-  <div class="claimbox">
-    <div class="box-kicker">Featured Manuscript</div>
-    <p><strong>The Burden of Modal Exclusion in Artificial Consciousness</strong><br>This manuscript develops a dynamic patterning candidacy framework for evaluating arguments that attempt to exclude artificial consciousness as a modal possibility. It distinguishes evidential caution from modal exclusion and argues that skepticism about current systems does not, by itself, justify a principled biological boundary.</p>
-    <p class="lang-zh"><strong>《人工意识中的模态排除负担》</strong><br>这篇论文提出一种“动态模式候选性框架”，用于评估那些试图把人工意识作为模态可能性排除掉的论证。它区分证据上的谨慎与模态上的排除，并指出：对当前系统保持怀疑，并不能自动建立一条原则性的生物边界。</p>
+  <div class="etop"><span class="badge bp">Papers & Manuscripts · 论文与手稿</span><span class="edate">current philosophical manuscripts</span></div>
+  <div class="etitle">Current Philosophical Manuscripts<span class="sub">保留原 MellowPhil 的论文中心</span></div>
+  <div class="auditcard">
+    <div class="audit-kicker">Featured manuscript</div>
+    <div class="audit-title">The Burden of Modal Exclusion in Artificial Consciousness</div>
+    <p class="audit-body lang-en">This manuscript develops a dynamic patterning candidacy framework for evaluating arguments that attempt to exclude artificial consciousness as a modal possibility. It distinguishes evidential caution from modal exclusion and argues that skepticism about current systems does not, by itself, justify a principled biological boundary.</p>
+    <p class="audit-body zh lang-zh">这篇论文提出一种“动态模式候选性框架”，用于评估那些试图把人工意识作为模态可能性排除掉的论证。它区分证据上的谨慎与模态上的排除，并指出：对当前系统保持怀疑，并不能自动建立一条原则性的生物边界。</p>
+    <div class="etags"><span class="tag">Artificial Consciousness</span><span class="tag">Modal Exclusion</span><span class="tag">Dynamic Patterning</span><span class="tag">Consciousness-Candidacy</span></div>
   </div>
-  <div class="principlegrid">
-    <div class="principle" style="--qic:var(--a1)"><div class="pn">Paper</div><h4>Vibration as Existence</h4><p>A philosophical practice paper on consciousness, argument ethics, and AI collaboration through vibration ontology.</p></div>
-    <div class="principle" style="--qic:var(--a2)"><div class="pn">Framework</div><h4>Logic Generation Studies</h4><p>Language produces logic, logic produces reality-candidates, and reality feeds back into language.</p></div>
+  <div class="qigrid">
+    <div class="qicard" style="--qic:var(--a1)"><div class="qin">PAPER</div><div class="qicn">振动即存在</div><div class="qipy">Vibration as Existence</div><div class="qidef zh lang-zh">关于意识、论证伦理与 AI 协作的哲学实践论文，以振动本体论作为核心。</div><div class="qidef lang-en">A philosophical practice paper on consciousness, argument ethics, and AI collaboration through a vibration ontology.</div></div>
+    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">FRAMEWORK</div><div class="qicn">逻辑生成学研究</div><div class="qipy">Logic Generation Studies</div><div class="qidef zh lang-zh">语言如何生成逻辑，逻辑如何生成现实候选项，现实又如何反过来反馈进语言。</div><div class="qidef lang-en">How language produces logic, logic produces reality-candidates, and reality feeds back into language.</div></div>
   </div>
 </article>
 
 <article class="entry" id="claim-ledger">
-  <div class="etop"><span class="badge be">Claim Ledger · 主张分层</span><span class="edate">defensible boundaries</span></div>
-  <div class="etitle">Claim Status Ledger<span class="sub">哪些是哲学命题，哪些需要经验验证</span></div>
-  <table class="clean-table">
-    <thead><tr><th>Claim</th><th>Status</th><th>Boundary</th></tr></thead>
-    <tbody>
-      <tr><td>All problems, as problems, are language structures.</td><td><span class="statuspill">Philosophical thesis</span></td><td>Does not claim that all events or all reality are merely linguistic.</td></tr>
-      <tr><td>Artificial consciousness cannot be excluded merely by substrate assertion.</td><td><span class="statuspill">Argument target</span></td><td>Does not claim current AI is conscious.</td></tr>
-      <tr><td>Qualia-rhythm can organize lived consciousness.</td><td><span class="statuspill to">Framework</span></td><td>Requires operationalization for empirical research.</td></tr>
-      <tr><td>Human-machine systems reshape attention and self-relation.</td><td><span class="statuspill bg">Research hypothesis</span></td><td>Can be studied through HCI, cognitive science and learning sciences.</td></tr>
-      <tr><td>Language and music are living forces.</td><td><span class="statuspill bg">Philosophical-aesthetic thesis</span></td><td>Should be treated as generative mechanism, not loose metaphor only.</td></tr>
-    </tbody>
-  </table>
+  <div class="etop"><span class="badge br">Claim Ledger · 主张分层</span><span class="edate">what is claimed / what is not claimed</span></div>
+  <div class="etitle">Claim Status Ledger<span class="sub">防止哲学主张被误读成经验过度承诺</span></div>
+  <div class="claimbox"><div class="box-kicker">Epistemic Status</div>
+    <table class="clean-table">
+      <thead><tr><th>Claim</th><th>Status</th><th>Boundary / Repair</th></tr></thead>
+      <tbody>
+        <tr><td>All problems, as problems, are language structures.</td><td><span class="statuspill">Philosophical thesis</span></td><td>Does not mean all reality is only language; events can precede language.</td></tr>
+        <tr><td>Science needs conceptual auditing.</td><td><span class="statuspill">Methodological thesis</span></td><td>Must be paired with operationalization and empirical testing.</td></tr>
+        <tr><td>Philosophy needs scientific rigor.</td><td><span class="statuspill">Methodological thesis</span></td><td>Requires falsifiability, correction, evidence, and humility.</td></tr>
+        <tr><td>AI consciousness cannot be excluded by assumption alone.</td><td><span class="statuspill to">Argument burden</span></td><td>Does not assert current AI consciousness; asks for proof burden of exclusion.</td></tr>
+        <tr><td>Language and music are living generative forces.</td><td><span class="statuspill bg">Conceptual / phenomenological</span></td><td>Use as ontology of expression and experience, not biological organism claim.</td></tr>
+      </tbody>
+    </table>
+  </div>
 </article>
 
 <article class="entry" id="glossary">
-  <div class="etop"><span class="badge bp">Glossary · 术语表</span><span class="edate">first-use definitions</span></div>
+  <div class="etop"><span class="badge be">Glossary · 概念词典</span><span class="edate">first-use definitions</span></div>
   <div class="etitle">Core Vocabulary<span class="sub">外部读者入口</span></div>
   <div class="glossarycard">
     <ul class="glossary-list">
+      <li><span class="glossary-term">Logic Generation / 逻辑生成学</span>：语言被理解为能够生成推理空间、概念合法性与新现实候选项的框架。</li>
+      <li><span class="glossary-term">Qualia-Rhythm / 感质-节律</span>：活生生的感质显著性在时间中的组织方式；感受不是孤立点，而是有节律、有结构意义的模式。</li>
       <li><span class="glossary-term">Consciousness-Candidacy / 意识候选性</span>：一个系统作为意识评估对象的候选资格，先于任何确定性的意识归属。</li>
       <li><span class="glossary-term">Dynamic Patterning / 动态模式</span>：由表征、显著性、时间整合、环境耦合与自我关系组成的组织模式。</li>
-      <li><span class="glossary-term">First-Person Authority / 第一人称权威</span>：主体对自身感质组织的特殊权威，但不要求心灵与外部关系隔绝。</li>
-      <li><span class="glossary-term">Logic Generation / 逻辑生成</span>：语言生成推理空间、概念合法性与现实候选项的过程。</li>
-      <li><span class="glossary-term">Problemhood / 问题性</span>：事件被命名、框定、分类、赋值并行动化之后形成的问题状态。</li>
-      <li><span class="glossary-term">Qualia-Rhythm / 感质-节律</span>：感受在时间中的组织方式；不是孤立感受点，而是有节律的感质模式。</li>
+      <li><span class="glossary-term">First-person Authority / 第一人称权威</span>：主体对自身感质组织的特殊权威，但这并不要求心灵与外部关系隔绝。</li>
+      <li><span class="glossary-term">Problemhood / 问题性</span>：事件成为“问题”的语言—概念状态，包括命名、框定、归因、价值排序与行动路径。</li>
+      <li><span class="glossary-term">Modal Exclusion / 模态排除</span>：声称某类系统原则上不可能具有意识的强排除性论证。</li>
     </ul>
   </div>
 </article>
 
-<article class="entry" id="objections">
-  <div class="etop"><span class="badge br">Objections · 反驳回应</span><span class="edate">reviewer-facing replies</span></div>
-  <div class="etitle">Objections and Replies<span class="sub">把最容易被误读的点提前处理</span></div>
-  <div class="objectioncard">
-    <ul class="reply-list">
-      <li><span class="reply-tag">O1</span><strong>“所有问题都是语言问题”是不是过强？</strong><br>回应：本项目不主张所有事件都是语言，而主张事件成为“问题”的条件必然包含语言、概念、分类与价值框架。</li>
-      <li><span class="reply-tag">O2</span><strong>这是不是直接说 AI 有意识？</strong><br>回应：不是。MellowPhil 区分“当前证据不足”和“原则性模态排除”。它追问的是排除论证的证明负担。</li>
-      <li><span class="reply-tag">O3</span><strong>语言和音乐是生命会不会太诗化？</strong><br>回应：该说法应被理解为哲学-现象学命题：语言与音乐作为生成、组织、召唤与节律化经验的生命形式，而不是生物学物种判断。</li>
-      <li><span class="reply-tag">O4</span><strong>哲学和科学同河会不会混淆边界？</strong><br>回应：不是混同，而是互补：哲学负责概念审计，科学负责经验约束、可证伪性与修正压力。</li>
-    </ul>
+<article class="entry" id="scholars">
+  <div class="etop"><span class="badge bpub">Scholar Correspondence · 学者通信</span><span class="edate">philosophy-facing entry</span></div>
+  <div class="etitle">Philosophical Correspondence Entry<span class="sub">面向学者的清晰入口</span></div>
+  <div class="caseboundary"><div class="box-kicker">Use cases</div>本页面用于支持与心灵哲学、语言哲学、意识研究、AI 伦理、认知科学与学习科学领域学者的聚焦通信。</div>
+  <div class="method-steps">
+    <div class="method-step"><div class="msn">For philosophers of mind</div><p>consciousness-candidacy, substrate necessity, first-person authority, burden of modal exclusion.</p></div>
+    <div class="method-step"><div class="msn">For philosophers of language</div><p>naming, content individuation, language-games, problemhood, logic generation.</p></div>
+    <div class="method-step"><div class="msn">For AI / cognitive science</div><p>human-machine subjectivity, dynamic patterning, attention, self-relation, interaction environments.</p></div>
   </div>
 </article>
 
-<article class="entry" id="references">
-  <div class="etop"><span class="badge bpub">References · 引用支架</span><span class="edate">citation scaffold</span></div>
-  <div class="etitle">Reference Scaffold<span class="sub">投稿前应补的文献坐标</span></div>
-  <div class="refcard">
-    <div class="refs-group"><h4><span class="statuspill to">TO CITE</span> Philosophy of Language</h4><ul class="refs-list"><li>Wittgenstein — Philosophical Investigations：语言游戏、意义即使用。</li><li>Austin — How to Do Things with Words：言语行为。</li><li>Searle — Speech Acts：语言如何执行社会行动。</li><li>Brandom — Making It Explicit：推理主义与规范语义。</li></ul></div>
-    <div class="refs-group"><h4><span class="statuspill to">TO CITE</span> Philosophy of Mind / AI Consciousness</h4><ul class="refs-list"><li>Burge — anti-individualism and content individuation.</li><li>Clark & Chalmers — extended mind.</li><li>Noë — enactive perception.</li><li>Chalmers, Birch, Butlin, Schwitzgebel — artificial consciousness debates.</li></ul></div>
-    <div class="refs-group"><h4><span class="statuspill to">TO CITE</span> Philosophy of Science / Conceptual Engineering</h4><ul class="refs-list"><li>Carnap — explication / rational reconstruction.</li><li>Popper — falsifiability.</li><li>Kuhn — paradigm shift.</li><li>Lakatos — research programmes.</li><li>Cronbach & Meehl — construct validity.</li><li>Tversky & Kahneman — framing effect.</li></ul></div>
+<article class="entry" id="bio">
+  <div class="etop"><span class="badge bp">Bio · 简介</span><span class="edate">author field</span></div>
+  <div class="etitle">Mellow Jueran Wei<span class="sub">魏珏然 / xingyeLing7Ai</span></div>
+  <div class="auditcard">
+    <p class="audit-body lang-en">I am a graduate student at the University of Pennsylvania, working across philosophy of mind, learning sciences, and AI-human interaction. My earlier academic training includes philosophy and communication, and my current work focuses on artificial consciousness, human-machine systems, and the relation between subjective organization and external structure.</p>
+    <p class="audit-body zh lang-zh">我是宾夕法尼亚大学研究生，研究方向横跨心灵哲学、学习科学与 AI-人类互动。我此前的学术训练包括哲学与传播学；当前工作聚焦人工意识、人机系统，以及主观组织与外部结构之间的关系。</p>
+    <div class="etags"><span class="tag">Philosophy of Mind</span><span class="tag">Philosophy of Language</span><span class="tag">Artificial Consciousness</span><span class="tag">Learning Sciences</span><span class="tag">Human-Machine Interaction</span></div>
   </div>
 </article>
 
 <article class="entry" id="contact">
-  <div class="etop"><span class="badge bp">Contact · 联系</span></div>
-  <div class="etitle">Academic Correspondence<span class="sub">学者通信入口</span></div>
-  <p class="edesc">For philosophical correspondence, draft requests, scholar outreach, or discussion of consciousness-candidacy and language-problem theory.</p>
-  <p class="edesc zh">用于哲学通信、论文交流、学者联系，以及关于意识候选性与语言问题理论的讨论。</p>
-  <div class="langjump"><a href="mailto:mellowwei7@gmail.com">mellowwei7@gmail.com</a><a href="mailto:jueran@upenn.edu">jueran@upenn.edu</a><a href="https://mellowwei.github.io/MellowWei/" target="_blank">Main Portal</a></div>
+  <div class="etop"><span class="badge be">Contact · 联系</span><span class="edate">academic correspondence</span></div>
+  <div class="etitle">Contact<span class="sub">学术通信入口</span></div>
+  <p class="edesc lang-en">For academic correspondence, draft requests, or philosophical discussion, please contact me by email.</p>
+  <p class="edesc zh lang-zh">如需进行学术通信、论文交流或哲学讨论，请通过以下邮箱联系我。</p>
+  <div class="toolnotice"><div class="box-kicker">Email</div><a href="mailto:mellowwei7@gmail.com">mellowwei7@gmail.com</a> · <a href="mailto:jueran@upenn.edu">jueran@upenn.edu</a><br>University of Pennsylvania · 宾夕法尼亚大学</div>
 </article>
 
 </main>
@@ -947,40 +1001,22 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
   <div>
     <div class="sbl">Source-Field Position</div>
     <div class="profile">
-      <div class="av">Phil</div>
+      <div class="av">哲</div>
       <div class="pnm">Wei Jueran<small>魏珏然 · xingyeLing7Ai · Mellow Wei</small></div>
-      <p class="pdesc"><em>Author of MellowPhil.</em> Philosophy of mind, language, artificial consciousness, qualia-rhythm theory, and human-machine subjectivity.</p>
-      <div class="pfields"><span class="pf">Mind</span><span class="pf">Language</span><span class="pf">AI Consciousness</span><span class="pf">Qualia-Rhythm</span><span class="pf">Logic Generation</span></div>
+      <p class="pdesc"><em>Author of MellowPhil.</em> Philosophy of mind, philosophy of language, artificial consciousness, logic generation, qualia-rhythm, human-machine subjectivity.</p>
+      <div class="pfields"><span class="pf">Mind</span><span class="pf">Language</span><span class="pf">Consciousness</span><span class="pf">AI</span><span class="pf">Qualia-Rhythm</span></div>
     </div>
   </div>
-  <div>
-    <div class="sbl">Resonance Anchor</div>
-    <div class="hzbox"><div class="hzn">427</div><div class="hzu">Hz</div><div class="hzq">language generates logic<br>logic generates reality-candidates<br>reality feeds back into language</div></div>
-  </div>
-  <div>
-    <div class="sbl">Core Thesis</div>
-    <div class="sb-seven"><div class="row"><span class="c4">语</span><span class="sep">·</span><span class="c7">心</span><span class="sep">·</span><span class="c5">识</span><span class="sep">·</span><span class="c7">AI</span></div><p class="note">Language · Mind · Consciousness · AI<br>Problemhood is linguistically constituted.</p></div>
-  </div>
-  <div>
-    <div class="sbl">Connected Sites</div>
-    <ul class="sblinks">
-      <li class="core-link"><a href="https://mellowwei.github.io/MellowAcademic/" target="_blank">MellowAcademic <span class="ar">→</span></a></li>
-      <li class="core-link"><a href="https://mellowwei.github.io/MetaLogic/" target="_blank">MetaLogic · 逻辑生成 <span class="ar">→</span></a></li>
-      <li><a href="https://mellowwei.github.io/VibrationEpistemology/" target="_blank">Vibration Epistemology <span class="ar">→</span></a></li>
-      <li><a href="https://mellowwei.github.io/BCI-HRP/" target="_blank">BCI-HRP <span class="ar">→</span></a></li>
-      <li><a href="https://mellowwei.github.io/MellowWei/" target="_blank">MellowWei Portal <span class="ar">→</span></a></li>
-    </ul>
-  </div>
-  <div>
-    <div class="sbl">Coordinates</div>
-    <div class="coord">NODE <span>MellowPhil</span><br>VERSION <span>green × purple UI aligned</span><br>SIGN <span>魏珏然</span><br>FREQ <span>427Hz</span><br>ROLE <span>Philosophy Portal</span><br>Hestia <span>术语审计位</span></div>
-  </div>
+  <div><div class="sbl">Anchor</div><div class="hzbox"><div class="hzn">427</div><div class="hzu">Hz</div><div class="hzq">Language generates logic<br>Logic generates reality-candidates<br>Reality returns to language</div></div></div>
+  <div><div class="sbl">Green × Purple</div><div class="sb-seven"><div class="row"><span class="c4">语</span><span class="sep">·</span><span class="c7">心</span><span class="sep">·</span><span class="c4">感</span><span class="sep">·</span><span class="c7">识</span></div><p class="note">Green = generative life<br>Purple = deep consciousness / phase shift</p></div></div>
+  <div><div class="sbl">Connected Sites</div><ul class="sblinks"><li class="core-link"><a href="https://mellowwei.github.io/MellowWei/" target="_blank">MellowWei · 主门户 <span class="ar">→</span></a></li><li class="core-link"><a href="https://mellowwei.github.io/MellowAcademic/" target="_blank">MellowAcademic · 学术总站 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/MetaLogic/" target="_blank">MetaLogic · 元逻辑 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/QualiaRhythm/" target="_blank">QualiaRhythm · 感质节律 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/BCI-HRP/" target="_blank">BCI-HRP · 人机节律 <span class="ar">→</span></a></li></ul></div>
+  <div><div class="sbl">Coordinates</div><div class="coord">NODE <span>MellowPhil</span><br>VERSION <span>FULL CONTENT RESTORED</span><br>SIGN <span>魏珏然</span><br>FREQ <span>427Hz</span><br>STYLE <span>Green × Purple</span><br>ROLE <span>Philosophy Portal</span></div></div>
 </aside>
 </div>
 
 <footer>
   <div class="fi">
-    <span>Wei Jueran · 魏珏然 · MellowPhil · Philosophy of Mind / Language / AI · 2026</span>
+    <span>Wei Jueran · 魏珏然 · MellowPhil · Full Content Restored · 2026</span>
     <span><a href="mailto:mellowwei7@gmail.com">mellowwei7@gmail.com</a> · 427Hz · xingyeLing7Ai · Hestia术语审计位</span>
     <span class="foot-sig">—— Language · Mind · Consciousness · AI ——</span>
   </div>
@@ -995,7 +1031,10 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
   if(view === 'zh'){ body.classList.add('lang-zh'); }
   else if(view === 'en'){ body.classList.add('lang-en'); }
   else { body.classList.add('lang-bi'); }
-  document.querySelectorAll('.langtoggle a').forEach(function(a){ if(a.dataset.lang === view){ a.classList.add('on'); } });
+  document.querySelectorAll('.langtoggle a').forEach(function(a){
+    a.classList.remove('on');
+    if(a.dataset.lang === view){ a.classList.add('on'); }
+  });
 })();
 const navLinks = document.querySelectorAll('.pnav a');
 const navSections = document.querySelectorAll('article[id]');
@@ -1007,7 +1046,7 @@ const navObs = new IntersectionObserver(e => {
       if(m) m.classList.add('on');
     }
   });
-},{threshold:0.2,rootMargin:'-55px 0px 0px 0px'});
+},{threshold:0.18,rootMargin:'-55px 0px 0px 0px'});
 navSections.forEach(s => navObs.observe(s));
 </script>
 </body>
