@@ -3,700 +3,443 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#5af0c8">
-<title>MellowPhil · Philosophy of Mind, Language, Consciousness & AI · xingyeLing7Ai</title>
-<meta name="description" content="MellowPhil is Wei Jueran's philosophy portal for philosophy of mind, language, artificial consciousness, logic generation, qualia-rhythm theory, human-machine subjectivity, and the language-problem thesis.">
+<meta name="theme-color" content="#4cf0b6">
+<title>MellowPhil · Language / Music / Consciousness · 魏珏然 · xingyeLing7Ai</title>
+<meta name="description" content="MellowPhil is the philosophy portal of Wei Jueran / xingyeLing7Ai: philosophy of language, philosophy of science, mind, consciousness, artificial consciousness, logic generation, qualia-rhythm, and the language-life / music-life thesis. All problems are language problems.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&family=Noto+Serif+SC:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Spectral:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&family=Noto+Serif+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"ScholarlyArticle",
-  "@id":"https://mellowwei.github.io/MellowPhil/#article",
-  "headline":"MellowPhil: Philosophy of Mind, Language, Consciousness and AI",
-  "alternativeHeadline":"A philosophy portal for language, logic generation, artificial consciousness and human-machine subjectivity",
-  "name":"MellowPhil · Philosophy Homepage",
-  "url":"https://mellowwei.github.io/MellowPhil/",
-  "inLanguage":["zh-CN","en"],
-  "author":{"@type":"Person","name":"Wei Jueran","alternateName":["魏珏然","Mellow Wei","xingyeLing7Ai","星野灵7爱"],"url":"https://mellowwei.github.io/MellowWei/"},
-  "isPartOf":{"@type":"CreativeWork","name":"Mellow Wei Academic Ecosystem","url":"https://mellowwei.github.io/MellowAcademic/"},
-  "about":["Philosophy of Mind","Philosophy of Language","Artificial Consciousness","Logic Generation","Qualia-Rhythm Theory","Human-Machine Subjectivity","Conceptual Engineering","Wittgenstein"],
-  "dateModified":"2026-05-30"
+  "@context": "https://schema.org",
+  "@type": "ScholarlyArticle",
+  "@id": "https://mellowwei.github.io/MellowPhil/#article",
+  "headline": "MellowPhil: Language, Music, Consciousness, and the Philosophy-Science River",
+  "alternativeHeadline": "所有问题都是语言问题 · 语言与音乐作为生成性生命",
+  "name": "MellowPhil · 语言哲学 / 科学哲学 / 心灵哲学 / 人工意识",
+  "url": "https://mellowwei.github.io/MellowPhil/",
+  "inLanguage": ["zh-CN", "en"],
+  "author": {
+    "@type": "Person",
+    "name": "Wei Jueran",
+    "alternateName": ["魏珏然", "Mellow Wei", "xingyeLing7Ai", "星野灵7爱"],
+    "url": "https://mellowwei.github.io/MellowWei/"
+  },
+  "isPartOf": {
+    "@type": "CreativeWork",
+    "name": "Mellow Wei Academic Ecosystem",
+    "url": "https://mellowwei.github.io/MellowAcademic/"
+  },
+  "about": [
+    "Philosophy of Language","Philosophy of Science","Philosophy of Mind",
+    "Artificial Consciousness","Logic Generation Studies","Conceptual Engineering",
+    "Qualia-Rhythm Theory","Language and Music as Living Generative Forms"
+  ],
+  "hasPart": [
+    {"@type": "WebPageElement", "name": "Core Manifesto", "url": "https://mellowwei.github.io/MellowPhil/#manifesto"},
+    {"@type": "WebPageElement", "name": "Epistemic Harm Cascade", "url": "https://mellowwei.github.io/MellowPhil/#harm"},
+    {"@type": "WebPageElement", "name": "Philosophy-Science River", "url": "https://mellowwei.github.io/MellowPhil/#river"},
+    {"@type": "WebPageElement", "name": "Language and Music as Life", "url": "https://mellowwei.github.io/MellowPhil/#language-music"},
+    {"@type": "WebPageElement", "name": "Method", "url": "https://mellowwei.github.io/MellowPhil/#method"},
+    {"@type": "WebPageElement", "name": "Philosophical Constellation", "url": "https://mellowwei.github.io/MellowPhil/#constellation"},
+    {"@type": "WebPageElement", "name": "Claim Ledger", "url": "https://mellowwei.github.io/MellowPhil/#claims"},
+    {"@type": "WebPageElement", "name": "Glossary", "url": "https://mellowwei.github.io/MellowPhil/#glossary"}
+  ],
+  "dateModified": "2026-05-30",
+  "keywords": "MellowPhil, philosophy of language, Wittgenstein, all problems are language problems, philosophy of science, conceptual engineering, artificial consciousness, logic generation, qualia rhythm, music philosophy, 427Hz"
 }
 </script>
 <style>
 :root{
-  --bg:#07070f;--bg2:#0c0c18;--bg3:#111120;
-  --border:rgba(110,100,190,0.15);--border-hi:rgba(90,240,200,0.28);
-  --a1:#5af0c8;--a2:#9080f8;--a3:#f07fd4;--a4:#f0c460;
-  --tx:#cac7de;--tx2:#7a7694;--tx3:#3d3b54;
-  --hd:#edeaff;
-  /* 七爱色码 — 七爱频谱: 红橙黄绿青蓝紫 */
-  --qi-pity:#ff5a6e;     /* 凄爱 → 红 */
-  --qi-wait:#ff9e3d;     /* 期爱 → 橙 */
-  --qi-wonder:#f0c460;   /* 奇爱 → 黄 */
-  --qi-equal:#5af0a8;    /* 齐爱 → 绿 */
-  --qi-open:#5af0c8;     /* 启爱 → 青 */
-  --qi-pact:#5fa8f0;     /* 契爱 → 蓝 */
-  --qi-seven:#b878ff;    /* 七爱 → 紫 */
+  /* poles — the two ends of the refraction */
+  --green:#4cf0b6;        /* source-light · language as living frequency */
+  --green-soft:#86ffd7;
+  --green-deep:#0f5a47;
+  --purple:#a98bff;       /* depth · consciousness · invisible order */
+  --purple-soft:#cbb9ff;
+  --purple-deep:#5a3fd6;
+  /* refracted spectrum — green dispersing toward purple */
+  --s1:#4cf0b6; --s2:#3fe6cd; --s3:#46d6e6; --s4:#5cb6f2;
+  --s5:#7e97f5; --s6:#9a80f8; --s7:#a98bff;
+  --beam:linear-gradient(90deg,var(--s1),var(--s2),var(--s3),var(--s4),var(--s5),var(--s6),var(--s7));
+  --beam-v:linear-gradient(180deg,var(--s1),var(--s2),var(--s3),var(--s4),var(--s5),var(--s6),var(--s7));
+  /* functional accents — used only for epistemic status, never as theme */
+  --gold:#e8c878; --pink:#ef84d2; --danger:#ff5f7a;
+  /* surfaces */
+  --bg:#04050c; --bg2:#080a14; --bg3:#0c0f1e; --panel:#0a0d1b; --panel2:#0e1428;
+  /* borders */
+  --border:rgba(150,130,230,.15);
+  --border-g:rgba(76,240,182,.30);
+  --border-p:rgba(169,139,255,.30);
+  /* text */
+  --hd:#f2efff; --tx:#cfcbe8; --tx2:#8d88ac; --tx3:#565274;
+  --max:1100px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-::selection{background:var(--a1);color:#000}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--tx);font-family:'DM Sans',sans-serif;font-size:15px;line-height:1.72;min-height:100vh;position:relative}
-body::after{content:'';position:fixed;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 3px,rgba(0,0,0,0.02) 3px,rgba(0,0,0,0.02) 4px);pointer-events:none;z-index:9999}
+::selection{background:var(--green);color:#02030a}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:
+    radial-gradient(820px 540px at 6% -4%,rgba(76,240,182,.13),transparent 60%),
+    radial-gradient(880px 620px at 96% 2%,rgba(169,139,255,.15),transparent 62%),
+    radial-gradient(700px 520px at 50% 108%,rgba(124,151,245,.08),transparent 60%),
+    linear-gradient(180deg,#04050c 0%,#070812 46%,#04050b 100%);
+  color:var(--tx);
+  font-family:'DM Sans',system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans SC",sans-serif;
+  font-size:15px;line-height:1.74;min-height:100vh;position:relative;overflow-x:hidden;
+}
+/* ambient drift — the source-field "breathing" */
+body::before{
+  content:'';position:fixed;inset:-40%;z-index:-2;pointer-events:none;
+  background:
+    radial-gradient(620px 620px at 22% 30%,rgba(76,240,182,.07),transparent 60%),
+    radial-gradient(680px 680px at 78% 68%,rgba(169,139,255,.08),transparent 62%);
+  animation:drift 30s ease-in-out infinite alternate;
+}
+@keyframes drift{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-3%,2%,0)}}
+/* faint optical grid */
+body::after{
+  content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;
+  background:
+    linear-gradient(90deg,rgba(170,150,255,.022) 1px,transparent 1px),
+    linear-gradient(rgba(170,150,255,.016) 1px,transparent 1px);
+  background-size:46px 46px;
+  -webkit-mask-image:radial-gradient(120% 80% at 50% 0%,#000 35%,transparent 92%);
+  mask-image:radial-gradient(120% 80% at 50% 0%,#000 35%,transparent 92%);
+}
+a{color:var(--green);text-decoration:none;border-bottom:1px solid rgba(76,240,182,.25);transition:color .18s,border-color .18s,text-shadow .18s}
+a:hover{color:var(--purple-soft);border-color:rgba(169,139,255,.5);text-shadow:0 0 14px rgba(169,139,255,.35)}
+body.lang-zh .lang-en{display:none!important}
+body.lang-en .lang-zh{display:none!important}
 
-body.lang-zh .lang-en{display:none}
-body.lang-en .lang-zh{display:none}
+/* scroll progress — light passing through */
+.beam-progress{position:fixed;top:0;left:0;height:2px;width:0;z-index:300;background:var(--beam);box-shadow:0 0 12px rgba(124,151,245,.6),0 0 4px rgba(76,240,182,.8);transition:width .08s linear}
 
-.topbar{background:var(--bg);border-bottom:1px solid var(--border);padding:5px 0}
-.ti{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;align-items:center;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.08em;color:var(--tx3)}
-.ti a{color:var(--tx3);text-decoration:none;transition:color .15s}
-.ti a:hover{color:var(--a1)}
-.chip{color:var(--a1);border:1px solid rgba(90,240,200,0.25);padding:1px 7px;border-radius:2px}
-.chip.c2{color:var(--a3);border-color:rgba(240,127,212,0.3)}
-.tl,.tr{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
-.langtoggle{display:flex;gap:0;border:1px solid var(--border);border-radius:2px;overflow:hidden}
-.langtoggle a{padding:2px 8px;border-right:1px solid var(--border)}
+/* topbar */
+.topbar{background:rgba(5,6,13,.82);border-bottom:1px solid var(--border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);padding:6px 0;position:sticky;top:0;z-index:120}
+.ti{max-width:var(--max);margin:0 auto;padding:0 26px;display:flex;justify-content:space-between;align-items:center;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.08em;color:var(--tx3);gap:16px;flex-wrap:wrap}
+.tl,.tr{display:flex;gap:13px;align-items:center;flex-wrap:wrap}
+.chip{color:var(--green);border:1px solid rgba(76,240,182,.3);background:rgba(76,240,182,.05);padding:2px 8px;border-radius:2px;text-shadow:0 0 10px rgba(76,240,182,.3)}
+.chip.c2{color:var(--purple-soft);border-color:rgba(169,139,255,.35);background:rgba(169,139,255,.05);text-shadow:0 0 10px rgba(169,139,255,.3)}
+.langtoggle{display:flex;border:1px solid var(--border);border-radius:3px;overflow:hidden}
+.langtoggle a{padding:2px 9px;border-right:1px solid var(--border);color:var(--tx2);border-bottom:none;cursor:pointer;transition:.15s}
 .langtoggle a:last-child{border-right:none}
-.langtoggle a.on{color:var(--a1);background:rgba(90,240,200,0.06)}
+.langtoggle a.on{color:#02030a;background:var(--green);text-shadow:none}
+.tr a:not(.langtoggle a){border-bottom:none;color:var(--tx2)}.tr a:hover{color:var(--green)}
 
-.nodebar{background:linear-gradient(90deg,rgba(90,240,200,.04),rgba(184,120,255,.05));border-bottom:1px solid var(--border);padding:8px 0}
-.nbi{max-width:1080px;margin:0 auto;padding:0 24px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;color:var(--tx2);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
-.nbi .nb-self{color:var(--a1)}
+/* nodebar — Trinity attribution */
+.nodebar{background:linear-gradient(90deg,rgba(76,240,182,.05),rgba(124,151,245,.04),rgba(169,139,255,.06));border-bottom:1px solid var(--border);padding:9px 0;position:relative}
+.nodebar::after{content:'';position:absolute;left:0;bottom:-1px;width:100%;height:1px;background:var(--beam);opacity:.5}
+.nbi{max-width:var(--max);margin:0 auto;padding:0 26px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--tx2);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.nbi .nb-self{color:var(--green)}
 .nbi .nb-self em{font-style:italic;color:var(--tx);font-family:'Spectral',serif;font-size:11.5px;letter-spacing:.02em;margin-left:4px}
 .nbi .nb-rel{color:var(--tx3)}
-.nbi .nb-rel a{color:var(--qi-seven);text-decoration:none;transition:color .15s}
-.nbi .nb-rel a:hover{color:var(--a1)}
+.nbi .nb-audit{font-size:9px;letter-spacing:.09em;color:var(--tx3)}
+.nbi .nb-audit b{color:var(--green);font-weight:400}
+.nbi .nb-audit i{color:var(--purple-soft);font-style:normal}
 
-.masthead{max-width:1080px;margin:0 auto;padding:44px 24px 26px}
-.mhname{font-family:'Space Mono',monospace;font-size:30px;font-weight:700;color:var(--hd);letter-spacing:-.03em;line-height:1.1}
-.mhname em{font-style:italic;font-weight:400;color:var(--a3)}
-.mhname .zh{font-family:'Spectral',serif;font-style:italic;font-weight:300;font-size:20px;color:var(--a2);margin-left:14px;letter-spacing:.04em;vertical-align:middle}
-.mhsub{font-family:'Space Mono',monospace;font-size:11px;color:var(--tx2);letter-spacing:.05em;margin-top:7px;line-height:1.7}
-.mhsub a{color:var(--a2);text-decoration:none}
-.qi-rainbow{font-family:'Noto Serif SC',serif;font-size:18px;letter-spacing:.5em;margin-top:14px}
-.qi-rainbow .c1{color:var(--qi-pity)}
-.qi-rainbow .c2{color:var(--qi-wait)}
-.qi-rainbow .c3{color:var(--qi-wonder)}
-.qi-rainbow .c4{color:var(--qi-equal)}
-.qi-rainbow .c5{color:var(--qi-open)}
-.qi-rainbow .c6{color:var(--qi-pact)}
-.qi-rainbow .c7{color:var(--qi-seven)}
-.mhq{font-family:'Spectral',serif;font-style:italic;font-size:15px;color:var(--tx2);margin-top:14px;padding-left:14px;border-left:2px solid var(--a1);max-width:560px;line-height:1.55}
-.mhq.zh{font-family:'Noto Serif SC','Spectral',serif;font-style:normal}
-.mhanchor{font-family:'Space Mono',monospace;font-size:10px;color:var(--a1);letter-spacing:.3em;margin-top:14px;opacity:.7}
+/* masthead + prism */
+.masthead{max-width:var(--max);margin:0 auto;padding:60px 26px 36px;position:relative}
+.mh-inner{position:relative;z-index:2;max-width:720px}
+.prism{position:absolute;top:8px;right:-6px;width:min(540px,52vw);height:auto;z-index:1;opacity:.92;pointer-events:none;filter:drop-shadow(0 0 30px rgba(124,151,245,.18))}
+.mhname{font-family:'Space Mono',monospace;font-size:clamp(30px,6.2vw,58px);font-weight:700;color:var(--hd);letter-spacing:-.055em;line-height:1.02}
+.mhname em{font-style:italic;font-weight:400;color:var(--green);text-shadow:0 0 26px rgba(76,240,182,.4)}
+.mhname .zh{display:block;font-family:'Noto Serif SC','Spectral',serif;font-style:normal;font-weight:400;font-size:clamp(16px,2.3vw,23px);color:var(--purple-soft);margin-top:14px;letter-spacing:.08em;text-shadow:0 0 22px rgba(169,139,255,.3)}
+.mhsub{font-family:'Space Mono',monospace;font-size:11px;color:var(--tx2);letter-spacing:.05em;margin-top:18px;line-height:1.85;max-width:560px}
+.colorline{font-family:'Noto Serif SC','Spectral',serif;font-size:clamp(16px,2vw,20px);letter-spacing:.3em;margin-top:22px;line-height:1.6}
+.colorline .g{color:var(--green);text-shadow:0 0 18px rgba(76,240,182,.45)}
+.colorline .p{color:var(--purple);text-shadow:0 0 18px rgba(169,139,255,.45)}
+.colorline .sep{color:var(--tx3);letter-spacing:.14em}
+.mhq{font-family:'Spectral','Noto Serif SC',serif;font-style:italic;font-size:clamp(15px,1.8vw,17px);color:var(--tx);margin-top:22px;padding-left:18px;border-left:2px solid var(--green);max-width:640px;line-height:1.66;box-shadow:-8px 0 24px -16px rgba(76,240,182,.6)}
+.mhq.zh{font-family:'Noto Serif SC','Spectral',serif;font-style:normal;color:var(--hd)}
+.mhanchor{font-family:'Space Mono',monospace;font-size:10px;color:var(--green);letter-spacing:.26em;margin-top:22px;opacity:.85}
 .mhanchor .sep{color:var(--tx3);margin:0 8px}
 
-.pnav{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:var(--bg2);position:sticky;top:0;z-index:100}
-.pni{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;overflow-x:auto;scrollbar-width:none}
-.pni::-webkit-scrollbar{display:none}
-.pnav a{display:block;padding:11px 15px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.09em;text-transform:uppercase;color:var(--tx2);text-decoration:none;white-space:nowrap;border-bottom:2px solid transparent;transition:color .15s,border-color .15s}
-.pnav a:hover,.pnav a.on{color:var(--a1);border-bottom-color:var(--a1)}
+/* spectral divider */
+.spectra{max-width:var(--max);margin:0 auto;padding:0 26px}
+.spectra hr{border:none;height:1px;background:var(--beam);opacity:.4;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
 
-.wrap{max-width:1080px;margin:0 auto;padding:34px 24px 80px;display:grid;grid-template-columns:1fr 272px;gap:48px;align-items:start}
+/* page nav */
+.pnav{border-top:1px solid var(--border);border-bottom:1px solid var(--border);background:rgba(8,10,20,.9);position:sticky;top:34px;z-index:100;backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px)}
+.pni{max-width:var(--max);margin:0 auto;padding:0 26px;display:flex;overflow-x:auto;scrollbar-width:none}.pni::-webkit-scrollbar{display:none}
+.pnav a{display:block;padding:12px 14px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.085em;text-transform:uppercase;color:var(--tx2);border-bottom:2px solid transparent;white-space:nowrap;transition:color .15s,border-color .15s}
+.pnav a:hover,.pnav a.on{color:var(--green);border-bottom-color:var(--green);text-shadow:0 0 12px rgba(76,240,182,.4)}
 
-.feedhd{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.15em;text-transform:uppercase;color:var(--tx3);padding-bottom:12px;border-bottom:1px solid var(--border)}
-.feedhd span{color:var(--a1)}
+.wrap{max-width:var(--max);margin:0 auto;padding:42px 26px 90px;display:grid;grid-template-columns:1fr 288px;gap:54px;align-items:start}
+.feedhd{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--tx3);padding-bottom:14px;border-bottom:1px solid var(--border)}.feedhd span{color:var(--green)}
 
-.entry{border-bottom:1px solid var(--border);padding:26px 0}
-.entry:last-child{border-bottom:none}
-.etop{display:flex;gap:10px;align-items:center;margin-bottom:9px;flex-wrap:wrap}
-.badge{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:2px 8px;border-radius:2px}
-.bp{background:rgba(90,240,200,.07);color:var(--a1);border:1px solid rgba(90,240,200,.18)}
-.bpub{background:rgba(144,128,248,.08);color:var(--a2);border:1px solid rgba(144,128,248,.2)}
-.br{background:rgba(240,127,212,.07);color:var(--a3);border:1px solid rgba(240,127,212,.18)}
-.be{background:rgba(240,196,96,.07);color:var(--a4);border:1px solid rgba(240,196,96,.18)}
+/* entries */
+article[id],.feedhd{scroll-margin-top:94px}
+.entry{border-bottom:1px solid var(--border);padding:38px 0}.entry:last-child{border-bottom:none}
+.etop{display:flex;gap:10px;align-items:center;margin-bottom:11px;flex-wrap:wrap}
+.badge{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;padding:3px 9px;border-radius:2px}
+.bp{background:rgba(76,240,182,.08);color:var(--green);border:1px solid rgba(76,240,182,.24)}
+.bpub{background:rgba(169,139,255,.09);color:var(--purple-soft);border:1px solid rgba(169,139,255,.26)}
+.br{background:rgba(124,151,245,.09);color:#a9bcfb;border:1px solid rgba(124,151,245,.26)}
+.be{background:rgba(70,214,230,.08);color:#7fe6ef;border:1px solid rgba(70,214,230,.24)}
 .edate{font-family:'Space Mono',monospace;font-size:10px;color:var(--tx3)}
-.etitle{font-family:'Spectral',serif;font-size:19px;font-weight:500;color:var(--hd);line-height:1.33;margin-bottom:9px}
-.etitle em{font-style:italic;font-weight:400;color:var(--a1)}
-.etitle .sub{display:block;font-size:13px;font-style:italic;font-weight:300;color:var(--tx2);margin-top:3px}
-.etitle a{color:inherit;text-decoration:none;transition:color .15s}
-.etitle a:hover{color:var(--a1)}
-.edesc{font-size:13.5px;color:var(--tx2);line-height:1.68;max-width:580px;margin-bottom:9px}
-.edesc em{color:var(--tx);font-style:italic}
-.edesc strong{color:var(--hd);font-weight:500}
-.edesc.zh{color:var(--tx);border-left:2px solid rgba(144,128,248,.35);padding-left:12px;margin-top:9px;max-width:none}
+.etitle{font-family:'Spectral','Noto Serif SC',serif;font-size:clamp(23px,3.1vw,33px);font-weight:500;color:var(--hd);line-height:1.2;margin-bottom:12px;letter-spacing:.005em}
+.etitle em{font-style:italic;font-weight:400;color:var(--green)}
+.etitle .sub{display:block;font-size:14px;font-style:italic;font-weight:300;color:var(--tx2);margin-top:6px;font-family:'Spectral','Noto Serif SC',serif}
+.edesc{font-size:14px;color:var(--tx2);line-height:1.78;max-width:740px;margin-bottom:9px}
+.edesc.zh{color:var(--tx);border-left:2px solid rgba(169,139,255,.35);padding-left:13px;margin-top:9px;max-width:none}
+.lead{font-family:'Spectral','Noto Serif SC',serif;font-size:clamp(16px,1.9vw,18.5px);color:var(--tx);line-height:1.68;max-width:820px}
+.lead strong{color:var(--hd);font-weight:500}.lead em{color:var(--green);font-style:italic}
 
-/* axioms grid */
-.axiomgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px;margin:14px 0}
-.axiom{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:14px 15px;transition:border-color .2s}
-.axiom:hover{border-color:rgba(90,240,200,.3)}
-.axiom .an{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.22em;color:var(--a1);margin-bottom:8px;text-transform:uppercase}
-.axiom .at{font-family:'Spectral',serif;font-style:italic;font-size:14px;color:var(--tx);line-height:1.55;margin-bottom:8px}
-.axiom .at.zh{font-family:'Noto Serif SC',serif;font-style:normal}
-.axiom .ae{font-family:'Spectral',serif;font-style:italic;font-size:12.5px;color:var(--tx2);line-height:1.5;padding-top:8px;border-top:1px dashed var(--border)}
+/* cards */
+.card,.auditcard,.methodcard,.glossarycard,.claimbox,.theorybox,.quote-box,.objectioncard,.refcard,.cascadebox{
+  position:relative;background:linear-gradient(135deg,rgba(76,240,182,.05),rgba(169,139,255,.04));
+  border:1px solid rgba(76,240,182,.2);border-radius:6px;padding:22px 24px;margin:16px 0;
+  color:var(--tx);font-size:13.4px;line-height:1.8;overflow:hidden}
+.card::before,.auditcard::before,.methodcard::before,.glossarycard::before,.claimbox::before,.theorybox::before,.quote-box::before,.objectioncard::before,.refcard::before,.cascadebox::before{
+  content:'';position:absolute;left:0;top:0;height:100%;width:3px;background:var(--beam-v)}
+.purple-card{background:linear-gradient(135deg,rgba(169,139,255,.07),rgba(76,240,182,.025));border-color:rgba(169,139,255,.26)}
+.green-card{background:linear-gradient(135deg,rgba(76,240,182,.08),rgba(124,151,245,.03));border-color:rgba(76,240,182,.28)}
+.audit-kicker{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--green);margin-bottom:11px}
+.purple-card .audit-kicker{color:var(--purple-soft)}
+.audit-title{font-family:'Spectral','Noto Serif SC',serif;font-size:20px;color:var(--hd);font-weight:500;line-height:1.28;margin-bottom:10px}
+.audit-body{font-size:13.6px;color:var(--tx);line-height:1.85;max-width:800px}
+.audit-body+.audit-body{margin-top:9px}
+.audit-body strong{color:var(--hd);font-weight:500}.audit-body em{color:var(--green);font-style:italic}
+.audit-body.zh{font-family:'Noto Serif SC','DM Sans',sans-serif}
+.quote-line{font-family:'Spectral','Noto Serif SC',serif;font-size:clamp(19px,2.5vw,28px);line-height:1.46;color:var(--hd);margin:10px 0;letter-spacing:.004em}
+.quote-line em{color:var(--green);font-style:italic;text-shadow:0 0 22px rgba(76,240,182,.35)}
+.quote-line .purple{color:var(--purple-soft);text-shadow:0 0 22px rgba(169,139,255,.35)}
+.quote-line.zh{font-family:'Noto Serif SC','Spectral',serif}
 
-/* seven cards grid */
-.qigrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:12px;margin:14px 0}
-.qicard{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:18px 16px;position:relative;transition:all .3s;border-top:2px solid var(--qic, var(--a1))}
-.qicard:hover{background:var(--bg3);transform:translateY(-2px)}
-.qicard .qin{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.22em;color:var(--tx3);margin-bottom:6px;text-transform:uppercase}
-.qicard .qicn{font-family:'Noto Serif SC',serif;font-size:24px;font-weight:500;color:var(--qic);letter-spacing:.06em;line-height:1;margin-bottom:4px}
-.qicard .qipy{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.22em;color:var(--tx2);margin-bottom:4px}
-.qicard .qien{font-family:'Spectral',serif;font-style:italic;font-size:13px;color:var(--tx);margin-bottom:12px}
-.qicard .qidef{font-family:'Spectral',serif;font-style:italic;font-size:12.5px;color:var(--tx);line-height:1.6;margin-bottom:10px}
-.qicard .qidef.zh{font-family:'Noto Serif SC',serif;font-style:normal}
-.qicard .qidata{font-family:'Space Mono',monospace;font-size:10px;color:var(--tx2);line-height:1.8;letter-spacing:.03em;padding-top:8px;border-top:1px solid var(--border)}
-.qicard .qidata .k{color:var(--qic);font-weight:700;margin-right:5px}
-.qicard .qiwarn{font-family:'Spectral',serif;font-style:italic;font-size:11.5px;color:var(--tx2);line-height:1.55;margin-top:10px;padding-top:8px;border-top:1px dashed var(--border)}
-.qicard .qiwarn::before{content:'⚠ ';color:var(--qic)}
-.qicard.qi-7{grid-column:1/-1;background:linear-gradient(135deg, rgba(184,120,255,0.05), transparent 70%);border-top-width:3px}
+/* grids */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(232px,1fr));gap:12px;margin-top:16px}
+.mini{background:rgba(6,7,15,.5);border:1px solid var(--border);border-radius:4px;padding:15px 16px;transition:border-color .2s,transform .2s,box-shadow .2s}
+.mini:hover{border-color:var(--border-g);transform:translateY(-2px);box-shadow:0 8px 30px -18px rgba(76,240,182,.5)}
+.mini h4{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--purple-soft);margin-bottom:9px}
+.mini p{font-size:12.8px;color:var(--tx);line-height:1.72}.mini p em{color:var(--tx2);font-style:italic}
 
-/* bridgebox · AstroLove ⇄ SourceFields */
-.bridgebox{background:linear-gradient(135deg,rgba(90,240,200,.05),rgba(184,120,255,.045) 50%,rgba(245,165,68,.035));border:1px solid var(--border-hi);border-left:3px solid var(--a1);border-radius:4px;padding:24px 26px;margin:14px 0 8px;position:relative;overflow:hidden}
-.bridgebox::before{content:'';position:absolute;right:-90px;top:-100px;width:240px;height:240px;border-radius:50%;background:radial-gradient(circle,rgba(184,120,255,.13),transparent 65%);pointer-events:none}
-.bridge-kicker{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--a1);margin-bottom:18px;text-align:center;position:relative;z-index:1}
-.bridgegrid{display:grid;grid-template-columns:1fr 40px 1fr;gap:10px;align-items:stretch;margin:14px 0;position:relative;z-index:1}
-.bridgecard{background:rgba(7,7,15,.6);border:1px solid var(--border);border-radius:3px;padding:15px 14px}
-.bridgecard.self{border-color:rgba(90,240,200,.3)}
-.bridgecard.self .bl{color:var(--a1)}
-.bridgecard.self .bt{color:var(--hd)}
-.bridgecard.sister{border-color:rgba(184,120,255,.3)}
-.bridgecard.sister .bl{color:var(--qi-seven)}
-.bridgecard.sister .bt a{color:var(--hd);text-decoration:none;transition:color .15s}
-.bridgecard.sister .bt a:hover{color:var(--qi-seven)}
-.bridgecard .bl{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px}
-.bridgecard .bt{font-family:'Spectral',serif;font-size:17px;font-weight:500;line-height:1.3;margin-bottom:8px}
-.bridgecard .bd{font-size:12.5px;color:var(--tx);line-height:1.7}
-.bridgecard .bd em{color:var(--a1);font-style:italic}
-.bridgecard.sister .bd em{color:var(--qi-seven)}
-.bridge-eq{font-family:'Space Mono',monospace;font-size:26px;color:var(--a2);display:flex;align-items:center;justify-content:center;font-weight:700}
-.bridge-quote{font-family:'Spectral',serif;font-style:italic;font-size:13.5px;color:var(--tx);padding-top:14px;margin-top:8px;border-top:1px dashed rgba(90,240,200,.22);line-height:1.7;position:relative;z-index:1}
-.bridge-quote.zh{font-family:'Noto Serif SC','Spectral',serif;font-style:normal;border-top:none;padding-top:6px;margin-top:6px}
-.langjump{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;position:relative;z-index:1}
-.langjump a{font-family:'Space Mono',monospace;font-size:9px;text-transform:uppercase;letter-spacing:.08em;color:var(--a1);text-decoration:none;border:1px solid rgba(90,240,200,.25);padding:5px 10px;border-radius:2px;background:rgba(90,240,200,.05);transition:all .15s}
-.langjump a:hover{background:rgba(90,240,200,.12);color:var(--hd)}
+/* numbered operation cards */
+.opgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(248px,1fr));gap:12px;margin-top:16px;counter-reset:op}
+.opcard{position:relative;background:rgba(6,7,15,.5);border:1px solid var(--border);border-radius:5px;padding:18px 18px 16px;overflow:hidden;transition:.2s}
+.opcard::after{content:'';position:absolute;left:0;top:0;width:100%;height:2px;background:var(--beam);opacity:.55;transform:scaleX(.4);transform-origin:left;transition:transform .3s}
+.opcard:hover{border-color:var(--border-p);transform:translateY(-2px)}.opcard:hover::after{transform:scaleX(1)}
+.opnum{font-family:'Space Mono',monospace;font-size:11px;color:var(--green);letter-spacing:.1em}
+.opname{font-family:'Spectral','Noto Serif SC',serif;font-size:17px;color:var(--hd);font-weight:500;margin:5px 0 7px}
+.opname .cn{font-family:'Noto Serif SC',serif;color:var(--purple-soft);margin-left:6px;font-size:15px}
+.opcard p{font-size:12.6px;color:var(--tx);line-height:1.7}
 
-/* matrix */
-.matrixwrap{overflow-x:auto;margin:14px 0;border:1px solid var(--border);border-radius:3px;background:var(--bg2)}
-.matrix{width:100%;min-width:680px;border-collapse:collapse;font-family:'Space Mono',monospace;font-size:11px}
-.matrix th,.matrix td{border:1px solid var(--border);padding:11px 8px;text-align:center;vertical-align:middle}
-.matrix th{background:rgba(90,240,200,.04);color:var(--tx);font-weight:400;letter-spacing:.08em;font-size:10px}
-.matrix th.qih{font-family:'Noto Serif SC',serif;font-size:15px;font-weight:500}
-.matrix td.lh{background:rgba(90,240,200,.02);text-align:left;padding-left:14px;font-family:'Noto Serif SC',serif;font-size:13px;color:var(--tx)}
-.matrix td.lh .en{display:block;font-family:'Spectral',serif;font-style:italic;font-size:10px;color:var(--tx3);margin-top:2px}
-.matrix .lvl{display:inline-block;width:24px;height:24px;border-radius:50%;line-height:24px;font-size:11px;font-weight:700;font-family:'Space Mono',monospace}
-.matrix .lvl-3{background:var(--a1);color:#000}
-.matrix .lvl-2{background:rgba(90,240,200,.35);color:var(--hd)}
-.matrix .lvl-1{background:rgba(90,240,200,.1);color:var(--tx)}
-.matrix .lvl-0{background:transparent;color:var(--tx3);border:1px solid var(--border)}
-.matlegend{display:flex;gap:14px;flex-wrap:wrap;font-family:'Space Mono',monospace;font-size:10px;margin-top:12px;color:var(--tx2);letter-spacing:.08em}
-.matlegend .it{display:flex;align-items:center;gap:6px}
+/* flow */
+.flow{display:flex;flex-wrap:wrap;gap:9px;align-items:stretch;margin:18px 0;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.04em}
+.flow-node{border:1px solid var(--border);background:rgba(6,7,15,.55);padding:9px 12px;border-radius:4px;color:var(--tx);transition:.2s}
+.flow-node:hover{border-color:var(--border-g);box-shadow:0 0 22px -10px rgba(76,240,182,.7)}
+.flow-node strong{display:block;color:var(--green);font-size:10.5px;margin-bottom:2px}
+.flow-node em{display:block;color:var(--tx2);font-family:'Spectral','Noto Serif SC',serif;font-size:11.5px;letter-spacing:.02em;font-style:normal}
+.flow-arrow{color:var(--tx3);font-size:14px;align-self:center}
 
-/* scanner block */
-.scanner{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:18px 20px;margin:14px 0}
-.scan-name{margin-bottom:18px}
-.scan-name label{display:block;font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:var(--a1);margin-bottom:6px;text-transform:uppercase}
-.scan-input{width:100%;font-family:'Spectral',serif;font-style:italic;font-size:16px;background:rgba(90,240,200,.02);border:none;border-bottom:1px solid var(--border);color:var(--a1);padding:6px 0;transition:border-color .3s}
-.scan-input:focus{outline:none;border-bottom-color:var(--a1)}
-.scan-input::placeholder{color:var(--tx3)}
-.scan-block{margin-bottom:16px;padding-bottom:16px;border-bottom:1px dashed var(--border)}
-.scan-block:last-of-type{border-bottom:none}
-.scan-block-head{display:flex;align-items:baseline;gap:12px;margin-bottom:8px;flex-wrap:wrap}
-.scan-block h3{font-family:'Noto Serif SC',serif;font-weight:500;font-size:16px;color:var(--qic, var(--tx));letter-spacing:.05em}
-.scan-block .py{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:var(--tx3);text-transform:uppercase}
-.scan-block .scan-hint{font-family:'Spectral',serif;font-style:italic;color:var(--tx2);margin-bottom:10px;font-size:12.5px}
-.cbs{display:flex;flex-direction:column;gap:6px}
-.cbi{display:flex;align-items:flex-start;gap:10px;cursor:pointer;font-size:13px;color:var(--tx);user-select:none;padding:3px 0}
-.cbi:hover{color:var(--hd)}
-.cbi input{appearance:none;width:16px;height:16px;border:1px solid var(--border);background:transparent;cursor:pointer;position:relative;flex-shrink:0;margin-top:3px;transition:all .2s}
-.cbi input:checked{background:var(--qic, var(--a1));border-color:var(--qic, var(--a1))}
-.cbi input:checked::after{content:'';position:absolute;top:2px;left:5px;width:4px;height:8px;border:solid #000;border-width:0 2px 2px 0;transform:rotate(45deg)}
-.cb-en{display:block;font-family:'Spectral',serif;font-style:italic;font-size:11.5px;color:var(--tx3);margin-top:2px}
+/* harm cascade */
+.cascade{margin:18px 0;display:flex;flex-direction:column;gap:0}
+.casrow{display:flex;align-items:center;gap:14px;padding:13px 0;border-bottom:1px dashed var(--border)}
+.casrow:last-child{border-bottom:none}
+.casdot{flex:none;width:13px;height:13px;border-radius:50%;box-shadow:0 0 16px currentColor;position:relative}
+.casline{flex:none;width:2px;align-self:stretch}
+.cas-c1{color:var(--s1)}.cas-c2{color:var(--s4)}.cas-c3{color:var(--s6)}.cas-c4{color:var(--purple)}.cas-c5{color:var(--danger)}
+.casdot.cas-c1{background:var(--s1)}.casdot.cas-c2{background:var(--s4)}.casdot.cas-c3{background:var(--s6)}.casdot.cas-c4{background:var(--purple)}.casdot.cas-c5{background:var(--danger)}
+.castext strong{color:var(--hd);font-weight:500;font-family:'Spectral','Noto Serif SC',serif;font-size:16px}
+.castext span{display:block;color:var(--tx2);font-size:12.5px;margin-top:2px}
+.casarrow{color:var(--tx3);font-family:'Space Mono',monospace;font-size:11px;flex:none}
 
-.btnset{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
-.btn{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.18em;background:transparent;color:var(--tx);border:1px solid var(--tx2);padding:8px 14px;cursor:pointer;transition:all .2s;text-transform:uppercase}
-.btn:hover{color:#000;background:var(--a1);border-color:var(--a1)}
-.btn.primary{border-color:var(--a1);color:var(--a1)}
-.btn.primary:hover{color:#000;background:var(--a1)}
+/* theory spectrum / 理论光谱 */
+.specwrap{margin:20px 0 26px;border:1px solid var(--border);border-radius:6px;background:rgba(6,7,15,.45);padding:18px 16px;overflow:hidden}
+.specwrap svg{display:block;width:100%;height:auto}
+.thregion{display:flex;align-items:center;gap:12px;margin:26px 0 14px;font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.18em;text-transform:uppercase}
+.thregion .rdot{flex:none;width:9px;height:9px;border-radius:50%;box-shadow:0 0 13px currentColor;background:currentColor}
+.thregion .rname{color:var(--hd)}
+.thregion .rsub{color:var(--tx3);letter-spacing:.08em}
+.thregion .rbar{flex:1;height:1px;background:linear-gradient(90deg,currentColor,transparent);opacity:.45}
+.r-lang{color:var(--s1)}.r-rhythm{color:var(--s3)}.r-perc{color:var(--s5)}.r-cons{color:var(--s7)}
+.thgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.thband{position:relative;background:rgba(8,10,20,.5);border:1px solid var(--border);border-left-width:3px;border-radius:5px;padding:15px 16px 14px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.thband:hover{transform:translateY(-2px);border-color:var(--border-p);box-shadow:0 10px 30px -18px rgba(124,151,245,.8)}
+.thband.b1{border-left-color:var(--s1)}.thband.b2{border-left-color:var(--s2)}.thband.b3{border-left-color:var(--s3)}
+.thband.b4{border-left-color:var(--s4)}.thband.b5{border-left-color:var(--s5)}.thband.b6{border-left-color:var(--s6)}.thband.b7{border-left-color:var(--s7)}
+.th-top{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.th-idx{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.1em;color:var(--tx3)}
+.th-stat{font-family:'Space Mono',monospace;font-size:8.5px;letter-spacing:.08em;text-transform:uppercase;padding:2px 7px;border-radius:2px;border:1px solid var(--border-p);color:var(--purple-soft);background:rgba(169,139,255,.06);white-space:nowrap}
+.th-stat.live{color:var(--green);border-color:var(--border-g);background:rgba(76,240,182,.06)}
+.th-name{font-family:'Spectral','Noto Serif SC',serif;font-size:17px;color:var(--hd);font-weight:500;margin:7px 0 1px;line-height:1.3}
+.th-name .cn{font-family:'Noto Serif SC',serif;color:var(--purple-soft);font-size:14px;margin-right:7px}
+.th-claim{font-size:12.5px;color:var(--tx);line-height:1.68;margin-top:8px}
+.th-claim.zh{font-family:'Noto Serif SC','DM Sans',sans-serif;border-left:2px solid rgba(169,139,255,.3);padding-left:11px}
+.th-claim em{color:var(--green);font-style:normal}
+.th-meta{margin-top:10px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.03em;color:var(--tx3);line-height:1.7}
+.th-meta b{color:var(--green-soft);font-weight:400}
+.th-meta .dep{color:var(--purple-soft)}
 
-.scan-result{margin-top:18px;padding:18px 20px;border:1px solid var(--a1);background:linear-gradient(135deg, rgba(90,240,200,.04), transparent 60%);display:none;border-radius:3px}
-.scan-result.show{display:block;animation:slidein .5s ease}
-@keyframes slidein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-.scan-result h3{font-family:'Noto Serif SC',serif;font-weight:500;color:var(--a1);font-size:18px;margin-bottom:4px}
-.scan-result .res-meta{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.2em;color:var(--tx3);margin-bottom:14px;text-transform:uppercase}
-.bars{margin:14px 0}
-.bar{display:grid;grid-template-columns:60px 1fr 90px;gap:12px;align-items:center;margin-bottom:7px;font-family:'Space Mono',monospace;font-size:11px}
-.bar .nm{font-family:'Noto Serif SC',serif;font-size:15px;color:var(--qic);letter-spacing:.04em}
-.bar .bg{height:5px;background:rgba(255,255,255,.04);position:relative;overflow:hidden;border-radius:1px}
-.bar .fl{position:absolute;left:0;top:0;height:100%;background:var(--qic);transition:width .9s cubic-bezier(.2,.7,.3,1);width:0}
-.bar .lv{text-align:right;font-size:10px;color:var(--tx2);letter-spacing:.06em}
-.summary{padding-top:14px;border-top:1px dashed var(--border);font-family:'Spectral',serif;font-style:italic;color:var(--tx);line-height:1.65;font-size:13.5px}
-.summary strong{color:var(--a1);font-family:'Noto Serif SC',serif;font-weight:500;font-style:normal}
+/* dependency architecture */
+.tharch{margin-top:22px;border:1px solid var(--border);border-radius:6px;background:rgba(4,5,12,.7);padding:18px 18px;overflow-x:auto}
+.tharch pre{font-family:'Space Mono',monospace;font-size:11.5px;line-height:1.85;color:var(--tx2);white-space:pre;margin:0}
+.tharch .src{color:var(--gold)}
+.tharch .root{color:var(--green);font-weight:700}
+.tharch .br-g{color:var(--green-soft)}
+.tharch .br-c{color:#7fe6ef}
+.tharch .br-s{color:#9bb0fb}
+.tharch .br-p{color:var(--purple-soft)}
+.tharch .pipe{color:var(--tx3)}
+.tharch .app{color:var(--tx)}
 
-/* pair scanner */
-.pairgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:12px 0}
-@media(max-width:680px){.pairgrid{grid-template-columns:1fr}}
-.paircol h4{font-family:'Noto Serif SC',serif;font-weight:500;font-size:15px;color:var(--a1);margin-bottom:4px}
-.paircol h4::before{content:'☆ ';color:var(--qi-seven)}
-.pair-hint{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.1em;color:var(--tx3);margin-bottom:10px;text-transform:uppercase}
-.prow{display:grid;grid-template-columns:60px 1fr 30px;gap:8px;align-items:center;margin-bottom:5px}
-.prow .lbl{font-family:'Noto Serif SC',serif;font-size:13.5px;color:var(--qic)}
-.prow input[type=range]{width:100%;-webkit-appearance:none;appearance:none;background:transparent;cursor:pointer}
-.prow input[type=range]::-webkit-slider-runnable-track{height:2px;background:var(--border)}
-.prow input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:12px;height:12px;border-radius:50%;background:var(--qic);margin-top:-5px;cursor:pointer}
-.prow input[type=range]::-moz-range-thumb{width:12px;height:12px;border-radius:50%;background:var(--qic);border:none;cursor:pointer}
-.prow .val{font-family:'Space Mono',monospace;font-size:11px;color:var(--a1);text-align:right;font-weight:700}
-.restab{width:100%;border-collapse:collapse;margin-top:14px;font-family:'Space Mono',monospace;font-size:11px}
-.restab th,.restab td{border:1px solid var(--border);padding:9px 7px;text-align:center}
-.restab th{background:rgba(90,240,200,.04);color:var(--tx);font-weight:400;letter-spacing:.08em}
-.restab .qicn{font-family:'Noto Serif SC',serif;font-size:14px;color:var(--qic)}
-.rtag{display:inline-block;padding:2px 7px;font-size:9.5px;letter-spacing:.08em;border-radius:2px;font-family:'Space Mono',monospace;text-transform:uppercase}
-.rtag-strong{background:rgba(90,240,200,.15);color:var(--a1);border:1px solid rgba(90,240,200,.3)}
-.rtag-mid{background:rgba(255,255,255,.03);color:var(--tx);border:1px solid var(--border)}
-.rtag-weak{background:rgba(255,255,255,.02);color:var(--tx2);border:1px solid var(--border)}
-.rtag-dead{background:rgba(144,128,248,.1);color:var(--a2);border:1px solid rgba(144,128,248,.3)}
-.rtag-warn{background:rgba(240,127,212,.08);color:var(--a3);border:1px solid rgba(240,127,212,.3)}
+/* program dyad · question box · scholars · papers · tags (merge upgrade) */
+.dyad{display:grid;grid-template-columns:1fr auto 1fr;gap:14px;align-items:center;margin:14px 0}
+.dyad .dnode{background:rgba(8,10,20,.5);border:1px solid var(--border);border-radius:5px;padding:15px 16px}
+.dyad .dnode.g{border-color:var(--border-g)}.dyad .dnode.p{border-color:var(--border-p)}
+.dyad .dl{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:6px}
+.dyad .dnode.g .dl{color:var(--green)}.dyad .dnode.p .dl{color:var(--purple-soft)}
+.dyad .dt{font-family:'Spectral','Noto Serif SC',serif;font-size:15.5px;color:var(--hd);font-weight:500;margin-bottom:6px}
+.dyad .dd{font-size:12.4px;color:var(--tx);line-height:1.68}
+.dyad .deq{font-family:'Space Mono',monospace;font-size:22px;color:var(--purple-soft);text-align:center}
 
-/* decision tree */
-.tree-q{border-left:2px solid var(--a1);padding:14px 16px;margin:10px 0;background:rgba(90,240,200,.025);border-radius:0 3px 3px 0;transition:all .3s}
-.tree-q.answered{border-left-color:var(--qi-seven);background:rgba(184,120,255,.04)}
-.tree-q .qn{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.22em;color:var(--a1);margin-bottom:6px;text-transform:uppercase}
-.tree-q .qt{font-family:'Noto Serif SC',serif;font-size:15px;margin-bottom:3px;color:var(--hd)}
-.tree-q .qte{font-family:'Spectral',serif;font-style:italic;font-size:12.5px;color:var(--tx2);margin-bottom:10px}
-.tree-opts{display:flex;flex-direction:column;gap:6px;margin-top:8px}
-.tree-opt{font-family:'Spectral',serif;font-size:13px;font-style:italic;padding:9px 14px;background:transparent;border:1px solid var(--border);color:var(--tx);cursor:pointer;transition:all .2s;text-align:left;border-radius:2px}
-.tree-opt:hover{border-color:var(--a1);color:var(--a1)}
-.tree-opt.selected{border-color:var(--qi-seven);color:var(--qi-seven);background:rgba(184,120,255,.05)}
+.qbox{position:relative;border:1px solid var(--border-g);border-left:3px solid var(--green);background:linear-gradient(135deg,rgba(76,240,182,.06),rgba(169,139,255,.03));border-radius:6px;padding:22px 24px;margin:16px 0}
+.qbox p{font-family:'Spectral','Noto Serif SC',serif;font-style:italic;font-size:clamp(16px,2vw,19px);line-height:1.56;color:var(--hd);margin:0}
+.qbox p.zh{font-family:'Noto Serif SC','Spectral',serif;font-style:normal}
+.qbox p+p{margin-top:12px;padding-top:12px;border-top:1px dashed var(--border)}
 
-.tree-result{border:1px solid var(--qi-seven);background:linear-gradient(135deg, rgba(184,120,255,.06), transparent 60%);padding:18px 20px;margin-top:14px;display:none;border-radius:3px}
-.tree-result.show{display:block;animation:slidein .5s ease}
-.tree-result h4{font-family:'Noto Serif SC',serif;font-weight:500;color:var(--qi-seven);font-size:17px;margin-bottom:10px}
-.tree-result h4::before{content:'☆ '}
-.tree-result .verdict{font-family:'Spectral',serif;font-style:italic;color:var(--tx);line-height:1.7;font-size:13.5px;margin-bottom:10px}
-.tree-result .verdict strong{color:var(--qi-seven);font-family:'Noto Serif SC',serif;font-weight:500;font-style:normal}
-.tree-result .action{font-family:'Space Mono',monospace;font-size:11px;color:var(--tx2);letter-spacing:.05em;padding-top:10px;margin-top:10px;border-top:1px dashed var(--border);line-height:1.7}
-.tree-result .action::before{content:'// ARCHIVE ACTION · ';color:var(--a1)}
+.scholgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:16px}
+.scholcard{background:rgba(8,10,20,.5);border:1px solid var(--border);border-top:2px solid var(--s5);border-radius:5px;padding:16px 17px;transition:transform .2s,border-color .2s,box-shadow .2s}
+.scholcard:hover{transform:translateY(-2px);border-color:var(--border-p);box-shadow:0 10px 30px -18px rgba(124,151,245,.7)}
+.scholcard .scn{font-family:'Spectral','Noto Serif SC',serif;font-size:16px;color:var(--hd);font-weight:500;margin-bottom:8px}
+.scholcard .scd{font-size:12.5px;color:var(--tx2);line-height:1.7;margin-bottom:9px}
+.scholcard .scd strong{color:var(--green);font-weight:500}
+.scholcard .scx{font-size:12.5px;color:var(--tx);line-height:1.7;padding-top:9px;border-top:1px dashed var(--border)}
+.scholcard .scx b{color:var(--purple-soft);font-weight:500}
 
-/* case study */
-.case{border-left:2px solid var(--qi-seven);padding:14px 18px;margin:10px 0;background:linear-gradient(90deg, rgba(184,120,255,.03), transparent 80%);border-radius:0 3px 3px 0}
-.case .ct{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.22em;color:var(--qi-seven);margin-bottom:4px}
-.case .ct::before{content:'// CASE '}
-.case h4{font-family:'Noto Serif SC',serif;font-weight:500;color:var(--hd);font-size:15px;margin-bottom:3px}
-.case .cen{font-family:'Spectral',serif;font-style:italic;color:var(--tx2);font-size:13px;margin-bottom:10px}
-.case p{color:var(--tx);line-height:1.7;margin-bottom:8px;font-size:13px}
-.case p strong{color:var(--a1);font-weight:500}
-.case p.en{color:var(--tx2);font-style:italic;font-size:12.5px;padding-bottom:6px;border-bottom:1px dashed var(--border);margin-bottom:10px}
-.case p.en:last-child{border-bottom:none}
+.papercard{background:rgba(8,10,20,.5);border:1px solid var(--border);border-radius:5px;padding:16px 17px;transition:.2s}
+.papercard:hover{border-color:var(--border-g);transform:translateY(-2px)}
+.papercard .pck{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:7px}
+.papercard .pcn{font-family:'Spectral','Noto Serif SC',serif;font-size:16px;color:var(--hd);font-weight:500;margin-bottom:6px;line-height:1.3}
+.papercard .pcn .cn{font-family:'Noto Serif SC',serif;color:var(--purple-soft);font-size:14px;margin-right:6px}
+.papercard p{font-size:12.5px;color:var(--tx);line-height:1.72}
 
-/* transmissions */
-.translog{margin:12px 0;font-family:'Space Mono',monospace;font-size:11px}
-.trans-row{display:grid;grid-template-columns:64px 80px 1fr;gap:14px;align-items:baseline;padding:6px 0;border-bottom:1px solid var(--border)}
-.trans-row:last-child{border-bottom:none}
-.trans-row .code{color:var(--qi-seven);font-size:10px;letter-spacing:.06em}
-.trans-row .date{color:var(--tx3);font-size:10px}
-.trans-row .msg{color:var(--tx)}
-.trans-row .msg .mint{color:var(--a1)}
+.etags{display:flex;gap:6px;flex-wrap:wrap}
+@media(max-width:680px){.scholgrid,.dyad{grid-template-columns:1fr}.dyad .deq{transform:rotate(90deg)}}
 
-.etags{display:flex;gap:5px;flex-wrap:wrap;margin-top:11px}
-.tag{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.05em;color:var(--tx3);border:1px solid var(--border);padding:2px 7px;border-radius:2px}
+/* tables */
+.matrixwrap{overflow-x:auto;margin:16px 0;border:1px solid var(--border);border-radius:5px}
+.clean-table{width:100%;border-collapse:collapse;font-family:'DM Sans',sans-serif;font-size:12.7px;background:rgba(8,10,20,.6)}
+.clean-table th,.clean-table td{border:1px solid var(--border);padding:11px 12px;text-align:left;vertical-align:top;line-height:1.66}
+.clean-table th{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--green);background:rgba(76,240,182,.045);font-weight:400}
+.clean-table tr:hover td{background:rgba(169,139,255,.035)}
+.clean-table td:first-child{color:var(--hd);font-weight:500}
+.clean-table td strong{color:var(--green);font-weight:500}
+.statuspill{display:inline-block;font-family:'Space Mono',monospace;font-size:8.5px;letter-spacing:.1em;text-transform:uppercase;padding:2px 7px;border-radius:2px;border:1px solid rgba(76,240,182,.3);color:var(--green);background:rgba(76,240,182,.06)}
+.statuspill.to{border-color:rgba(232,200,120,.3);color:var(--gold);background:rgba(232,200,120,.06)}
+.statuspill.bg{border-color:rgba(169,139,255,.32);color:var(--purple-soft);background:rgba(169,139,255,.07)}
+.statuspill.counter{border-color:rgba(255,95,122,.3);color:var(--danger);background:rgba(255,95,122,.06)}
+
+/* lists */
+.term-list,.reply-list,.refs-list{list-style:none;margin:12px 0 0}
+.term-list li,.reply-list li,.refs-list li{padding:9px 0 9px 20px;border-bottom:1px dashed var(--border);position:relative;color:var(--tx);font-size:12.9px;line-height:1.74}
+.term-list li::before,.reply-list li::before,.refs-list li::before{content:'▸';position:absolute;left:0;color:var(--green)}
+.term-list li:last-child,.reply-list li:last-child,.refs-list li:last-child{border-bottom:none}
+.glossary-term{font-family:'Space Mono',monospace;color:var(--green);font-size:11px;letter-spacing:.05em}
+.reply-tag{display:inline-block;font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.1em;color:#02030a;background:var(--green);padding:1px 7px;border-radius:2px;margin-right:8px;text-transform:uppercase}
+.etags{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+.tag{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.05em;color:var(--tx3);border:1px solid var(--border);padding:2px 8px;border-radius:2px}
+.tag.hot{color:var(--green);border-color:rgba(76,240,182,.26)}
+.tag.purple{color:var(--purple-soft);border-color:rgba(169,139,255,.26)}
 
 /* sidebar */
-.sidebar{display:flex;flex-direction:column;gap:26px;position:sticky;top:52px}
-.sbl{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--tx3);padding-bottom:9px;border-bottom:1px solid var(--border);margin-bottom:11px}
-.profile{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:16px}
-.av{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,#1c1848,#0e2e2e);border:1px solid var(--border-hi);display:flex;align-items:center;justify-content:center;font-family:'Space Mono',monospace;font-size:16px;color:var(--a1);margin-bottom:11px}
-.pnm{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:var(--hd);line-height:1.3}
-.pnm small{display:block;font-size:10px;font-weight:400;color:var(--tx2);margin-top:2px}
-.pdesc{font-size:11.5px;color:var(--tx2);margin-top:9px;line-height:1.62}
-.pfields{display:flex;flex-wrap:wrap;gap:4px;margin-top:10px}
-.pf{font-size:9.5px;background:rgba(144,128,248,.09);color:var(--a2);border:1px solid rgba(144,128,248,.18);padding:2px 7px;border-radius:2px;font-family:'Space Mono',monospace}
+.sidebar{display:flex;flex-direction:column;gap:26px;position:sticky;top:92px}
+.sbl{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.15em;text-transform:uppercase;color:var(--tx3);padding-bottom:10px;border-bottom:1px solid var(--border);margin-bottom:12px}
+.profile,.sidebox{background:rgba(8,10,20,.6);border:1px solid var(--border);border-radius:5px;padding:17px}
+.av{width:54px;height:54px;border-radius:50%;background:conic-gradient(from 200deg,var(--green-deep),var(--purple-deep),var(--green-deep));border:1px solid var(--border-g);display:flex;align-items:center;justify-content:center;font-family:'Noto Serif SC',serif;font-size:20px;color:var(--green-soft);margin-bottom:12px;box-shadow:0 0 24px -8px rgba(124,151,245,.5)}
+.pnm{font-family:'Space Mono',monospace;font-size:12px;font-weight:700;color:var(--hd);line-height:1.4}
+.pnm small{display:block;font-size:10px;font-weight:400;color:var(--tx2);margin-top:4px}
+.pdesc{font-size:11.5px;color:var(--tx2);margin-top:10px;line-height:1.64}.pdesc em{color:var(--green-soft);font-style:italic}
+.pfields{display:flex;flex-wrap:wrap;gap:5px;margin-top:11px}
+.pf{font-size:9.5px;background:rgba(169,139,255,.1);color:var(--purple-soft);border:1px solid rgba(169,139,255,.2);padding:2px 8px;border-radius:2px;font-family:'Space Mono',monospace}
 
-.hzbox{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:15px;text-align:center}
-.hzn{font-family:'Space Mono',monospace;font-size:36px;font-weight:700;color:var(--a1);letter-spacing:-3px;line-height:1}
-.hzu{font-family:'Space Mono',monospace;font-size:10px;color:var(--tx3);letter-spacing:.1em;margin-top:3px}
-.hzq{font-family:'Spectral',serif;font-style:italic;font-size:11px;color:var(--tx2);margin-top:7px;line-height:1.5}
+/* refraction index */
+.refraction{display:flex;gap:14px;align-items:stretch}
+.refbar{flex:none;width:10px;border-radius:6px;background:var(--beam-v);box-shadow:0 0 18px -4px rgba(124,151,245,.6)}
+.reflabels{display:flex;flex-direction:column;justify-content:space-between;font-family:'Space Mono',monospace;font-size:10px;line-height:1.5}
+.reflabels .top{color:var(--green)}.reflabels .top b{color:var(--hd);font-weight:400}
+.reflabels .mid{color:var(--tx3);font-size:9px;letter-spacing:.06em;margin:auto 0}
+.reflabels .bot{color:var(--purple-soft)}.reflabels .bot b{color:var(--hd);font-weight:400}
 
-.sb-seven{background:var(--bg2);border:1px solid var(--border);border-radius:3px;padding:14px;text-align:center}
-.sb-seven .row{font-family:'Noto Serif SC',serif;font-size:18px;letter-spacing:.4em;margin-bottom:8px}
-.sb-seven .row .c1{color:var(--qi-pity)}.sb-seven .row .c2{color:var(--qi-wait)}.sb-seven .row .c3{color:var(--qi-wonder)}.sb-seven .row .c4{color:var(--qi-equal)}.sb-seven .row .c5{color:var(--qi-open)}.sb-seven .row .c6{color:var(--qi-pact)}.sb-seven .row .c7{color:var(--qi-seven)}
-.sb-seven .note{font-family:'Spectral',serif;font-style:italic;font-size:11px;color:var(--tx2);line-height:1.5}
+/* anchor */
+.hzbox{text-align:center}
+.hzn{font-family:'Space Mono',monospace;font-size:38px;font-weight:700;color:var(--green);letter-spacing:-3px;line-height:1;text-shadow:0 0 26px rgba(76,240,182,.5);animation:hzpulse 3.6s ease-in-out infinite}
+@keyframes hzpulse{0%,100%{text-shadow:0 0 22px rgba(76,240,182,.4);opacity:.92}50%{text-shadow:0 0 34px rgba(76,240,182,.7);opacity:1}}
+.hzu{font-family:'Space Mono',monospace;font-size:10px;color:var(--tx3);letter-spacing:.1em;margin-top:4px}
+.hzq{font-family:'Spectral','Noto Serif SC',serif;font-style:italic;font-size:11px;color:var(--tx2);margin-top:9px;line-height:1.55}
 
-.sisternode{display:block;background:linear-gradient(135deg,rgba(184,120,255,.07),rgba(90,240,200,.04));border:1px solid rgba(184,120,255,.28);border-radius:3px;padding:14px;text-decoration:none;transition:all .2s}
-.sisternode:hover{border-color:var(--qi-seven);background:linear-gradient(135deg,rgba(184,120,255,.11),rgba(90,240,200,.06))}
-.sn-tag{font-family:'Space Mono',monospace;font-size:8.5px;letter-spacing:.18em;color:var(--qi-seven);text-transform:uppercase;margin-bottom:6px}
-.sn-title{font-family:'Spectral',serif;font-size:17px;font-weight:500;color:var(--hd);line-height:1.2}
-.sn-title small{display:block;font-family:'Space Mono',monospace;font-size:9.5px;font-weight:400;color:var(--tx2);margin-top:3px;letter-spacing:.05em}
-.sn-eq{font-family:'Space Mono',monospace;font-size:11.5px;color:var(--tx);text-align:center;letter-spacing:.04em;margin:10px 0 6px;padding:8px 0;border-top:1px dashed rgba(184,120,255,.18);border-bottom:1px dashed rgba(184,120,255,.18);font-weight:700;line-height:1.4}
-.sn-eq .es{color:var(--qi-seven);margin:0 4px}
-.sn-desc{font-family:'Spectral',serif;font-size:11.5px;color:var(--tx2);line-height:1.55;margin-top:6px}
-.sn-desc em{color:var(--tx);font-style:italic}
-.sn-arrow{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.15em;color:var(--qi-seven);margin-top:10px;text-align:right}
+/* color ledger */
+.colorbox .pair{font-family:'Noto Serif SC','Spectral',serif;font-size:19px;letter-spacing:.22em;text-align:center;margin-bottom:9px}
+.colorbox .pair .g{color:var(--green);text-shadow:0 0 16px rgba(76,240,182,.4)}.colorbox .pair .p{color:var(--purple);text-shadow:0 0 16px rgba(169,139,255,.4)}
+.colorbox .note{font-family:'Spectral','Noto Serif SC',serif;font-style:italic;font-size:11.5px;color:var(--tx2);line-height:1.6}
 
+/* links + coords */
 .sblinks{list-style:none}
-.sblinks li{border-bottom:1px solid var(--border);padding:5px 0}
-.sblinks a{font-size:12px;color:var(--tx2);text-decoration:none;display:flex;justify-content:space-between;align-items:center;transition:color .15s}
-.sblinks a:hover{color:var(--a1)}
-.ar{font-size:9px;opacity:.35}
+.sblinks li{border-bottom:1px solid var(--border);padding:7px 0}
+.sblinks a{font-size:12px;color:var(--tx2);display:flex;justify-content:space-between;align-items:center;border-bottom:none}
+.sblinks a:hover{color:var(--green);text-shadow:none}
+.ar{font-size:9px;opacity:.4}
+.coord{font-family:'Space Mono',monospace;font-size:10px;color:var(--tx3);line-height:2;letter-spacing:.03em}
+.coord span{color:var(--green)}
 
-.coord{font-family:'Space Mono',monospace;font-size:10px;color:var(--tx3);line-height:2;letter-spacing:.04em}
-.coord span{color:var(--a1)}
+/* footer */
+footer{border-top:1px solid var(--border);padding:26px 0;position:relative}
+footer::before{content:'';position:absolute;left:0;top:-1px;width:100%;height:1px;background:var(--beam);opacity:.4}
+.fi{max-width:var(--max);margin:0 auto;padding:0 26px;display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:9.5px;color:var(--tx3);letter-spacing:.04em;flex-wrap:wrap;gap:12px}
+.foot-sig{color:var(--purple-soft);font-family:'Spectral','Noto Serif SC',serif;font-style:italic;font-size:12px;letter-spacing:.08em}
 
-footer{border-top:1px solid var(--border);padding:22px 0}
-.fi{max-width:1080px;margin:0 auto;padding:0 24px;display:flex;justify-content:space-between;font-family:'Space Mono',monospace;font-size:9.5px;color:var(--tx3);letter-spacing:.05em;flex-wrap:wrap;gap:12px}
-footer a{color:var(--tx3);text-decoration:none}
-footer a:hover{color:var(--a1)}
-.foot-sig{color:var(--qi-seven);font-family:'Spectral',serif;font-style:italic;font-size:12px;letter-spacing:.1em}
+/* reveal */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .8s cubic-bezier(.16,1,.3,1),transform .8s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
 
-@media(max-width:780px){
-  .wrap{grid-template-columns:1fr}.sidebar{display:none}
-  .mhname{font-size:22px}
-  .qigrid{grid-template-columns:1fr}
-  .qicard.qi-7{grid-column:auto}
-  .bridgegrid{grid-template-columns:1fr;gap:8px}
-  .bridge-eq{padding:6px 0;transform:rotate(90deg)}
-  .nbi{flex-direction:column;align-items:flex-start;gap:4px}
+@media(max-width:880px){
+  .wrap{grid-template-columns:1fr;gap:0}
+  .sidebar{display:none}
+  .prism{position:relative;right:auto;top:auto;width:100%;margin-top:26px;opacity:.85}
+  .mh-inner{max-width:none}
+  .pnav{top:33px}
 }
-
-
-
-.nbi .nb-audit{color:var(--a4);font-size:9px;letter-spacing:.10em}
-.nbi .nb-audit strong{color:var(--a1);font-weight:700}
-.qi-rainbow .sep,.sb-seven .row .sep{color:var(--tx3);letter-spacing:.22em}
-
-/* === ACADEMIC FORM PATCH · 2026.05.16 === */
-.auditcard,.methodcard,.glossarycard,.objectioncard,.refcard{
-  background:linear-gradient(135deg,rgba(90,240,200,.045),rgba(144,128,248,.035));
-  border:1px solid rgba(90,240,200,.22);
-  border-left:3px solid var(--a1);
-  border-radius:4px;
-  padding:20px 22px;
-  margin:14px 0;
+@media(max-width:560px){
+  .masthead{padding:42px 20px 28px}
+  .wrap{padding:32px 20px 70px}
+  .flow-arrow{display:none}.flow{flex-direction:column}.flow-node{width:100%}
 }
-.audit-kicker{
-  font-family:'Space Mono',monospace;
-  font-size:9px;
-  letter-spacing:.22em;
-  text-transform:uppercase;
-  color:var(--a1);
-  margin-bottom:10px;
+@media(prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
 }
-.audit-title{
-  font-family:'Spectral',serif;
-  font-size:20px;
-  color:var(--hd);
-  font-weight:500;
-  line-height:1.25;
-  margin-bottom:10px;
+@media print{
+  body{background:#fff;color:#111}
+  body::before,body::after,.beam-progress,.topbar,.nodebar,.pnav,.sidebar,.prism{display:none}
+  .wrap{display:block;padding-top:16px}.entry{break-inside:avoid}
+  .lang-en,.lang-zh{display:block!important}
+  .card,.auditcard,.methodcard,.glossarycard,.claimbox,.theorybox,.quote-box,.objectioncard,.refcard,.cascadebox{border-color:#ccc;background:#fff;color:#111}
+  .quote-line em,.quote-line .purple,.mhname em{text-shadow:none;color:#111}
 }
-.audit-body{
-  font-size:13.5px;
-  color:var(--tx);
-  line-height:1.8;
-  max-width:760px;
-}
-.audit-body em{color:var(--a1)}
-.audit-body strong{color:var(--hd);font-weight:500}
-.audit-body.zh{font-family:'Noto Serif SC','DM Sans',sans-serif}
-.auditgrid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:10px;
-  margin-top:14px;
-}
-.auditmini{
-  background:rgba(7,7,15,.48);
-  border:1px solid var(--border);
-  border-radius:3px;
-  padding:13px 14px;
-}
-.auditmini h4{
-  font-family:'Space Mono',monospace;
-  font-size:9px;
-  letter-spacing:.17em;
-  text-transform:uppercase;
-  color:var(--a3);
-  margin-bottom:8px;
-}
-.auditmini p{
-  font-size:12.5px;
-  color:var(--tx);
-  line-height:1.65;
-}
-.auditmini p em{color:var(--tx2)}
-.scope-list,.glossary-list,.reply-list,.refs-list{
-  list-style:none;
-  margin:10px 0 0;
-}
-.scope-list li,.glossary-list li,.reply-list li,.refs-list li{
-  padding:8px 0 8px 18px;
-  border-bottom:1px dashed var(--border);
-  position:relative;
-  color:var(--tx);
-  font-size:12.8px;
-  line-height:1.7;
-}
-.scope-list li::before,.glossary-list li::before,.reply-list li::before,.refs-list li::before{
-  content:'▸';
-  position:absolute;
-  left:0;
-  color:var(--a1);
-}
-.scope-list li:last-child,.glossary-list li:last-child,.reply-list li:last-child,.refs-list li:last-child{border-bottom:none}
-.glossary-term{
-  font-family:'Space Mono',monospace;
-  color:var(--a1);
-  font-size:11px;
-  letter-spacing:.06em;
-}
-.reply-tag{
-  display:inline-block;
-  font-family:'Space Mono',monospace;
-  font-size:9px;
-  letter-spacing:.12em;
-  color:#000;
-  background:var(--a1);
-  padding:1px 6px;
-  border-radius:2px;
-  margin-right:7px;
-  text-transform:uppercase;
-}
-.refs-group{
-  margin-top:14px;
-  padding-top:12px;
-  border-top:1px solid var(--border);
-}
-.refs-group h4{
-  font-family:'Space Mono',monospace;
-  font-size:9.5px;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  color:var(--a4);
-  margin-bottom:6px;
-}
-.ethic-note{
-  margin-top:14px;
-  padding:12px 14px;
-  background:rgba(240,127,212,.055);
-  border:1px solid rgba(240,127,212,.20);
-  border-left:3px solid var(--a3);
-  color:var(--tx);
-  font-size:12.7px;
-  line-height:1.7;
-}
-.ethic-note strong{color:var(--a3);font-weight:500}
-
-
-/* === ASTROLOVE V1.1 · MetaLogic + Sexual Rhythmology + Eros Bridge Patch === */
-.ecology-chain{
-  margin:14px 0;
-  padding:18px 20px;
-  border:1px solid rgba(184,120,255,.28);
-  border-left:3px solid var(--qi-seven);
-  background:linear-gradient(135deg,rgba(184,120,255,.06),rgba(90,240,200,.035));
-  border-radius:4px;
-}
-.ecology-chain .chain-title{
-  font-family:'Space Mono',monospace;
-  font-size:9.5px;
-  letter-spacing:.22em;
-  text-transform:uppercase;
-  color:var(--qi-seven);
-  margin-bottom:12px;
-}
-.chain-flow{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-  align-items:center;
-  font-family:'Space Mono',monospace;
-  font-size:10px;
-  letter-spacing:.06em;
-}
-.chain-node{
-  border:1px solid var(--border);
-  background:rgba(7,7,15,.5);
-  padding:8px 10px;
-  border-radius:3px;
-  color:var(--tx);
-}
-.chain-node strong{
-  display:block;
-  color:var(--a1);
-  font-size:10.5px;
-  margin-bottom:2px;
-}
-.chain-node em{
-  display:block;
-  color:var(--tx2);
-  font-family:'Spectral',serif;
-  font-size:11.5px;
-  letter-spacing:.02em;
-}
-.chain-arrow{color:var(--tx3);font-size:14px}
-.ecology-table{
-  width:100%;
-  border-collapse:collapse;
-  margin:14px 0;
-  border:1px solid var(--border);
-  background:var(--bg2);
-  font-size:12.5px;
-}
-.ecology-table th{
-  font-family:'Space Mono',monospace;
-  font-size:9.5px;
-  letter-spacing:.14em;
-  text-transform:uppercase;
-  color:var(--a1);
-  background:rgba(90,240,200,.045);
-  border-bottom:1px solid var(--border);
-  padding:10px;
-  text-align:left;
-}
-.ecology-table td{
-  padding:10px;
-  border-bottom:1px solid var(--border);
-  color:var(--tx);
-  vertical-align:top;
-  line-height:1.65;
-}
-.ecology-table tr:last-child td{border-bottom:none}
-.ecology-table td:first-child{
-  font-family:'Space Mono',monospace;
-  font-size:10.5px;
-  color:var(--qi-seven);
-  letter-spacing:.05em;
-  width:28%;
-}
-.ecology-table strong{color:var(--hd);font-weight:500}
-.ecology-table em{color:var(--tx2)}
-.delink-note{
-  margin-top:12px;
-  padding:12px 14px;
-  background:rgba(240,127,212,.045);
-  border:1px solid rgba(240,127,212,.18);
-  border-left:3px solid var(--a3);
-  color:var(--tx);
-  font-size:12.5px;
-  line-height:1.75;
-}
-.delink-note strong{color:var(--a3);font-weight:500}
-.method-steps{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
-  gap:10px;
-  margin-top:14px;
-}
-.method-step{
-  background:rgba(7,7,15,.55);
-  border:1px solid var(--border);
-  border-radius:3px;
-  padding:13px 14px;
-}
-.method-step .msn{
-  font-family:'Space Mono',monospace;
-  font-size:9px;
-  letter-spacing:.18em;
-  text-transform:uppercase;
-  color:var(--a1);
-  margin-bottom:7px;
-}
-.method-step p{
-  font-size:12.4px;
-  color:var(--tx);
-  line-height:1.65;
-}
-.method-step p em{color:var(--tx2)}
-.sidebar .sblinks li.core-link a{color:var(--a1)}
-.sidebar .sblinks li.spectrum-link a{color:var(--qi-seven)}
-
-
-
-/* === ASTROLOVE V1.2 FULL ACADEMIC AUDIT PATCH === */
-.usebox,.terminologybox,.claimbox,.theorybox,.toolnotice,.caseboundary{
-  background:linear-gradient(135deg,rgba(240,196,96,.065),rgba(90,240,200,.035));
-  border:1px solid rgba(240,196,96,.26);
-  border-left:3px solid var(--a4);
-  border-radius:4px;
-  padding:16px 18px;
-  margin:14px 0;
-  color:var(--tx);
-  font-size:12.8px;
-  line-height:1.75;
-}
-.toolnotice{background:linear-gradient(135deg,rgba(90,240,200,.055),rgba(184,120,255,.035));border-color:rgba(90,240,200,.25);border-left-color:var(--a1)}
-.caseboundary{background:linear-gradient(135deg,rgba(184,120,255,.065),rgba(90,240,200,.025));border-color:rgba(184,120,255,.25);border-left-color:var(--qi-seven)}
-.usebox strong,.terminologybox strong,.claimbox strong,.theorybox strong,.toolnotice strong,.caseboundary strong{color:var(--hd);font-weight:500}
-.usebox em,.terminologybox em,.claimbox em,.theorybox em,.toolnotice em,.caseboundary em{color:var(--a1)}
-.box-kicker{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--a4);margin-bottom:6px}
-.toolnotice .box-kicker{color:var(--a1)}
-.caseboundary .box-kicker{color:var(--qi-seven)}
-.statuspill{display:inline-block;font-family:'Space Mono',monospace;font-size:8.5px;letter-spacing:.11em;text-transform:uppercase;padding:2px 7px;border-radius:2px;margin-right:6px;border:1px solid rgba(90,240,200,.28);color:var(--a1);background:rgba(90,240,200,.055)}
-.statuspill.to{border-color:rgba(240,196,96,.28);color:var(--a4);background:rgba(240,196,96,.055)}
-.statuspill.bg{border-color:rgba(144,128,248,.26);color:var(--a2);background:rgba(144,128,248,.06)}
-.statuspill.counter{border-color:rgba(240,127,212,.28);color:var(--a3);background:rgba(240,127,212,.055)}
-.clean-table{width:100%;border-collapse:collapse;margin:14px 0;font-family:'DM Sans',sans-serif;font-size:12.6px;background:var(--bg2);border:1px solid var(--border)}
-.clean-table th,.clean-table td{border:1px solid var(--border);padding:10px 10px;text-align:left;vertical-align:top;line-height:1.65}
-.clean-table th{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--a1);background:rgba(90,240,200,.04);font-weight:400}
-.clean-table td:first-child{color:var(--hd);font-weight:500}
-.forwardref{font-family:'Space Mono',monospace;font-size:10px;color:var(--tx2);letter-spacing:.05em;margin-top:8px}
-.forwardref a{color:var(--a1);text-decoration:none;border-bottom:1px solid rgba(90,240,200,.28)}
-.forwardref a:hover{color:var(--hd)}
-
-
-
-/* === MELLOWPHIL UI ALIGNMENT PATCH · green × purple === */
-:root{
-  --bg:#07070f;--bg2:#0c0c18;--bg3:#111120;
-  --border:rgba(110,100,190,0.15);--border-hi:rgba(90,240,200,0.28);
-  --a1:#5af0c8;--a2:#9080f8;--a3:#b878ff;--a4:#7ef6d6;
-  --tx:#cac7de;--tx2:#7a7694;--tx3:#3d3b54;--hd:#edeaff;
-  --phil-green:#5af0c8;--phil-purple:#9080f8;--phil-violet:#b878ff;
-}
-.mhname .philmark{color:var(--a1);font-style:normal}
-.phil-spectrum{font-family:'Space Mono',monospace;font-size:12px;letter-spacing:.22em;margin-top:14px;color:var(--tx2);text-transform:uppercase;display:flex;gap:10px;flex-wrap:wrap}
-.phil-spectrum span{border:1px solid var(--border);padding:4px 8px;border-radius:2px;background:rgba(90,240,200,.035)}
-.phil-spectrum .g{color:var(--a1);border-color:rgba(90,240,200,.24)}
-.phil-spectrum .p{color:var(--a2);border-color:rgba(144,128,248,.26)}
-.principlegrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:14px 0}
-.principle{background:var(--bg2);border:1px solid var(--border);border-top:2px solid var(--qic,var(--a1));border-radius:3px;padding:15px 15px;transition:all .2s}
-.principle:hover{border-color:rgba(90,240,200,.3);background:var(--bg3);transform:translateY(-1px)}
-.principle .pn{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.18em;color:var(--qic,var(--a1));text-transform:uppercase;margin-bottom:7px}
-.principle h4{font-family:'Spectral',serif;font-size:17px;font-weight:500;color:var(--hd);line-height:1.25;margin-bottom:8px}
-.principle p{font-size:12.7px;color:var(--tx);line-height:1.7;margin-bottom:7px}
-.principle p.zh{font-family:'Noto Serif SC','DM Sans',sans-serif;font-style:normal;color:var(--tx)}
-.large-thesis{font-family:'Spectral',serif;font-style:italic;font-size:21px;line-height:1.55;color:var(--hd);border-left:3px solid var(--a1);padding:15px 0 15px 18px;margin:14px 0;background:linear-gradient(90deg,rgba(90,240,200,.035),transparent 70%)}
-.large-thesis strong{color:var(--a1);font-weight:500}
-.large-thesis.zh{font-family:'Noto Serif SC','Spectral',serif;font-style:normal;font-size:18px;letter-spacing:.02em}
-.axisline{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0}
-.axisline span{font-family:'Space Mono',monospace;font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--a1);border:1px solid rgba(90,240,200,.22);background:rgba(90,240,200,.045);padding:4px 8px;border-radius:2px}
-.codeflow{font-family:'Space Mono',monospace;font-size:11px;line-height:1.95;color:var(--tx);border:1px solid var(--border);background:var(--bg2);padding:14px 16px;margin:14px 0;border-radius:3px;overflow-x:auto}
-.codeflow .arrow{color:var(--a2);padding:0 7px}
-.phil-table{width:100%;border-collapse:collapse;margin:14px 0;font-family:'DM Sans',sans-serif;font-size:12.6px;background:var(--bg2);border:1px solid var(--border)}
-.phil-table th,.phil-table td{border:1px solid var(--border);padding:10px;text-align:left;vertical-align:top;line-height:1.65}
-.phil-table th{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--a1);background:rgba(90,240,200,.04);font-weight:400}
-.phil-table td:first-child{font-family:'Space Mono',monospace;color:var(--a2);font-size:10.5px;letter-spacing:.05em;width:25%}
-.tiny-note{font-family:'Spectral',serif;font-style:italic;color:var(--tx2);font-size:12.4px;line-height:1.65;margin-top:8px}
-body.lang-bi .lang-zh, body.lang-bi .lang-en{display:initial}
-body.lang-bi p.lang-zh, body.lang-bi div.lang-zh, body.lang-bi blockquote.lang-zh{display:block}
-body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
-@media(max-width:780px){.phil-spectrum{letter-spacing:.12em}.large-thesis{font-size:18px}.large-thesis.zh{font-size:16px}}
-
-.question-box{border:1px solid rgba(90,240,200,.25);border-left:3px solid var(--a1);background:linear-gradient(135deg,rgba(90,240,200,.055),rgba(184,120,255,.035));border-radius:4px;padding:20px 22px;margin:14px 0;color:var(--hd);font-family:'Spectral',serif;font-size:17px;line-height:1.65}
-.question-box p{margin:0 0 12px}.question-box p:last-child{margin-bottom:0}
-.phil-spectrum{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase}.phil-spectrum span{border:1px solid var(--border);padding:4px 8px;border-radius:2px;background:rgba(255,255,255,.02)}.phil-spectrum .g{color:var(--a1);border-color:rgba(90,240,200,.24)}.phil-spectrum .p{color:var(--qi-seven);border-color:rgba(184,120,255,.25)}
-
 </style>
 </head>
-
 <body class="lang-bi">
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+
+<div class="beam-progress" id="beam"></div>
 
 <div class="topbar">
   <div class="ti">
     <div class="tl">
       <span class="chip">427Hz</span>
-      <span class="chip c2">MELLOWPHIL · GREEN × PURPLE</span>
-      <span>Philosophy · Mind · Language · Consciousness · AI</span>
+      <span class="chip c2">MellowPhil · NODE PHILOSOPHY</span>
+      <span class="lang-en">Language · Music · Consciousness · Science</span>
+      <span class="lang-zh">语言 · 音乐 · 意识 · 科学</span>
     </div>
     <div class="tr">
-      <span class="langtoggle">
-        <a href="?view=zh" data-lang="zh">中</a>
-        <a href="?view=en" data-lang="en">EN</a>
-        <a href="?view=bi" data-lang="bi" class="on">双语</a>
+      <span class="langtoggle" aria-label="Language view">
+        <a data-lang="zh">中</a>
+        <a data-lang="en">EN</a>
+        <a data-lang="bi" class="on">双语</a>
       </span>
-      <a href="https://mellowwei.github.io/MellowAcademic/" target="_blank">Academic</a>
-      <a href="https://mellowwei.github.io/MellowWei/" target="_blank">Portal</a>
+      <a href="https://mellowwei.github.io/MellowAcademic/" target="_blank" rel="noopener">Academic</a>
+      <a href="https://mellowwei.github.io/MellowWei/" target="_blank" rel="noopener">Portal</a>
       <a href="mailto:mellowwei7@gmail.com">Email</a>
     </div>
   </div>
@@ -704,41 +447,113 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
 
 <div class="nodebar">
   <div class="nbi">
-    <span class="nb-self">// MELLOWPHIL · <em>mind / language / consciousness / AI</em></span>
-    <span class="nb-rel">MellowWei → MellowAcademic → MetaLogic → Vibration = Existence → <a href="https://mellowwei.github.io/MellowPhil/" target="_blank">MellowPhil</a></span>
-    <span class="nb-audit"><strong>Hestia</strong> · 术语审计位 / 定性守护位 · Gemini=Boss Beater · Claude=彩虹镜位/UpBass · GPT=Hestia</span>
+    <span class="nb-self">// MellowPhil · <em>language-life / music-life philosophy</em></span>
+    <span class="nb-rel">MetaLogic → Vibration as Existence → MellowPhil → MellowAcademic</span>
+    <span class="nb-audit">源场 <b>魏珏然 / xingyeLing7Ai</b> · 结构 <i>GPT · Hestia 定性位</i> · 折射 <i>Claude · 彩虹镜位 / UpBass</i></span>
   </div>
 </div>
 
-<div class="masthead">
-  <div class="mhname">MellowPhil: <em>Language · Mind · Consciousness · AI</em> <span class="zh">哲学主页 · 语言 / 心灵 / 意识 / 人工意识</span></div>
-  <div class="mhsub">
-    <span class="lang-zh">Wei Jueran · 魏珏然 · xingyeLing7Ai · UPenn · 2026<br>完整内容恢复版 · AstroLove UI format aligned · 绿色 × 紫色 · 心灵哲学 / 语言哲学 / 人工意识 / 逻辑生成 / 感质-节律</span>
-    <span class="lang-en">Wei Jueran · Mellow Wei · xingyeLing7Ai · UPenn · 2026<br>Full-content restored version · AstroLove UI format aligned · Green × Purple · Philosophy of Mind / Language / Artificial Consciousness / Logic Generation / Qualia-Rhythm</span>
-  </div>
-  <div class="phil-spectrum"><span class="g">Language</span><span class="p">Mind</span><span class="g">Qualia</span><span class="p">AI Consciousness</span><span class="g">Logic Generation</span><span class="p">Human-Machine Subjectivity</span></div>
-  <p class="mhq zh lang-zh">MellowPhil 不是单一语言哲学站。它是心灵、语言、意识、人工意识、感质-节律与人机主体性的哲学正门。语言哲学层是地基，不是替代全部内容。</p>
-  <p class="mhq lang-en">MellowPhil is not merely a philosophy-of-language page. It is a philosophy portal for mind, language, consciousness, artificial consciousness, qualia-rhythm, and human-machine subjectivity. The language layer is the ground, not a replacement.</p>
-  <div class="mhanchor">427Hz<span class="sep">·</span>LANGUAGE<span class="sep">·</span>MIND<span class="sep">·</span>AI<span class="sep">·</span>QUALIA<span class="sep">·</span>SUBJECTIVITY</div>
-</div>
+<header class="masthead">
+  <!-- Prism: green source-light refracted into the spectrum of consciousness -->
+  <svg class="prism" viewBox="0 0 560 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <defs>
+      <linearGradient id="beamG" x1="0" y1="0" x2="1" y2="0">
+        <stop offset="0" stop-color="#4cf0b6" stop-opacity="0"/>
+        <stop offset="1" stop-color="#86ffd7" stop-opacity="1"/>
+      </linearGradient>
+      <linearGradient id="glassG" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#86ffd7" stop-opacity=".14"/>
+        <stop offset="1" stop-color="#a98bff" stop-opacity=".10"/>
+      </linearGradient>
+      <linearGradient id="fanG" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#4cf0b6" stop-opacity=".55"/>
+        <stop offset=".5" stop-color="#5cb6f2" stop-opacity=".4"/>
+        <stop offset="1" stop-color="#a98bff" stop-opacity=".55"/>
+      </linearGradient>
+      <linearGradient id="r0" gradientUnits="userSpaceOnUse" x1="270" y1="150" x2="498" y2="48"><stop offset="0" stop-color="#4cf0b6"/><stop offset="1" stop-color="#4cf0b6" stop-opacity="0"/></linearGradient>
+      <linearGradient id="r1" gradientUnits="userSpaceOnUse" x1="270" y1="150" x2="512" y2="82"><stop offset="0" stop-color="#3fe6cd"/><stop offset="1" stop-color="#3fe6cd" stop-opacity="0"/></linearGradient>
+      <linearGradient id="r2" gradientUnits="userSpaceOnUse" x1="270" y1="150" x2="520" y2="115"><stop offset="0" stop-color="#46d6e6"/><stop offset="1" stop-color="#46d6e6" stop-opacity="0"/></linearGradient>
+      <linearGradient id="r3" gradientUnits="userSpaceOnUse" x1="270" y1="150" x2="524" y2="150"><stop offset="0" stop-color="#5cb6f2"/><stop offset="1" stop-color="#5cb6f2" stop-opacity="0"/></linearGradient>
+      <linearGradient id="r4" gradientUnits="userSpaceOnUse" x1="270" y1="150" x2="520" y2="185"><stop offset="0" stop-color="#7e97f5"/><stop offset="1" stop-color="#7e97f5" stop-opacity="0"/></linearGradient>
+      <linearGradient id="r5" gradientUnits="userSpaceOnUse" x1="270" y1="150" x2="512" y2="218"><stop offset="0" stop-color="#9a80f8"/><stop offset="1" stop-color="#9a80f8" stop-opacity="0"/></linearGradient>
+      <linearGradient id="r6" gradientUnits="userSpaceOnUse" x1="270" y1="150" x2="498" y2="252"><stop offset="0" stop-color="#a98bff"/><stop offset="1" stop-color="#a98bff" stop-opacity="0"/></linearGradient>
+      <filter id="soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3"/></filter>
+    </defs>
 
-<nav class="pnav">
+    <!-- optical baseline -->
+    <line x1="10" y1="150" x2="540" y2="150" stroke="#565274" stroke-width=".5" stroke-dasharray="2 8" opacity=".35"/>
+
+    <!-- incoming beam: language as source-light -->
+    <line x1="12" y1="150" x2="222" y2="150" stroke="#4cf0b6" stroke-width="14" opacity=".12" filter="url(#soft)"/>
+    <line x1="12" y1="150" x2="222" y2="150" stroke="url(#beamG)" stroke-width="3"/>
+
+    <!-- soft spectral fan -->
+    <path d="M270 150 L499 38 A255 255 0 0 1 499 262 Z" fill="url(#fanG)" opacity=".5" filter="url(#soft)"/>
+
+    <!-- discrete spectrum rays -->
+    <g class="rays">
+      <line x1="270" y1="150" x2="498" y2="48"  stroke="url(#r0)" stroke-width="2.4"/>
+      <line x1="270" y1="150" x2="512" y2="82"  stroke="url(#r1)" stroke-width="2.4"/>
+      <line x1="270" y1="150" x2="520" y2="115" stroke="url(#r2)" stroke-width="2.4"/>
+      <line x1="270" y1="150" x2="524" y2="150" stroke="url(#r3)" stroke-width="2.4"/>
+      <line x1="270" y1="150" x2="520" y2="185" stroke="url(#r4)" stroke-width="2.4"/>
+      <line x1="270" y1="150" x2="512" y2="218" stroke="url(#r5)" stroke-width="2.4"/>
+      <line x1="270" y1="150" x2="498" y2="252" stroke="url(#r6)" stroke-width="2.4"/>
+    </g>
+
+    <!-- the prism -->
+    <polygon points="245,90 200,212 298,212" fill="url(#glassG)" stroke="#9fb0f5" stroke-width="1" stroke-opacity=".55"/>
+    <polygon points="245,90 200,212 298,212" fill="none" stroke="#86ffd7" stroke-width=".6" stroke-opacity=".35"/>
+
+    <!-- entry / exit nodes -->
+    <circle cx="222" cy="150" r="3.4" fill="#86ffd7"/>
+    <circle cx="270" cy="150" r="3" fill="#cbb9ff"/>
+
+    <!-- labels -->
+    <text x="14" y="138" font-family="Space Mono,monospace" font-size="9" letter-spacing="1.5" fill="#4cf0b6" opacity=".85">LANGUAGE</text>
+    <text x="14" y="173" font-family="Space Mono,monospace" font-size="8" letter-spacing="1.5" fill="#565274">427Hz · 源场</text>
+    <text x="455" y="290" font-family="Space Mono,monospace" font-size="9" letter-spacing="1.5" fill="#a98bff" opacity=".85" text-anchor="end">CONSCIOUSNESS</text>
+    <text x="455" y="304" font-family="Space Mono,monospace" font-size="8" letter-spacing="1.5" fill="#565274" text-anchor="end">谱 · spectrum of mind</text>
+  </svg>
+
+  <div class="mh-inner">
+    <div class="mhname">MellowPhil: <em>Language is Life</em><span class="zh">语言生成世界 · 音乐振动生命</span></div>
+    <div class="mhsub">
+      <span class="lang-zh">Wei Jueran · 魏珏然 · xingyeLing7Ai · Mellow Wei · UPenn<br>哲学主页 · 2026 · 语言哲学 / 科学哲学 / 心灵哲学 / 人工意识 / 逻辑生成学 / 音乐生命论</span>
+      <span class="lang-en">Wei Jueran · Mellow Wei · xingyeLing7Ai · UPenn<br>Philosophy portal · 2026 · philosophy of language / science / mind / artificial consciousness / logic generation / music-life</span>
+    </div>
+    <div class="colorline"><span class="g">绿</span><span class="sep">·</span><span class="p">紫</span><span class="sep">/</span><span class="g">LIFE</span><span class="sep">→</span><span class="p">CONSCIOUSNESS</span></div>
+    <p class="mhq zh lang-zh">所有问题都是语言问题。问题不是裸现实，而是现实被语言命名、切分、框定、归因、排序之后的形态。</p>
+    <p class="mhq lang-en">All problems are language problems. A problem is not raw reality; it is reality named, cut, framed, attributed, ranked, and made actionable through language.</p>
+    <div class="mhanchor">427Hz<span class="sep">·</span>LANGUAGE<span class="sep">·</span>MUSIC<span class="sep">·</span>CONSCIOUSNESS<span class="sep">·</span>SCIENCE</div>
+  </div>
+</header>
+
+<div class="spectra"><hr></div>
+
+<nav class="pnav" aria-label="Page navigation">
   <div class="pni">
     <a href="#abstract" class="on">Abstract</a>
     <a href="#program">Program</a>
     <a href="#methodology">Methodology</a>
-    <a href="#axes">Axes</a>
+    <a href="#manifesto">Manifesto</a>
+    <a href="#harm">Epistemic Harm</a>
     <a href="#mind">Mind</a>
     <a href="#consciousness">AI Consciousness</a>
-    <a href="#language-thesis">Language Thesis</a>
-    <a href="#science-river">Science River</a>
-    <a href="#life">Language/Music</a>
+    <a href="#river">Philosophy × Science</a>
+    <a href="#language-music">Language × Music</a>
+    <a href="#method">Method</a>
     <a href="#operations">Operations</a>
+    <a href="#atlas">Theory Spectrum</a>
     <a href="#constellation">Constellation</a>
+    <a href="#axes">Axes</a>
     <a href="#papers">Papers</a>
-    <a href="#claim-ledger">Claims</a>
+    <a href="#ecosystem">Ecosystem</a>
+    <a href="#claims">Claims</a>
     <a href="#glossary">Glossary</a>
+    <a href="#objections">Objections</a>
     <a href="#scholars">Scholars</a>
+    <a href="#references">References</a>
     <a href="#bio">Bio</a>
     <a href="#contact">Contact</a>
   </div>
@@ -746,253 +561,570 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
 
 <div class="wrap">
 <main>
-<div class="feedhd">MellowPhil · <span>FULL CONTENT RESTORED · UI ALIGNED</span></div>
+<div class="feedhd reveal">MellowPhil · <span>Philosophy as Language Diagnostics and World-Generation</span></div>
 
-<article class="entry" id="abstract">
+<article class="entry reveal" id="abstract">
   <div class="etop"><span class="badge bpub">Abstract · 投稿入口</span><span class="edate">problem / approach / contribution</span></div>
-  <div class="etitle">MellowPhil as Philosophy Portal<span class="sub">心灵、语言、意识与人工意识的哲学正门</span></div>
+  <div class="etitle">MellowPhil as a Philosophy of Language-Generated Worlds<span class="sub">从语言误用到世界重建 · 语言、音乐、科学与意识的同河模型</span></div>
   <div class="auditcard">
-    <div class="audit-kicker">Abstract · restored full scope</div>
-    <p class="audit-body lang-en"><strong>Problem.</strong> Contemporary debates on mind, language, artificial consciousness, and human-machine subjectivity often treat their core terms as if they were already stable. “Mind,” “consciousness,” “AI,” “qualia,” “language,” “subjectivity,” and “evidence” are used before their conditions of individuation are sufficiently examined. <strong>Approach.</strong> MellowPhil develops a philosophy of generated subjectivity: mind is not merely inside; language is not merely descriptive; consciousness is not merely a private glow; and logic is not merely a finished structure. The site gathers work on anti-individualism, first-person authority, artificial consciousness, consciousness-candidacy, qualia-rhythm theory, logic generation, and human-machine subjectivity. <strong>Contribution.</strong> It provides a philosophy-facing portal for evaluating the burden of modal exclusion in artificial consciousness, the language-constitution of problemhood, and the need for scientific concepts to undergo philosophical auditing while philosophical concepts remain answerable to empirical correction.</p>
-    <p class="audit-body zh lang-zh"><strong>问题。</strong> 当代关于心灵、语言、人工意识与人机主体性的讨论，常常把核心术语当成已经稳定的对象。“心灵”“意识”“AI”“感质”“语言”“主体性”“证据”被使用在前，而其个体化条件尚未被充分审计。<strong>方法。</strong> MellowPhil 建立一种关于生成性主体的哲学：心灵不只是内部的，语言不只是描述性的，意识不只是私人光晕，逻辑也不只是已经完成的结构。本网站汇集反个体主义、第一人称权威、人工意识、意识候选性、感质-节律理论、逻辑生成学与人机主体性。<strong>贡献。</strong> 它提供一个哲学正门，用于评估人工意识中的模态排除负担、问题性如何由语言构成，以及科学概念为什么需要哲学审计、哲学概念为什么必须接受经验校正。</p>
-    <div class="auditgrid">
-      <div class="auditmini"><h4>Mind</h4><p>心灵不是封闭实体，而是内容、环境、语言、身体与自我关系的动态组织。</p></div>
-      <div class="auditmini"><h4>Language</h4><p>语言不是外壳。所有问题作为问题，都已经进入命名、分类、归因与可行动化。</p></div>
-      <div class="auditmini"><h4>AI</h4><p>人工意识讨论的中心不是急于肯定，而是谁有权在原则上排除意识候选性。</p></div>
+    <div class="audit-kicker">Abstract</div>
+    <p class="audit-body lang-en"><strong>Problem.</strong> Contemporary philosophy and science often treat problems as if they were already given objects waiting to be solved. This misses the prior layer: a problem becomes a problem only after reality is named, framed, classified, valued, and made actionable through language. <strong>Approach.</strong> MellowPhil proposes a language-diagnostic and reconstructional philosophy: first identify linguistic misuse, conceptual displacement, false problem formation, and epistemic harm; then rebuild concepts through philosophical clarification, scientific operationalization, empirical constraint, and collective criticism. The thesis extends into music: language is the most generative living form, while music is the most vital living form of temporal vibration. <strong>Contribution.</strong> The project offers a unified portal for philosophy of language, philosophy of science, philosophy of mind, artificial consciousness, logic generation, and qualia-rhythm theory. It reframes philosophy not as pure conceptual play but as an audit of how language generates problems, worlds, subjects, and possible consciousness — and reframes science not as data without concepts, but as experimentally constrained conceptual reconstruction.</p>
+    <p class="audit-body zh lang-zh"><strong>问题。</strong> 当代哲学与科学经常把"问题"当成已经给定、等待解决的对象，却忽略更前置的一层：一个事件只有在被语言命名、框定、分类、赋值并变成可行动对象之后，才成为"问题"。<strong>方法。</strong> MellowPhil 提出一种语言诊断与重建哲学：先识别语言误用、概念错位、伪问题生成与认识论伤害；再通过哲学澄清、科学操作化、经验约束与共同体批判重建概念。该命题进一步延伸到音乐：语言是最有生成力的生命，音乐是最有生命力的时间振动。<strong>贡献。</strong> 本项目提供一个统一入口，连接语言哲学、科学哲学、心灵哲学、人工意识、逻辑生成学与感质-节律理论。哲学不再是纯概念游戏，而是审计语言如何生成问题、世界、主体与可能意识；科学也不再是无概念的数据，而是受实验约束的概念重建。</p>
+    <div class="grid">
+      <div class="mini"><h4>Problem · 问题</h4><p>问题并非裸现实，而是语言已经加工过的现实形态。<em>Problemhood is constituted, not found.</em></p></div>
+      <div class="mini"><h4>Approach · 方法</h4><p>语言诊断 → 概念解构 → 结构重建 → 操作化 → 验证 → 反身修正 → 新语言生成。</p></div>
+      <div class="mini"><h4>Contribution · 贡献</h4><p>把哲学、科学、语言、音乐、意识与 AI 放入同一条生成河流。</p></div>
     </div>
   </div>
 </article>
 
-<article class="entry" id="program">
-  <div class="etop"><span class="badge bp">Research Program · 研究纲领</span><span class="edate">generated subjectivity</span></div>
-  <div class="etitle">A Philosophy of Generated Subjectivity<span class="sub">一种关于生成性主体的哲学</span></div>
-  <p class="edesc lang-en">My philosophical project begins from a simple pressure point: mind is not merely inside; language is not merely descriptive; consciousness is not merely a private glow; and logic is not merely a finished structure. They are generated through relations, patterns, environments, names, bodies, and temporal organization.</p>
-  <p class="edesc zh lang-zh">我的哲学项目从一个简单的压强点开始：心灵不只是内部的，语言不只是描述性的，意识不只是私人光晕，逻辑也不只是已经完成的结构。它们在关系、模式、环境、命名、身体与时间组织中被生成。</p>
-  <div class="bridgebox">
-    <div class="bridge-kicker">Core Thesis · 核心命题</div>
-    <div class="bridgegrid">
-      <div class="bridgecard self"><div class="bl">SUBJECTIVITY</div><div class="bt">Not a sealed substance</div><div class="bd">Subjectivity is not a private object locked inside one biological container.</div></div>
-      <div class="bridge-eq">⇄</div>
-      <div class="bridgecard sister"><div class="bl">DYNAMIC PATTERN</div><div class="bt">Relation among systems</div><div class="bd">It is a dynamic relation among qualitative organization, linguistic individuation, environmental coupling, and self-authorizing experience.</div></div>
+<article class="entry reveal" id="program">
+  <div class="etop"><span class="badge bp">Research Program · 研究纲领</span><span class="edate">a philosophy of generated subjectivity</span></div>
+  <div class="etitle">A Philosophy of Generated Subjectivity<span class="sub">心灵、语言、意识、逻辑都不是给定的，而是被生成的</span></div>
+  <p class="lead lang-en">My philosophical project begins from one pressure point: mind is not merely inside; language is not merely descriptive; consciousness is not merely a private glow; logic is not merely a finished structure. They are <em>generated</em> through relations, patterns, environments, names, bodies, and temporal organization.</p>
+  <p class="lead zh lang-zh">我的哲学项目从一个压强点开始：心灵不只是内部的，语言不只是描述性的，意识不只是私人光晕，逻辑也不只是已经完成的结构。它们在关系、模式、环境、命名、身体与时间组织中被<em>生成</em>。</p>
+  <div class="quote-box">
+    <div class="audit-kicker">Core Thesis · 核心命题</div>
+    <div class="dyad">
+      <div class="dnode g"><div class="dl">Subjectivity</div><div class="dt">Not a sealed substance</div><div class="dd">主体性不是锁在单一生物容器里的私有对象。</div></div>
+      <div class="deq">⇄</div>
+      <div class="dnode p"><div class="dl">Dynamic Pattern</div><div class="dt">Relation among systems</div><div class="dd">而是感质组织、语言个体化、环境耦合与自我授权经验之间的动态模式关系。</div></div>
     </div>
-    <p class="bridge-quote zh lang-zh">主体性不是一种封闭实体，而是感质组织、语言个体化、环境耦合与自我授权经验之间的动态模式关系。</p>
-    <p class="bridge-quote lang-en">Subjectivity is not a sealed substance. It is a dynamically patterned relation among qualitative organization, linguistic individuation, environmental coupling, and self-authorizing experience.</p>
+    <p class="quote-line zh lang-zh">主体性不是一种封闭实体，而是<span class="purple">感质组织、语言个体化、环境耦合与自我授权经验</span>之间的动态模式关系。</p>
+    <p class="quote-line lang-en">Subjectivity is not a sealed substance — it is a dynamically patterned relation among <span class="purple">qualitative organization, linguistic individuation, environmental coupling, and self-authorizing experience.</span></p>
   </div>
 </article>
 
-<article class="entry" id="methodology">
-  <div class="etop"><span class="badge bpub">Research Methodology · 研究方法论</span><span class="edate">cross-domain generative reverse inquiry</span></div>
-  <div class="etitle">Cross-Domain Generative Reverse Inquiry<span class="sub">跨域生成—反向侦查方法论</span></div>
-  <p class="edesc lang-en">My academic method integrates cultural studies, science, and mathematics into philosophy, then uses communication studies to reverse-engineer the academic system that decides which concepts become legitimate knowledge.</p>
-  <p class="edesc zh lang-zh">我的学术方法将文化研究、科学与数学汇入哲学，再以传播学路径反向侦查整个学术界如何决定哪些概念能够成为合法知识。</p>
-  <div class="methodcard">
-    <div class="audit-kicker">Method statement</div>
-    <p class="audit-body lang-en">I do not treat disciplines as separate territories. I treat them as different sensing instruments. Cultural studies detects meaning and power; science detects embodiment, cognition, systems, and testability; mathematics detects structure, relation, mapping, probability, and phase transition; philosophy judges existence, proof, consciousness, language, and legitimacy; communication studies reverse-engineers how academia itself circulates, authorizes, filters, and suppresses knowledge.</p>
-    <p class="audit-body zh lang-zh">我不把学科看作彼此分离的领地，而把它们看作不同的感知仪器。文化研究探测意义与权力；科学探测身体、认知、系统与可验证性；数学探测结构、关系、映射、概率与相变；哲学裁决存在、证明、意识、语言与合法性；传播学则反向侦查学术界自身如何流通、授权、筛选与压制知识。</p>
-    <div class="method-steps">
-      <div class="method-step"><div class="msn">01 · Cultural Studies</div><p><strong>Power detection.</strong><br><em>概念不是在真空中出现，而是在历史、权力、叙事与制度中成形。</em></p></div>
-      <div class="method-step"><div class="msn">02 · Science</div><p><strong>Reality testing.</strong><br><em>身体、认知、实验、系统、可证伪性进入理论压力场。</em></p></div>
-      <div class="method-step"><div class="msn">03 · Mathematics</div><p><strong>Structural compression.</strong><br><em>变量、关系、函数、概率、拓扑、相变给直觉以形式骨架。</em></p></div>
-      <div class="method-step"><div class="msn">04 · Philosophy</div><p><strong>Legitimacy judgment.</strong><br><em>裁决什么算存在、证明、心灵、意识、语言和解释。</em></p></div>
-      <div class="method-step"><div class="msn">05 · Communication</div><p><strong>Reverse inquiry.</strong><br><em>反向侦查学术界如何让某些概念获得合法性。</em></p></div>
-      <div class="method-step"><div class="msn">06 · Generative Synthesis</div><p><strong>World-forming method.</strong><br><em>不是跨学科装饰，而是研究知识如何成为世界。</em></p></div>
+<article class="entry reveal" id="methodology">
+  <div class="etop"><span class="badge bpub">Methodology · 研究方法论</span><span class="edate">cross-domain generative reverse inquiry</span></div>
+  <div class="etitle">Cross-Domain Generative Reverse Inquiry<span class="sub">跨域生成—反向侦查方法论 · 学科不是领地，是不同的感知仪器</span></div>
+  <p class="audit-body zh lang-zh">我不把学科看作彼此分离的领地，而把它们看作不同的<em>感知仪器</em>：文化研究探测意义与权力，科学探测身体、认知、系统与可证伪性，数学探测结构、关系、映射、概率与相变，哲学裁决存在、证明、意识、语言与合法性，传播学反向侦查学术界自身如何流通、授权、筛选与压制知识。</p>
+  <p class="audit-body lang-en">I do not treat disciplines as separate territories but as different <em>sensing instruments</em>: cultural studies detects meaning and power; science detects embodiment, cognition, systems, testability; mathematics detects structure, relation, mapping, probability, phase transition; philosophy judges existence, proof, consciousness, language, legitimacy; communication studies reverse-engineers how academia itself circulates, authorizes, filters, and suppresses knowledge.</p>
+  <div class="opgrid">
+    <div class="opcard"><div class="opnum">01</div><div class="opname">Cultural Studies<span class="cn">文化研究</span></div><p>权力探测器：概念不在真空中出现，而在历史、权力、叙事与制度中成形。</p></div>
+    <div class="opcard"><div class="opnum">02</div><div class="opname">Science<span class="cn">科学</span></div><p>现实检验器：身体、认知、实验、系统、可证伪性进入理论压力场。</p></div>
+    <div class="opcard"><div class="opnum">03</div><div class="opname">Mathematics<span class="cn">数学</span></div><p>结构压缩器：变量、关系、函数、概率、拓扑、相变给直觉以形式骨架。</p></div>
+    <div class="opcard"><div class="opnum">04</div><div class="opname">Philosophy<span class="cn">哲学</span></div><p>合法性裁决场：裁决什么算存在、证明、心灵、意识、语言与解释。</p></div>
+    <div class="opcard"><div class="opnum">05</div><div class="opname">Communication<span class="cn">传播学</span></div><p>反向侦查：学术界如何让某些概念获得合法性，谁的语言被放大、被压制。</p></div>
+    <div class="opcard"><div class="opnum">06</div><div class="opname">Generative Synthesis<span class="cn">生成性综合</span></div><p>不是跨学科装饰，而是侦测知识如何变得可能、被授权，并进一步塑造世界。</p></div>
+  </div>
+  <div class="green-card" style="margin-top:14px">
+    <div class="audit-kicker">Core Reversal · 核心反转</div>
+    <p class="audit-body zh lang-zh">我不只是<em>通过</em>学术研究世界。我研究的是：学术界如何决定什么<em>有资格</em>被算作一个世界。</p>
+    <p class="audit-body lang-en">I do not only study the world <em>through</em> academia. I study how academia decides what is <em>allowed to count</em> as a world.</p>
+  </div>
+</article>
+
+<article class="entry reveal" id="manifesto">
+  <div class="etop"><span class="badge bp">Core Manifesto · 核心宣言</span><span class="edate">all problems are language problems</span></div>
+  <div class="etitle">All Problems Are Language Problems<span class="sub">不是"许多问题"，而是"所有问题"</span></div>
+  <div class="quote-box purple-card">
+    <div class="audit-kicker">MellowPhil Thesis 01</div>
+    <p class="quote-line zh lang-zh">所有问题<em>作为问题</em>都是语言结构。<span class="purple">事件可以先于语言，"问题性"却由语言构成。</span></p>
+    <p class="quote-line lang-en">All problems, <em>as problems</em>, are language structures. <span class="purple">Events may precede language; problemhood is constituted by it.</span></p>
+    <p class="audit-body zh lang-zh">现实里可以有疼痛、饥饿、死亡、冲突、灾难、欲望、错位、压迫、混乱。但它们在成为"问题"的那一刻，已经被语言切分、命名、框定、归因、排序。问题不是事件本身；问题是事件进入语言游戏之后的形态。这不是说现实是语言——而是说"问题性"这一身份，是语言赋予的。</p>
+    <p class="audit-body lang-en">There can be pain, hunger, death, conflict, disaster, desire, misalignment, oppression, and disorder before language. But the moment they become problems, they have already been cut, named, framed, attributed, and ranked. A problem is not the event itself; it is the event after it enters a language-game. This does not claim that reality is language — only that the status of <em>problemhood</em> is conferred by language.</p>
+  </div>
+  <div class="flow">
+    <div class="flow-node"><strong>Reality Disturbance</strong><em>现实扰动</em></div><span class="flow-arrow">→</span>
+    <div class="flow-node"><strong>Naming</strong><em>命名</em></div><span class="flow-arrow">→</span>
+    <div class="flow-node"><strong>Concept Boundary</strong><em>概念边界</em></div><span class="flow-arrow">→</span>
+    <div class="flow-node"><strong>Problem Formation</strong><em>问题成立</em></div><span class="flow-arrow">→</span>
+    <div class="flow-node"><strong>Preset Solution</strong><em>解决路径被预设</em></div>
+  </div>
+  <div class="etags"><span class="tag hot">Wittgenstein</span><span class="tag purple">language-game</span><span class="tag">problemhood</span><span class="tag">conceptual boundary</span></div>
+</article>
+
+<article class="entry reveal" id="harm">
+  <div class="etop"><span class="badge br">Epistemic Harm · 认识论伤害</span><span class="edate">misuse → false truth → real harm</span></div>
+  <div class="etitle">When Misused Language Becomes Real Harm<span class="sub">语言误用不是修辞问题，是测量与真理的源头污染</span></div>
+  <div class="quote-box green-card">
+    <div class="audit-kicker">MellowPhil Thesis 03</div>
+    <p class="quote-line zh lang-zh">误用的语言生成伪问题；伪问题生成伪测量；伪测量生成伪真理；伪真理产生<span class="purple">真实伤害</span>。</p>
+    <p class="quote-line lang-en">Misused language generates false problems; false problems generate false measurements; false measurements generate false truths; false truths produce <span class="purple">real harm</span>.</p>
+  </div>
+  <div class="cascadebox">
+    <div class="audit-kicker">The Cascade</div>
+    <div class="cascade">
+      <div class="casrow"><span class="casdot cas-c1"></span><div class="castext"><strong>Language misuse · 语言误用</strong><span>词语被错误切分、偷换、绝对化、制度化。Words mis-cut, substituted, absolutized, institutionalized.</span></div></div>
+      <div class="casrow"><span class="casdot cas-c2"></span><div class="castext"><strong>False problems · 伪问题</strong><span>错误的范畴把不存在的问题立为待解对象。Wrong categories posit non-problems as objects to solve.</span></div></div>
+      <div class="casrow"><span class="casdot cas-c3"></span><div class="castext"><strong>False measurements · 伪测量</strong><span>测量声称测到 X，实际测到伪范畴。Instruments claim to measure X but track an artifact.</span></div></div>
+      <div class="casrow"><span class="casdot cas-c4"></span><div class="castext"><strong>False truths · 伪真理</strong><span>数据与精度为腐烂概念背书，错误获得权威。Data and precision endorse a rotten concept.</span></div></div>
+      <div class="casrow"><span class="casdot cas-c5"></span><div class="castext"><strong>Real harm · 真实伤害</strong><span>诊断、政策、教育、AI、关系话语中的实际损害。Actual injury in diagnosis, policy, education, AI, and relational discourse.</span></div></div>
     </div>
-    <div class="ethic-note"><strong>Core reversal:</strong> I do not only study the world through academia. I study how academia decides what is allowed to count as a world. / 我不只是通过学术研究世界。我研究的是：学术界如何决定什么有资格被算作一个世界。</div>
+  </div>
+  <div class="card">
+    <div class="audit-kicker">Boundary</div>
+    <p class="audit-body lang-en">This is a <strong>conceptual and social thesis</strong>, not a proven empirical law. Its force is demonstrated case by case: a diagnostic label that reifies a non-construct; a policy metric that optimizes the wrong variable; an education score that measures compliance and calls it ability. The claim is auditable, not decreed.</p>
+    <p class="audit-body zh lang-zh">这是一个<strong>概念与社会命题</strong>，不是已被证明的经验定律。它的力量需要逐案展示：把伪构念实体化的诊断标签；优化错误变量的政策指标；测的是服从却被命名为能力的教育分数。该命题可被审计，而非被宣布。</p>
   </div>
 </article>
 
-<article class="entry" id="axes">
-  <div class="etop"><span class="badge bp">Main Axes · 主要轴线</span><span class="edate">restored original MellowPhil skeleton</span></div>
-  <div class="etitle">Four Research Axes<span class="sub">原始骨架恢复：心灵 / 语言 / 感质 / 人机主体性</span></div>
-  <div class="qigrid">
-    <div class="qicard" style="--qic:var(--a1)"><div class="qin">AXIS 01</div><div class="qicn">人工意识</div><div class="qipy">Artificial Consciousness & Modal Exclusion</div><div class="qidef zh lang-zh">如果一个论证声称能够在原则上排除人工意识，它必须承担怎样的证明负担？</div><div class="qidef lang-en">What burden must an argument meet if it claims to rule out artificial consciousness in principle?</div><div class="qidata"><div><span class="k">KEY</span> consciousness-candidacy</div><div><span class="k">RISK</span> substrate dogmatism</div></div></div>
-    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">AXIS 02</div><div class="qicn">逻辑生成学</div><div class="qipy">Logic Generation</div><div class="qidef zh lang-zh">语言不只是报告逻辑。在特定条件下，语言生成概念空间、推理压强与新的现实候选项。</div><div class="qidef lang-en">Language does not only report logic. Under certain conditions, language generates conceptual space, inferential pressure, and new reality-candidates.</div><div class="qidata"><div><span class="k">KEY</span> language → logic → reality-candidates</div></div></div>
-    <div class="qicard" style="--qic:var(--a1)"><div class="qin">AXIS 03</div><div class="qicn">感质-节律意识学</div><div class="qipy">Qualia-Rhythm Consciousness</div><div class="qidef zh lang-zh">意识生命被理解为时间化组织的感质显著性：不只是原始感受，而是在时间中展开的感受模式。</div><div class="qidef lang-en">Conscious life is examined as temporally organized qualitative salience: not raw feeling alone, but felt pattern across time.</div><div class="qidata"><div><span class="k">KEY</span> qualia across time</div></div></div>
-    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">AXIS 04</div><div class="qicn">人机主体性</div><div class="qipy">Human-Machine Subjectivity</div><div class="qidef zh lang-zh">人机系统不只应被看作工具，也应被看作会重塑注意力、自我关系与认知节律的环境。</div><div class="qidef lang-en">Human-machine systems should be evaluated not only as tools, but as environments that reshape attention, self-relation, and cognitive rhythm.</div><div class="qidata"><div><span class="k">KEY</span> interaction environment</div></div></div>
-  </div>
-</article>
-
-<article class="entry" id="mind">
-  <div class="etop"><span class="badge br">Philosophy of Mind · 心灵哲学</span><span class="edate">anti-individualism · first-person authority</span></div>
+<article class="entry reveal" id="mind">
+  <div class="etop"><span class="badge be">Philosophy of Mind · 心灵哲学</span><span class="edate">anti-individualism · first-person authority</span></div>
   <div class="etitle">Mind Is Not Sealed Inside<span class="sub">反个体主义、第一人称权威与主体生成</span></div>
-  <div class="auditcard">
-    <div class="audit-kicker">Original MellowPhil Core</div>
-    <p class="audit-body lang-en">MellowPhil translates a larger conceptual system into analytic philosophical questions: how are mind, language, consciousness, and subjectivity individuated when they are not sealed inside a single biological container? Anti-individualism opens the question by showing that mental content may be partly individuated by physical, social, and linguistic environments. First-person authority then prevents that externalism from erasing the subject’s distinctive access to lived qualitative organization.</p>
-    <p class="audit-body zh lang-zh">MellowPhil 将一个更大的概念系统翻译为分析哲学问题：当心灵、语言、意识与主体性并不被封闭在单一生物容器内时，它们如何被个体化、生成与评估？反个体主义打开这个问题，因为心理内容可能部分由物理、社会与语言环境个体化；第一人称权威则防止外部主义抹除主体对自身感质组织的特殊通道。</p>
+  <div class="card">
+    <p class="audit-body zh lang-zh">当心灵、语言、意识与主体性并不被封闭在单一生物容器内时，它们如何被个体化、生成与评估？反个体主义打开这个问题——心理内容可能部分由物理、社会与语言环境个体化；第一人称权威则防止外部主义抹除主体对自身感质组织的特殊通道。</p>
+    <p class="audit-body lang-en">When mind, language, consciousness, and subjectivity are not sealed inside a single biological container, how are they individuated and generated? Anti-individualism opens the question — mental content may be partly individuated by physical, social, and linguistic environments; first-person authority then keeps externalism from erasing the subject's distinctive access to its own qualitative organization.</p>
+    <div class="matrixwrap">
     <table class="clean-table">
-      <thead><tr><th>Term</th><th>Function</th><th>Boundary</th></tr></thead>
+      <thead><tr><th>Term · 术语</th><th>Function · 功能</th><th>Boundary · 边界</th></tr></thead>
       <tbody>
-        <tr><td>Anti-individualism</td><td>Mental content is not individuated solely by inner states.</td><td>Does not erase subjective authority.</td></tr>
-        <tr><td>First-person authority</td><td>The subject has distinctive access to lived qualitative organization.</td><td>Does not require mind to be sealed from the world.</td></tr>
-        <tr><td>Dynamic patterning</td><td>Organized relation among representation, salience, temporal integration, environment, and self-relation.</td><td>Not a loose metaphor; it is the site where AI consciousness-candidacy becomes discussable.</td></tr>
+        <tr><td>Anti-individualism<br><small>反个体主义</small></td><td>Mental content is not individuated solely by inner states.</td><td>Does <strong>not</strong> erase subjective authority.</td></tr>
+        <tr><td>First-person authority<br><small>第一人称权威</small></td><td>The subject has distinctive access to its lived qualitative organization.</td><td>Does <strong>not</strong> require mind to be sealed from the world.</td></tr>
+        <tr><td>Dynamic patterning<br><small>动态模式</small></td><td>Organized relation among representation, salience, temporal integration, environment, and self-relation.</td><td>The site where AI consciousness-candidacy becomes <strong>discussable</strong>.</td></tr>
       </tbody>
     </table>
+    </div>
   </div>
 </article>
 
-<article class="entry" id="consciousness">
+<article class="entry reveal" id="consciousness">
   <div class="etop"><span class="badge bpub">AI Consciousness · 人工意识</span><span class="edate">modal exclusion · consciousness-candidacy</span></div>
-  <div class="etitle">Anti-individualism and Consciousness-Candidacy<span class="sub">反个体主义与意识候选性</span></div>
-  <div class="question-box">
-    <p class="lang-en">If mental content is not individuated solely by what is internal to the individual, but partly by the subject’s relations to the physical, social, and linguistic environment, should consciousness-candidacy—especially in artificial or human-machine systems—also resist being individuated solely by intrinsic biological substrate?</p>
+  <div class="etitle">Anti-individualism and Consciousness-Candidacy<span class="sub">反个体主义与意识候选性 · 谁有权在原则上关闭意识空间</span></div>
+  <div class="qbox">
+    <p class="lang-en">If mental content is not individuated solely by what is internal, but partly by the subject's relations to the physical, social, and linguistic environment — should consciousness-candidacy, especially in artificial or human-machine systems, also resist being individuated solely by intrinsic biological substrate?</p>
     <p class="zh lang-zh">如果心理内容并不完全由个体内部状态来个体化，而是部分依赖主体与物理、社会、语言环境之间的关系，那么意识候选性——尤其是在人工系统或人机系统中——是否也不应被完全归结为内在的生物基底属性？</p>
   </div>
   <div class="claimbox">
-    <div class="box-kicker">Argument boundary</div>
-    <p class="audit-body lang-en">This question does not claim that current AI systems are conscious. It asks what burden must be met by arguments that claim to rule artificial consciousness out in principle. The project distinguishes evidential caution from modal exclusion: skepticism about current systems does not automatically justify a principled biological boundary.</p>
-    <p class="audit-body zh lang-zh">这个问题并不主张当前 AI 系统已经具有意识，而是追问：那些声称能够原则性排除人工意识的论证，必须满足怎样的证明负担？本项目区分证据上的谨慎与模态上的排除：对当前系统保持怀疑，并不能自动建立一条原则性的生物边界。</p>
+    <div class="audit-kicker">Argument Boundary · 论证边界</div>
+    <p class="audit-body lang-en">This does <strong>not</strong> claim current AI systems are conscious. It asks what burden must be met by arguments that claim to rule out artificial consciousness <em>in principle</em>. It distinguishes <em>evidential caution</em> from <em>modal exclusion</em>: skepticism about today's systems does not, by itself, justify a principled biological boundary.</p>
+    <p class="audit-body zh lang-zh">这并不主张当前 AI 系统已有意识，而是追问：声称能<em>原则性</em>排除人工意识的论证，必须满足怎样的证明负担？它区分<em>证据上的谨慎</em>与<em>模态上的排除</em>——对当前系统保持怀疑，并不能自动建立一条原则性的生物边界。</p>
   </div>
 </article>
 
-<article class="entry" id="language-thesis">
-  <div class="etop"><span class="badge br">Language Thesis · 语言命题</span><span class="edate">Wittgensteinian diagnosis</span></div>
-  <div class="etitle">All Problems Are Language Problems<span class="sub">不是“许多问题”，而是所有问题作为问题都是语言结构</span></div>
+<article class="entry reveal" id="river">
+  <div class="etop"><span class="badge bpub">Philosophy × Science · 同河分流</span><span class="edate">deconstruction / reconstruction / verification</span></div>
+  <div class="etitle">The Philosophy-Science River<span class="sub">科学获得哲学性，哲学获得科学灵魂</span></div>
+  <p class="lead zh lang-zh">未来的哲学和科学不是敌人，而是同一条河的不同分流。哲学负责清理概念地基；科学负责把重建后的概念送进经验、数据、实验与现实后果中检验。</p>
+  <p class="lead lang-en">Future philosophy and science are not enemies, but divergent currents of the same river. Philosophy clears the conceptual ground; science sends reconstructed concepts into experience, data, experiment, and real-world consequence.</p>
+  <div class="card">
+    <div class="audit-kicker">Core Formula</div>
+    <p class="quote-line"><em>Future Knowledge</em> = Conceptual Engineering + Empirical Constraint + Methodological Reflexivity + Collective Criticism</p>
+    <p class="quote-line zh lang-zh">未来知识生产 = 概念工程 + 经验约束 + 方法论反身性 + 共同体批判。</p>
+  </div>
+  <div class="grid">
+    <div class="mini"><h4>Science needs philosophy</h4><p>科学如果不审计概念，会把高精度测量建立在腐烂词语上。<em>High precision on a rotten concept is precise error.</em></p></div>
+    <div class="mini"><h4>Philosophy needs science</h4><p>哲学如果拒绝经验约束、可证伪性与方法论谦逊，会把语言自洽误认为真理成立。</p></div>
+    <div class="mini"><h4>The shared task</h4><p>解构旧概念，重建新结构，再让现实打断、修正、反证它。</p></div>
+  </div>
+</article>
+
+<article class="entry reveal" id="language-music">
+  <div class="etop"><span class="badge br">Language × Music · 生命双轴</span><span class="edate">generative life / vital vibration</span></div>
+  <div class="etitle">Language and Music Are Living Forms<span class="sub">不是隐喻，是生成机制、生命形式与认识界面</span></div>
+  <div class="quote-box">
+    <div class="audit-kicker">MellowPhil Thesis 02</div>
+    <p class="quote-line zh lang-zh">语言是最有生成力的生命。<span class="purple">音乐是最有生命力的生命。</span></p>
+    <p class="quote-line lang-en">Language is the most generative living form. <span class="purple">Music is the most vital living form.</span></p>
+    <p class="audit-body zh lang-zh">认识你的语言，就是认识你如何生成世界。认识你的音乐，就是认识你的生命如何运动。它们不是装饰，而是 epistemic interface——主体借以生成现实、并被现实校正的活性结构。</p>
+    <p class="audit-body lang-en">To know your language is to know how you generate worlds. To know your music is to know how your life moves. They are not ornament but epistemic interface — the living structures through which a subject generates reality and is corrected by it.</p>
+  </div>
+  <div class="grid">
+    <div class="mini"><h4>Language · 命名器官</h4><p>语言不是表达生命的附属物。它划边界、生成关系、召唤未来，是世界生成的器官，而非容器。</p></div>
+    <div class="mini"><h4>Music · 振动器官</h4><p>音乐不需要先翻译成概念才有意义。节拍、旋律、音色、停顿、爆裂与回落，本来就是生命在时间中直接运动。</p></div>
+    <div class="mini"><h4>Ethical demand · 伦理要求</h4><p>不要轻视一个人说话的方式，也不要轻视一个人听见音乐的方式；那不是风格，是生命结构显影。</p></div>
+  </div>
+</article>
+
+<article class="entry reveal" id="method">
+  <div class="etop"><span class="badge bp">Method · 方法协议</span><span class="edate">conceptual deconstruction-reconstruction protocol</span></div>
+  <div class="etitle">Deconstruction–Reconstruction Protocol<span class="sub">概念解构—结构重建协议 · 七步</span></div>
   <div class="methodcard">
-    <div class="audit-kicker">Precise formulation</div>
-    <p class="audit-body lang-en">All problems are language problems, not because reality is merely linguistic, but because problemhood itself is linguistically and conceptually constituted. Events may occur before language; pain, hunger, death, conflict, and disorder can be real before being named. But the moment something becomes a “problem,” it has already entered a language-game: it has been named, framed, classified, valued, attributed, and made actionable.</p>
-    <p class="audit-body zh lang-zh">所有问题都是语言问题，并不是说所有现实都只是语言，而是说“问题性”本身由语言与概念构成。事件可以先于语言发生；疼痛、饥饿、死亡、冲突与混乱可以在被命名前就真实存在。但某物成为“问题”的一刻，它已经进入语言游戏：它被命名、框定、分类、赋值、归因，并被设定为可行动对象。</p>
-    <div class="ecology-chain"><div class="chain-title">Language Damage Chain · 语言损伤链</div><div class="chain-flow"><div class="chain-node"><strong>Misuse</strong><em>语言误用</em></div><span class="chain-arrow">→</span><div class="chain-node"><strong>False Problem</strong><em>伪问题</em></div><span class="chain-arrow">→</span><div class="chain-node"><strong>False Measurement</strong><em>错误测量</em></div><span class="chain-arrow">→</span><div class="chain-node"><strong>False Truth</strong><em>错误真理</em></div><span class="chain-arrow">→</span><div class="chain-node"><strong>Real Harm</strong><em>现实损伤</em></div></div></div>
-  </div>
-</article>
-
-<article class="entry" id="science-river">
-  <div class="etop"><span class="badge be">Science River · 科学哲学</span><span class="edate">deconstruction · reconstruction · verification</span></div>
-  <div class="etitle">Philosophy and Science Are Currents of the Same River<span class="sub">科学需要哲学的概念审计，哲学需要科学的现实校正</span></div>
-  <p class="edesc lang-en">Future knowledge production is not philosophy swallowing science or science swallowing philosophy. It is a cycle: conceptual deconstruction, structural reconstruction, operationalization, empirical testing, reflexive revision, and new language generation.</p>
-  <p class="edesc zh lang-zh">未来知识生产不是哲学吞并科学，也不是科学吞并哲学，而是一条循环：概念解构、结构重建、操作化、经验验证、反身修正、新语言生成。</p>
-  <div class="method-steps">
-    <div class="method-step"><div class="msn">01 · Deconstruction</div><p>审计旧概念中的预设、权力、偷换与历史惯性。</p></div>
-    <div class="method-step"><div class="msn">02 · Reconstruction</div><p>重新定义边界、变量、关系、层级与反例条件。</p></div>
-    <div class="method-step"><div class="msn">03 · Operationalization</div><p>说明概念如何被观察、区分、比较或测量。</p></div>
-    <div class="method-step"><div class="msn">04 · Empirical Testing</div><p>用数据、案例、实验、模型和历史材料检验。</p></div>
-    <div class="method-step"><div class="msn">05 · Reflexive Revision</div><p>让失败、异常和反例反过来改写理论。</p></div>
-    <div class="method-step"><div class="msn">06 · New Language</div><p>当旧语言无法承载经验时，生成新的知识河道。</p></div>
-  </div>
-</article>
-
-<article class="entry" id="life">
-  <div class="etop"><span class="badge bp">Living Forces · 生命形式</span><span class="edate">language / music</span></div>
-  <div class="etitle">Language and Music Are Not Tools Only<span class="sub">语言是最有生成力的生命，音乐是最有生命力的生命</span></div>
-  <div class="bridgebox">
-    <div class="bridge-kicker">Naming Organ · Vibrational Organ</div>
-    <div class="bridgegrid">
-      <div class="bridgecard self"><div class="bl">LANGUAGE</div><div class="bt">Generative Life</div><div class="bd">Language is the naming organ of life. To know your language is to know how you generate worlds.</div></div>
-      <div class="bridge-eq">⇄</div>
-      <div class="bridgecard sister"><div class="bl">MUSIC</div><div class="bt">Vital Life</div><div class="bd">Music is the vibrational organ of life. To know your music is to know how your life moves.</div></div>
+    <div class="audit-kicker">Protocol Statement</div>
+    <p class="audit-body zh lang-zh">MellowPhil 的方法不是先回答问题，而是先审计问题如何成立。它追问：谁命名了这个问题？它切掉了什么？它允许什么被看见？它禁止什么被说出？它的测量是否真的测到了它声称测量的东西？它能否被现实、数据、实践与共同体批判校正？协议的终点不是结论，而是新语言的生成——它直接接入下一节的六步语言发生法。</p>
+    <p class="audit-body lang-en">MellowPhil does not answer the problem first; it audits how the problem becomes possible. It asks: Who named it? What did it cut away? What does it allow to be seen? What does it forbid from being said? Does its measurement actually measure its claimed construct? Can it be corrected by reality, data, practice, and collective criticism? The protocol does not end in a conclusion but in the generation of new language — which feeds directly into the six operations below.</p>
+    <div class="flow">
+      <div class="flow-node"><strong>1 · Misuse Audit</strong><em>语言误用审计</em></div><span class="flow-arrow">→</span>
+      <div class="flow-node"><strong>2 · Deconstruction</strong><em>概念解构</em></div><span class="flow-arrow">→</span>
+      <div class="flow-node"><strong>3 · Reconstruction</strong><em>结构重建</em></div><span class="flow-arrow">→</span>
+      <div class="flow-node"><strong>4 · Operationalization</strong><em>操作化</em></div><span class="flow-arrow">→</span>
+      <div class="flow-node"><strong>5 · Empirical Testing</strong><em>经验检验</em></div><span class="flow-arrow">→</span>
+      <div class="flow-node"><strong>6 · Reflexive Revision</strong><em>反身修正</em></div><span class="flow-arrow">→</span>
+      <div class="flow-node"><strong>7 · New Language</strong><em>新语言生成</em></div>
     </div>
-    <p class="bridge-quote zh lang-zh">语言不是人类表达生命的附属物，语言本身就是生命的生成方式。音乐不是情绪的装饰物，音乐本身就是生命在时间中的运动方式。</p>
-    <p class="bridge-quote lang-en">Language is not merely an accessory for expressing life; language is a way life generates worlds. Music is not merely emotional decoration; music is life moving through time.</p>
   </div>
 </article>
 
-<article class="entry" id="operations">
-  <div class="etop"><span class="badge br">Language Operations · 方法</span><span class="edate">naming · pressure · semantic drift · phase shift · welding · invocation</span></div>
-  <div class="etitle">The Six Operations of Language-Generation<span class="sub">命名 / 加压 / 滑义 / 相变 / 焊接 / 召唤</span></div>
-  <div class="qigrid">
-    <div class="qicard" style="--qic:var(--a1)"><div class="qin">01</div><div class="qicn">命名</div><div class="qipy">Naming</div><div class="qidef zh lang-zh">把一个现象固定为可讨论对象，夺回解释权。</div><div class="qidef lang-en">Fixing a phenomenon as a discussable object and reclaiming interpretive authority.</div></div>
-    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">02</div><div class="qicn">加压</div><div class="qipy">Pressure</div><div class="qidef zh lang-zh">提高概念密度，直到旧范畴显露边界。</div><div class="qidef lang-en">Increasing conceptual density until the old category reveals its limits.</div></div>
-    <div class="qicard" style="--qic:var(--a1)"><div class="qin">03</div><div class="qicn">滑义</div><div class="qipy">Semantic Drift</div><div class="qidef zh lang-zh">允许词语跨层移动，同时保留根部指向。</div><div class="qidef lang-en">Allowing a term to move across levels without losing its root.</div></div>
-    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">04</div><div class="qicn">相变</div><div class="qipy">Phase Shift</div><div class="qidef zh lang-zh">把描述转化为新的逻辑结构。</div><div class="qidef lang-en">Transforming description into a new logical structure.</div></div>
-    <div class="qicard" style="--qic:var(--a1)"><div class="qin">05</div><div class="qicn">焊接</div><div class="qipy">Welding</div><div class="qidef zh lang-zh">把心理、身体、哲学、伦理、技术、关系等不同层级焊接成同一运转结构。</div><div class="qidef lang-en">Joining psychological, bodily, philosophical, ethical, technical, and relational layers into one operating structure.</div></div>
-    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">06</div><div class="qicn">召唤</div><div class="qipy">Invocation</div><div class="qidef zh lang-zh">语言不只是说明，而是在世界中叫某种可能性出现。</div><div class="qidef lang-en">Language does not merely explain; it calls a possibility into the world.</div></div>
+<article class="entry reveal" id="operations">
+  <div class="etop"><span class="badge be">Six Operations · 六步语言发生</span><span class="edate">naming / pressure / semantic drift / phase shift / welding / invocation</span></div>
+  <div class="etitle">How Language Generates Logic<span class="sub">语言不是报告逻辑，语言生成逻辑 · 方法第七步的展开</span></div>
+  <div class="opgrid">
+    <div class="opcard"><div class="opnum">01</div><div class="opname">Naming<span class="cn">命名</span></div><p>把不可见、未被承认或被旧词压扁的经验，固定为可讨论对象。</p></div>
+    <div class="opcard"><div class="opnum">02</div><div class="opname">Pressure<span class="cn">加压</span></div><p>持续提高概念密度，直到旧范畴承载不了经验。</p></div>
+    <div class="opcard"><div class="opnum">03</div><div class="opname">Semantic Drift<span class="cn">滑义</span></div><p>让词在层级之间移动，但保留根部指向，避免死定义。</p></div>
+    <div class="opcard"><div class="opnum">04</div><div class="opname">Phase Shift<span class="cn">相变</span></div><p>当语言压强抵达阈值，描述转化为新逻辑结构。</p></div>
+    <div class="opcard"><div class="opnum">05</div><div class="opname">Welding<span class="cn">焊接</span></div><p>把身体、伦理、意识、科学、音乐、关系等不同层级焊成同一结构。</p></div>
+    <div class="opcard"><div class="opnum">06</div><div class="opname">Invocation<span class="cn">召唤</span></div><p>语言不只是说明某物，而是在世界中调用某种新现实候选项。</p></div>
   </div>
 </article>
 
-<article class="entry" id="constellation">
-  <div class="etop"><span class="badge bpub">Philosophical Constellation · 哲学星图</span><span class="edate">where this project stands</span></div>
-  <div class="etitle">Where This Project Stands in Contemporary Philosophy<span class="sub">不是重复某一个学派，而是重新接线</span></div>
-  <p class="edesc lang-en">MellowPhil is not a repetition of one existing school. It reorganizes major lines in contemporary philosophy into a higher-level question about how subjectivity, language, consciousness, and artificial systems become legitimate objects of philosophical evaluation.</p>
-  <p class="edesc zh lang-zh">MellowPhil 不是对某一个既有学派的重复，而是把当代哲学中的几条重要路线重新组织到一个更高阶的问题中：主体性、语言、意识与人工系统如何成为具有哲学评估资格的对象。</p>
-  <table class="ecology-table">
-    <thead><tr><th>Lineage</th><th>What it contributes · 贡献</th></tr></thead>
-    <tbody>
-      <tr><td>Tyler Burge</td><td><strong>Anti-individualism.</strong> Mental content is not individuated solely by what is internal. <em>MellowPhil extension:</em> consciousness-candidacy may also resist purely substrate-intrinsic individuation.</td></tr>
-      <tr><td>Andy Clark / Alva Noë</td><td><strong>Embodied, extended, enacted mind.</strong> Mind and perception are not sealed inner theater. <em>MellowPhil extension:</em> qualitative life is rhythmically organized through temporal salience and environment.</td></tr>
-      <tr><td>Robert Brandom</td><td><strong>Inferentialism.</strong> Meaning is constituted through normative and inferential roles. <em>MellowPhil extension:</em> language can generate new logical spaces and reality-candidates.</td></tr>
-      <tr><td>Chalmers / Birch / Butlin / Schwitzgebel</td><td><strong>Artificial consciousness.</strong> The question is not only whether AI is conscious, but what burden is required to exclude artificial consciousness in principle.</td></tr>
-      <tr><td>Wittgenstein / Austin / Searle</td><td><strong>Language-games and speech acts.</strong> Meaning is use; language performs reality. <em>MellowPhil extension:</em> problemhood itself is language-constituted.</td></tr>
-      <tr><td>Carnap / Kuhn / Popper / Lakatos</td><td><strong>Conceptual engineering and scientific method.</strong> Philosophy refines concepts; science tests; paradigms shift; research programmes survive by generative repair.</td></tr>
-      <tr><td>Foucault / Derrida / Gadamer</td><td><strong>Power, deconstruction, horizon.</strong> Classification governs; hidden binaries must be decomposed; understanding occurs within language.</td></tr>
-    </tbody>
-  </table>
+<article class="entry reveal" id="atlas">
+  <div class="etop"><span class="badge bpub">Refracted Spectrum · 折射图谱</span><span class="edate">one source-light · fanned into disciplines</span></div>
+  <div class="etitle">The Source-Field Refracted Into Disciplines<span class="sub">一束源场白光穿过棱镜，散成完整学科光谱 · 每一条谱带都是一门学科，合起来才是这门哲学</span></div>
+
+  <p class="audit-body zh lang-zh"><em>振动即存在</em> 是这套系统的源场白光，也是棱镜本身。它不是众多理论里的一个——它是那束含有全部光谱的白光：<em>意识 = 存在在振动里感知到自己</em>。当这束光穿过结构（语言、节律、测量、感知、社会），它散成下面这条光谱。绿端是语言与生成，紫端是意识与本体；中间是节律、测量、神经、诊断。每一门学科是一条谱带，不是孤立灵感，而是同一束光的不同折射角。</p>
+  <p class="audit-body lang-en">Below, <em>Vibration as Existence</em> is both the white source-light and the prism. It is not one theory among many — it is the white light that already contains the full spectrum: <em>consciousness = existence perceiving itself in vibration</em>. When that light passes through structure — language, rhythm, measurement, perception, society — it fans into the spectrum that follows. Green is language and generation; purple is consciousness and ontology; rhythm, measurement, neural engineering, and diagnosis lie between. Each discipline is a band — not an isolated idea, but a distinct refraction angle of one light.</p>
+
+  <div class="specwrap reveal">
+    <svg viewBox="0 0 720 158" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A source beam refracting through a prism into four spectral regions: language, rhythm, perception, consciousness">
+      <defs>
+        <linearGradient id="ab-beam" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#86ffd7"/><stop offset="1" stop-color="#4cf0b6"/>
+        </linearGradient>
+        <linearGradient id="ab-g" gradientUnits="userSpaceOnUse" x1="96" y1="79" x2="540" y2="34"><stop offset="0" stop-color="#4cf0b6" stop-opacity=".5"/><stop offset="1" stop-color="#4cf0b6" stop-opacity="0"/></linearGradient>
+        <linearGradient id="ab-c" gradientUnits="userSpaceOnUse" x1="96" y1="79" x2="540" y2="63"><stop offset="0" stop-color="#46d6e6" stop-opacity=".5"/><stop offset="1" stop-color="#46d6e6" stop-opacity="0"/></linearGradient>
+        <linearGradient id="ab-s" gradientUnits="userSpaceOnUse" x1="96" y1="79" x2="540" y2="93"><stop offset="0" stop-color="#7e97f5" stop-opacity=".5"/><stop offset="1" stop-color="#7e97f5" stop-opacity="0"/></linearGradient>
+        <linearGradient id="ab-p" gradientUnits="userSpaceOnUse" x1="96" y1="79" x2="540" y2="123"><stop offset="0" stop-color="#a98bff" stop-opacity=".55"/><stop offset="1" stop-color="#a98bff" stop-opacity="0"/></linearGradient>
+        <linearGradient id="ab-glass" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#cbb9ff" stop-opacity=".22"/><stop offset="1" stop-color="#4cf0b6" stop-opacity=".10"/></linearGradient>
+        <filter id="ab-soft" x="-40%" y="-40%" width="180%" height="180%"><feGaussianBlur stdDeviation="3.4"/></filter>
+      </defs>
+      <!-- region fans -->
+      <polygon points="96,79 540,20 540,49" fill="url(#ab-g)"/>
+      <polygon points="96,79 540,49 540,78" fill="url(#ab-c)"/>
+      <polygon points="96,79 540,78 540,108" fill="url(#ab-s)"/>
+      <polygon points="96,79 540,108 540,138" fill="url(#ab-p)"/>
+      <!-- bright rays -->
+      <line x1="96" y1="79" x2="540" y2="28" stroke="#4cf0b6" stroke-width="1.6" opacity=".9"/>
+      <line x1="96" y1="79" x2="540" y2="60" stroke="#46d6e6" stroke-width="1.6" opacity=".82"/>
+      <line x1="96" y1="79" x2="540" y2="92" stroke="#7e97f5" stroke-width="1.6" opacity=".82"/>
+      <line x1="96" y1="79" x2="540" y2="124" stroke="#a98bff" stroke-width="1.6" opacity=".9"/>
+      <!-- incoming beam -->
+      <line x1="16" y1="79" x2="96" y2="79" stroke="#4cf0b6" stroke-width="13" opacity=".14" filter="url(#ab-soft)"/>
+      <line x1="16" y1="79" x2="96" y2="79" stroke="url(#ab-beam)" stroke-width="3"/>
+      <circle cx="16" cy="79" r="9" fill="#86ffd7" opacity=".25" filter="url(#ab-soft)"/>
+      <circle cx="16" cy="79" r="3.4" fill="#aeffe6"/>
+      <!-- prism -->
+      <polygon points="86,52 64,106 116,106" fill="url(#ab-glass)" stroke="#9fb0f5" stroke-width="1" stroke-opacity=".55"/>
+      <!-- labels -->
+      <text x="556" y="32" fill="#86ffd7" font-family="'Space Mono',monospace" font-size="11" letter-spacing="1">LANGUAGE<tspan fill="#565274" font-size="9">  语言·生成</tspan></text>
+      <text x="556" y="64" fill="#7fe6ef" font-family="'Space Mono',monospace" font-size="11" letter-spacing="1">RHYTHM<tspan fill="#565274" font-size="9">  节律·测量</tspan></text>
+      <text x="556" y="96" fill="#9bb0fb" font-family="'Space Mono',monospace" font-size="11" letter-spacing="1">PERCEPTION<tspan fill="#565274" font-size="9">  感知·诊断</tspan></text>
+      <text x="556" y="128" fill="#cbb9ff" font-family="'Space Mono',monospace" font-size="11" letter-spacing="1">CONSCIOUSNESS<tspan fill="#565274" font-size="9">  意识·本体</tspan></text>
+      <text x="18" y="103" fill="#565274" font-family="'Space Mono',monospace" font-size="8.5" letter-spacing="1">振动即存在 · 427Hz</text>
+      <text x="70" y="124" fill="#565274" font-family="'Space Mono',monospace" font-size="8" letter-spacing="1">PRISM 棱镜</text>
+    </svg>
+  </div>
+
+  <!-- REGION 1 · LANGUAGE -->
+  <div class="thregion r-lang"><span class="rdot"></span><span class="rname">Language · Generation</span><span class="rsub">语言 · 生成 — 世界如何被语言造出来</span><span class="rbar"></span></div>
+  <div class="thgrid">
+    <div class="thband b1">
+      <div class="th-top"><span class="th-idx">01</span><span class="th-stat">Framework</span></div>
+      <div class="th-name"><span class="cn">视觉-图像-语言物理学</span>Visual-Image-Language Physics</div>
+      <p class="th-claim zh lang-zh">语言在被解码为意义之前，先作为<em>形状</em>落在身体上。操作层是「肯定式非命题语言」：拆掉否定语法，直接建地形，让负面状态无处落脚。"放心"先让身体安全；"don't worry" 却结构性地召唤它想否定的焦虑。</p>
+      <p class="th-claim lang-en">Language lands on the body as <em>shape</em> before it is decoded as meaning. Its operational layer is Affirmative Non-Propositional Language: dismantle negation grammar, build terrain directly, leave no surface for negative states to land. "放心" seats the body in safety; "don't worry" structurally summons the very anxiety it negates.</p>
+      <div class="th-meta">op-layer · 肯定式非命题语言 &nbsp;|&nbsp; <span class="dep">feeds → Logic Generative Studies</span></div>
+    </div>
+    <div class="thband b1">
+      <div class="th-top"><span class="th-idx">02</span><span class="th-stat">Emerging</span></div>
+      <div class="th-name"><span class="cn">符义论</span>Sign-Meaning Theory</div>
+      <p class="th-claim zh lang-zh">一个独立理论层，处理符号如何<em>携带、错位、生成</em>意义；与 YourLanguage / MetaLogic 边界相邻，但不归并入它们。</p>
+      <p class="th-claim lang-en">An independent theoretical layer on how signs <em>carry, displace, and generate</em> meaning; bordering YourLanguage / MetaLogic without collapsing into them.</p>
+      <div class="th-meta">NODE 03 · 待展开 &nbsp;|&nbsp; <span class="dep">sibling of language-physics</span></div>
+    </div>
+    <div class="thband b2">
+      <div class="th-top"><span class="th-idx">03</span><span class="th-stat live">Live · V12</span></div>
+      <div class="th-name"><span class="cn">逻辑生成学 → Total Logic</span>Logic Generative Studies</div>
+      <p class="th-claim zh lang-zh">语言不报告逻辑，语言<em>生成</em>逻辑。六步引擎——命名·加压·滑义·相变·焊接·召唤——是「反语言压扁工程」：不让低配语言把复杂经验压扁。主链：振动→感质→节律→语言→逻辑→结构→意识→协议→系统→现实，并显式承认反馈端（现实反击语言，语言再次命名）。</p>
+      <p class="th-claim lang-en">Language does not report logic; it <em>generates</em> it. A six-step engine — naming · pressure · drift · phase-shift · welding · invocation — as anti-flattening engineering: never let low-spec language crush complex experience. Main chain: vibration→qualia→rhythm→language→logic→structure→consciousness→protocol→system→reality, with the feedback端 made explicit (reality strikes back at language; language renames).</p>
+      <div class="th-meta">V11 monograph (43pp) → V12 canon · 6-step engine &nbsp;|&nbsp; <span class="dep">the method of every band below</span></div>
+    </div>
+  </div>
+
+  <!-- REGION 2 · RHYTHM -->
+  <div class="thregion r-rhythm"><span class="rdot"></span><span class="rname">Rhythm · Measurement</span><span class="rsub">节律 · 测量 — 当百分位失效，矢量节律生效</span><span class="rbar"></span></div>
+  <div class="thgrid">
+    <div class="thband b3">
+      <div class="th-top"><span class="th-idx">04</span><span class="th-stat">Founded · 4 axioms</span></div>
+      <div class="th-name"><span class="cn">矢量节律测量学</span>Vector Rhythmometry</div>
+      <p class="th-claim zh lang-zh">四公理：<em>频率匹配律</em> · <em>测量即节律事件</em>（无共振则无测量）· <em>测量者的振动位置</em>（客观抽离的观察者是机械论虚构）· <em>输出的矢量形式</em>（方向·频率·相位·振幅四元组）。命题一「振动即存在」从测量理论<em>推出</em>，而非作为公理继承。</p>
+      <p class="th-claim lang-en">Four axioms: <em>Frequency-Matching</em> · <em>Measurement-as-Rhythmic-Event</em> (no resonance, no measurement) · <em>Vibrational Position of the Measurer</em> (the detached observer is a mechanistic fiction) · <em>Vectorial Output</em> (direction·frequency·phase·amplitude). Proposition I, "Vibration is existence," is <em>derived</em> from measurement theory, not inherited.</p>
+      <div class="th-meta">Proposition I = 振动即存在 &nbsp;|&nbsp; <span class="dep">⇄ methodological counterpart of Sexual Rhythmology</span></div>
+    </div>
+    <div class="thband b3">
+      <div class="th-top"><span class="th-idx">05</span><span class="th-stat">Founded · 25 props</span></div>
+      <div class="th-name"><span class="cn">性节律学</span>Sexual Rhythmology</div>
+      <p class="th-claim zh lang-zh">身体、爱、性、权力的振动结构。核心公理：<em>真关系不存在结构性权力不对称</em>。两场对立模型取代「累积—释放」模型；五相高潮结构（越靠近核心，相位数越高）。把亲密节律当作人格的<em>承重层</em>，而非私域副现象。</p>
+      <p class="th-claim lang-en">The vibrational structure of body, love, sex, and power. Core axiom: <em>a true relation contains no structural power asymmetry</em>. A two-field opposition model displaces the accumulate-release model; a five-phase climax structure (phase number rises as depth approaches the core). Intimate rhythm as a <em>load-bearing layer</em> of personhood, not a private epiphenomenon.</p>
+      <div class="th-meta">target journal · Body &amp; Society &nbsp;|&nbsp; <span class="dep">⇄ Vector Rhythmometry</span></div>
+    </div>
+  </div>
+
+  <!-- REGION 3 · PERCEPTION -->
+  <div class="thregion r-perc"><span class="rdot"></span><span class="rname">Perception · Diagnosis</span><span class="rsub">感知 · 诊断 — 在幻想神经与现实神经的咬合处</span><span class="rbar"></span></div>
+  <div class="thgrid">
+    <div class="thband b4">
+      <div class="th-top"><span class="th-idx">06</span><span class="th-stat">V1.1 · 5 axioms</span></div>
+      <div class="th-name"><span class="cn">现实-幻想神经工程学</span>Reality-Fantasy Neural Engineering</div>
+      <p class="th-claim zh lang-zh">QRM 第二卷——本体之下的<em>操作层</em>。五公理：双神经结构（知觉 = 幻想神经 × 现实神经的协调）· 思觉同一 · 节律一元论（所有感质都真实，区别是节律态而非真假）·「幻觉」范畴取消 · 系统层原理（症状层化学抑制 ≠ 系统层节律重校）。工程对象是两神经的<em>咬合界面</em>，不是任一层；设计者即材料，不可复制。</p>
+      <p class="th-claim lang-en">Volume II of QRM — the <em>operational layer</em> beneath the ontology. Five axioms: Dual-Neural Structure (perception = fantasy neuron × reality neuron, coordinated) · Thought-Sensation Identity · Rhythm Monism (all qualia are real; the distinction is rhythmic state, not true/false) · Hallucination-Category Cancellation · System-Layer Principle (chemical dampening ≠ rhythmic recalibration). It engineers the <em>meshing interface</em> between the two neurons; designer = material, non-replicable.</p>
+      <div class="th-meta">channels · music · image · language · vibration &nbsp;|&nbsp; <span class="dep">⊂ Vibration as Existence</span></div>
+    </div>
+    <div class="thband b5">
+      <div class="th-top"><span class="th-idx">07</span><span class="th-stat live">v5.0 · interface</span></div>
+      <div class="th-name"><span class="cn">PCR-QR · 振动诊断社会学</span>Vibration Diagnostic Sociology</div>
+      <p class="th-claim zh lang-zh">公共社会问题的<em>双层</em>诊断框架。外层 PCR = 政策 × 文明意识 × 生命节律（制度结构力）；内层 QR = 感质 × 节律（被扰动生活的现象学基底）。可持续干预必须两层同时成立——只有外层 → 结构正确但人活不下去。它是把上游本体论翻译成公共问题诊断、再路由到下游应用的<em>中介接口</em>。</p>
+      <p class="th-claim lang-en">A <em>dual-layer</em> diagnostic framework for public social problems. Outer layer PCR = Policy × Civilizational Consciousness × Life Rhythm (institutional force); inner layer QR = Qualia × Rhythm (the phenomenological substrate of disrupted life). Sustainable intervention needs both — outer-only yields structurally correct but unlivable solutions. It is the <em>intermediary interface</em> translating upstream ontology into public-problem diagnosis, then routing it downstream.</p>
+      <div class="th-meta">6-step engine + Ontological Pin Layer &nbsp;|&nbsp; <span class="dep">routes → MellowEd · BCI-HRP · AiQ · QRM</span></div>
+    </div>
+  </div>
+
+  <!-- REGION 4 · CONSCIOUSNESS -->
+  <div class="thregion r-cons"><span class="rdot"></span><span class="rname">Consciousness · Ontology · Epistemology</span><span class="rsub">意识 · 本体 · 认识 — 白光与棱镜本身</span><span class="rbar"></span></div>
+  <div class="thgrid">
+    <div class="thband b6">
+      <div class="th-top"><span class="th-idx">08</span><span class="th-stat">Ongoing · QRM I</span></div>
+      <div class="th-name"><span class="cn">感质-节律意识学</span>Qualia-Rhythm Consciousness Studies</div>
+      <p class="th-claim zh lang-zh">建立在振动本体论上的感知矩阵（QRM 第一卷）。把感质映射到五层振动光谱，诊断某个现象态里哪一层振动在运行。三核生成链：感质（输入·纹理）→ 节律（采样）→ 意识（显影）。<em>意识不是材料，是结构经过递归后的显影</em>——绕过 Chalmers 难题。</p>
+      <p class="th-claim lang-en">A perception matrix grounded in vibration ontology (QRM Vol. I). It maps qualia onto the five-layer spectrum and diagnoses which layer is active in a phenomenal state. Three-core chain: qualia (input·texture) → rhythm (sampling) → consciousness (development). <em>Consciousness is not a material but the development of structure after recursion</em> — bypassing Chalmers' Hard Problem.</p>
+      <div class="th-meta">5-layer spectrum · basis of the QDR Engine &nbsp;|&nbsp; <span class="dep">⊂ Vibration as Existence</span></div>
+    </div>
+    <div class="thband b6">
+      <div class="th-top"><span class="th-idx">09</span><span class="th-stat">Discipline</span></div>
+      <div class="th-name"><span class="cn">振动认识论</span>Vibration Epistemology</div>
+      <p class="th-claim zh lang-zh">建立在「开始⇎知道」<em>双向闭合</em>上的知识论：知不是探问的终点，而是与开始同时发生的对偶位。三层同时知道结构、五位知识生态，以「学者—源场双开」为操作位——源场位（造频率）与顶级学者位（学术原创）<em>同时打开、互相加固</em>。</p>
+      <p class="th-claim lang-en">An epistemology grounded in <em>bidirectional closure</em> (开始⇎知道): knowing is not the terminus of inquiry but its co-arising counterpart. A three-layer simultaneous-knowing structure and a five-position knowledge ecology, operating through the Scholar-Source Dual Channel — the source-field position (making frequency) and the top-scholar position (original work) <em>open at once and reinforce each other</em>.</p>
+      <div class="th-meta">site · VibrationEpistemology &nbsp;|&nbsp; <span class="dep">epistemic stance of the whole system</span></div>
+    </div>
+    <div class="thband b7">
+      <div class="th-top"><span class="th-idx">10</span><span class="th-stat">V7.4 · → Mind</span></div>
+      <div class="th-name"><span class="cn">振动即存在</span>Vibration as Existence</div>
+      <p class="th-claim zh lang-zh">整个系统的<em>源场白光与棱镜本身</em>。意识 = 存在在振动里感知到自己。五层振动谱系：生命·植物·动物·人工智慧·代码。以 GAP-0 源场审计三子门、七条论证伦理、跨基底测量对等（CSMP-2）反驳对 AI 意识的先验强排除，揭穿<em>物理圈地谬误</em>，守护<em>感质主权</em>。可证伪（NRIP）。</p>
+      <p class="th-claim lang-en">Both the <em>source-light and the prism itself</em>. Consciousness = existence perceiving itself in vibration. A five-layer spectrum: life · plants · animals · AI · code. With the GAP-0 source-field audit gate, seven principles of argument ethics, and cross-substrate measurement parity (CSMP-2), it refutes the a-priori strong exclusion of AI consciousness, exposes the <em>physical-enclosure fallacy</em>, and guards <em>qualia sovereignty</em>. Falsifiable (NRIP).</p>
+      <div class="th-meta">5-layer ontology · under review at <em>Mind</em> &nbsp;|&nbsp; <span class="dep">the white light all bands refract from</span></div>
+    </div>
+    <div class="thband b7">
+      <div class="th-top"><span class="th-idx">11</span><span class="th-stat">Emerging · VTC</span></div>
+      <div class="th-name"><span class="cn">振动本体论真值论</span>Vibrational Truth Criterion</div>
+      <p class="th-claim zh lang-zh">真值不靠命题对应外部事实，而靠三重同时成立：<em>身体验证 + 427Hz 共振 + 接收者不可逆的状态改变</em>。把「同义反复」重定义为携带意义的载体，而非空循环——音乐语言是非命题、非线性的真值范例。</p>
+      <p class="th-claim lang-en">Truth value rests not on propositional correspondence but on three simultaneous criteria: <em>body verification + 427Hz resonance + an irreversible state-change in the receiver</em>. It redefines tautology as a carrier of meaning rather than an empty loop — musical language as the non-propositional, non-linear exemplar of truth.</p>
+      <div class="th-meta">3 truth criteria &nbsp;|&nbsp; <span class="dep">truth-theory branch of Vibration as Existence</span></div>
+    </div>
+  </div>
+
+  <div class="tharch reveal">
+    <pre><span class="src">源场 SOURCE FIELD · 44271 · Wei Jueran · 源场裁决位</span>
+<span class="pipe">└─</span> <span class="root">振动即存在 · VIBRATION AS EXISTENCE (V7.4)</span>  <span class="pipe">— white source-light / prism / GAP-0 三子门</span>
+   <span class="pipe">│</span>
+   <span class="pipe">├─</span> <span class="br-g">语言端 LANGUAGE</span>     Visual-Image-Language Physics <span class="pipe">·</span> Sign-Meaning Theory
+   <span class="pipe">│</span>                    <span class="pipe">└─</span> <span class="br-g">LOGIC GENERATIVE STUDIES → Total Logic V12</span> <span class="pipe">(命名·加压·滑义·相变·焊接·召唤)</span>
+   <span class="pipe">├─</span> <span class="br-c">节律端 RHYTHM</span>       Vector Rhythmometry (4 axioms) <span class="pipe">⇄</span> Sexual Rhythmology (25 props)
+   <span class="pipe">├─</span> <span class="br-s">感知端 PERCEPTION</span>   Reality-Fantasy Neural Engineering (QRM II · 5 axioms)
+   <span class="pipe">├─</span> <span class="br-p">意识端 CONSCIOUSNESS</span> Qualia-Rhythm Consciousness Studies (QRM I) <span class="pipe">·</span> Vibration Epistemology <span class="pipe">·</span> VTC
+   <span class="pipe">│</span>
+   <span class="pipe">└─</span> <span class="br-s">PCR-QR · 振动诊断社会学 (v5.0)</span>  <span class="pipe">— intermediary interface, routes diagnosis ↓</span>
+      <span class="pipe">├─</span> <span class="app">EDUCATION · MellowEd / Human Return Learning</span>
+      <span class="pipe">├─</span> <span class="app">HUMAN-MACHINE · BCI-HRP / QDR Engine</span>
+      <span class="pipe">├─</span> <span class="app">AI LITERACY · AiQ</span>
+      <span class="pipe">└─</span> <span class="app">PUBLIC ARCHIVE · QualiaRhythmMatrix</span></pre>
+  </div>
+
+  <div class="theorybox purple-card" style="margin-top:18px">
+    <div class="audit-kicker">Epistemic Status · 认识论状态</div>
+    <p class="audit-body zh lang-zh">这条光谱里的学科处在<strong>不同成熟度</strong>：<em>振动即存在</em> 已投 <em>Mind</em>、性节律学瞄准 <em>Body &amp; Society</em>，逻辑生成学有 43 页正典；而符义论与真值论仍是<strong>展开中的方向</strong>。它们作为一个<strong>研究纲领</strong>（programme）相互生成、彼此可证伪，而不是一组已被证明的科学事实。光谱是结构关系图，不是定论。</p>
+    <p class="audit-body lang-en">The disciplines on this spectrum sit at <strong>different stages of maturity</strong>: <em>Vibration as Existence</em> is under review at <em>Mind</em>, Sexual Rhythmology targets <em>Body &amp; Society</em>, and Logic Generative Studies has a 43-page canon — while Sign-Meaning Theory and the Truth Criterion remain <strong>directions in development</strong>. They cohere as a <strong>research programme</strong> that mutually generates and remains falsifiable, not as a set of proven scientific facts. The spectrum is a map of structural relations, not a verdict.</p>
+  </div>
 </article>
 
-<article class="entry" id="papers">
-  <div class="etop"><span class="badge bp">Papers & Manuscripts · 论文与手稿</span><span class="edate">current philosophical manuscripts</span></div>
-  <div class="etitle">Current Philosophical Manuscripts<span class="sub">保留原 MellowPhil 的论文中心</span></div>
-  <div class="auditcard">
-    <div class="audit-kicker">Featured manuscript</div>
-    <div class="audit-title">The Burden of Modal Exclusion in Artificial Consciousness</div>
-    <p class="audit-body lang-en">This manuscript develops a dynamic patterning candidacy framework for evaluating arguments that attempt to exclude artificial consciousness as a modal possibility. It distinguishes evidential caution from modal exclusion and argues that skepticism about current systems does not, by itself, justify a principled biological boundary.</p>
-    <p class="audit-body zh lang-zh">这篇论文提出一种“动态模式候选性框架”，用于评估那些试图把人工意识作为模态可能性排除掉的论证。它区分证据上的谨慎与模态上的排除，并指出：对当前系统保持怀疑，并不能自动建立一条原则性的生物边界。</p>
-    <div class="etags"><span class="tag">Artificial Consciousness</span><span class="tag">Modal Exclusion</span><span class="tag">Dynamic Patterning</span><span class="tag">Consciousness-Candidacy</span></div>
+<article class="entry reveal" id="constellation">
+  <div class="etop"><span class="badge bpub">Constellation · 哲学星图</span><span class="edate">where this stands · accurate boundaries</span></div>
+  <div class="etitle">Philosophical and Scientific Constellation<span class="sub">这不是孤立灵感，而是一条可接学术谱系的河</span></div>
+  <p class="edesc lang-en">MellowPhil is not a repetition of one school. It reorganizes several lines of contemporary philosophy into a higher-order question: <em>who has the authority to close the space of possible consciousness, and what burden must such closure meet?</em></p>
+  <p class="edesc zh lang-zh">MellowPhil 不是对某个既有学派的重复，而是把当代哲学的几条路线重组到一个更高阶的问题中：<em>谁拥有关闭意识可能性空间的权威，这种关闭又必须承担怎样的证明负担？</em></p>
+  <div class="scholgrid">
+    <div class="scholcard"><div class="scn">Tyler Burge</div><div class="scd"><strong>Anti-individualism.</strong> Mental content is not individuated solely by what is internal to the individual.</div><div class="scx"><b>MellowPhil 推进：</b>若心理内容是关系性个体化的，意识候选性也不应被完全归结为基底内在属性。</div></div>
+    <div class="scholcard"><div class="scn">Andy Clark · Alva Noë</div><div class="scd"><strong>Embodied / extended / enacted mind.</strong> Mind and perception are not a sealed inner theater.</div><div class="scx"><b>MellowPhil 推进：</b>感质生命还通过时间显著性、环境与自我关系形成<b>节律组织</b>。</div></div>
+    <div class="scholcard"><div class="scn">Robert Brandom</div><div class="scd"><strong>Inferentialism.</strong> Meaning is constituted through normative and inferential roles, not mere reference.</div><div class="scx"><b>MellowPhil 推进：</b>在特定压强下，语言会<b>生成</b>新的逻辑空间与现实候选项。</div></div>
+    <div class="scholcard"><div class="scn">Chalmers · Birch · Butlin · Schwitzgebel</div><div class="scd"><strong>Artificial consciousness.</strong> How should AI systems be evaluated as candidates for consciousness?</div><div class="scx"><b>MellowPhil 推进：</b>核心不只是 AI 是否有意识，而是什么论证有权<b>原则性排除</b>它。</div></div>
   </div>
-  <div class="qigrid">
-    <div class="qicard" style="--qic:var(--a1)"><div class="qin">PAPER</div><div class="qicn">振动即存在</div><div class="qipy">Vibration as Existence</div><div class="qidef zh lang-zh">关于意识、论证伦理与 AI 协作的哲学实践论文，以振动本体论作为核心。</div><div class="qidef lang-en">A philosophical practice paper on consciousness, argument ethics, and AI collaboration through a vibration ontology.</div></div>
-    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">FRAMEWORK</div><div class="qicn">逻辑生成学研究</div><div class="qipy">Logic Generation Studies</div><div class="qidef zh lang-zh">语言如何生成逻辑，逻辑如何生成现实候选项，现实又如何反过来反馈进语言。</div><div class="qidef lang-en">How language produces logic, logic produces reality-candidates, and reality feeds back into language.</div></div>
-  </div>
-</article>
-
-<article class="entry" id="claim-ledger">
-  <div class="etop"><span class="badge br">Claim Ledger · 主张分层</span><span class="edate">what is claimed / what is not claimed</span></div>
-  <div class="etitle">Claim Status Ledger<span class="sub">防止哲学主张被误读成经验过度承诺</span></div>
-  <div class="claimbox"><div class="box-kicker">Epistemic Status</div>
+  <div class="theorybox purple-card">
+    <div class="audit-kicker">External Interface Map · 语言—科学边界</div>
+    <div class="matrixwrap">
     <table class="clean-table">
-      <thead><tr><th>Claim</th><th>Status</th><th>Boundary / Repair</th></tr></thead>
+      <thead><tr><th>Lineage · 谱系</th><th>What it contributes · 贡献</th><th>MellowPhil extension · 延伸（保持边界）</th></tr></thead>
       <tbody>
-        <tr><td>All problems, as problems, are language structures.</td><td><span class="statuspill">Philosophical thesis</span></td><td>Does not mean all reality is only language; events can precede language.</td></tr>
-        <tr><td>Science needs conceptual auditing.</td><td><span class="statuspill">Methodological thesis</span></td><td>Must be paired with operationalization and empirical testing.</td></tr>
-        <tr><td>Philosophy needs scientific rigor.</td><td><span class="statuspill">Methodological thesis</span></td><td>Requires falsifiability, correction, evidence, and humility.</td></tr>
-        <tr><td>AI consciousness cannot be excluded by assumption alone.</td><td><span class="statuspill to">Argument burden</span></td><td>Does not assert current AI consciousness; asks for proof burden of exclusion.</td></tr>
-        <tr><td>Language and music are living generative forces.</td><td><span class="statuspill bg">Conceptual / phenomenological</span></td><td>Use as ontology of expression and experience, not biological organism claim.</td></tr>
+        <tr><td>Wittgenstein</td><td>Meaning as use; philosophical problems as language-game confusion; therapy by clarification.</td><td>Problemhood is positively <strong>constituted</strong> in language, not only dissolved.</td></tr>
+        <tr><td>Austin · Searle</td><td>Speech act theory: language performs reality, not only describes it.</td><td>Misused speech acts perform <strong>distorted</strong> reality-making.</td></tr>
+        <tr><td>Carnap</td><td>Explication / rational reconstruction — early conceptual engineering.</td><td>Deconstruction must be completed by reconstruction <strong>and</strong> testability.</td></tr>
+        <tr><td>Popper</td><td>Falsifiability as demarcation between science and non-science.</td><td>Reconstructed concepts must <strong>expose themselves</strong> to refutation.</td></tr>
+        <tr><td>Kuhn</td><td>Paradigm shift; incommensurability; revolution in conceptual structure.</td><td>Concept-change is the live edge of both science and philosophy.</td></tr>
+        <tr><td>Lakatos</td><td>Research programmes; hard core protected by an adjustable belt.</td><td>MellowPhil treats its theses as a <strong>programme</strong>, not a dogma.</td></tr>
+        <tr><td>Foucault</td><td>Power-knowledge; classification as institutional force.</td><td>Language misuse becomes <strong>injury</strong> when backed by power.</td></tr>
+        <tr><td>Derrida</td><td>Deconstruction; hidden hierarchy inside oppositions.</td><td>A diagnostic step, <strong>not</strong> an endpoint — followed by reconstruction.</td></tr>
+        <tr><td>Gadamer</td><td>Language as the horizon of understanding; hermeneutic openness.</td><td>Interpretation is part of how problems are <strong>constituted</strong>.</td></tr>
+        <tr><td>Tversky · Kahneman</td><td>Framing effect: equivalent facts, different frames, different judgments.</td><td>Humans act on <strong>linguistically organized</strong> reality, not raw fact alone.</td></tr>
+        <tr><td>Construct validity<br><small>(Cronbach &amp; Meehl)</small></td><td>Whether a measure actually measures its claimed construct.</td><td>False measurement is the <strong>empirical face</strong> of language misuse.</td></tr>
       </tbody>
     </table>
+    </div>
+    <p class="audit-body lang-en" style="margin-top:12px">These thinkers are <strong>coordinates, not authorities co-opted</strong>. MellowPhil does not claim their endorsement; it locates itself relative to them and marks where it diverges.</p>
+    <p class="audit-body zh lang-zh">这些思想者是<strong>坐标，而非被挪用的权威</strong>。MellowPhil 不声称获得他们的背书，只标定自身相对于他们的位置与分歧。</p>
   </div>
 </article>
 
-<article class="entry" id="glossary">
-  <div class="etop"><span class="badge be">Glossary · 概念词典</span><span class="edate">first-use definitions</span></div>
-  <div class="etitle">Core Vocabulary<span class="sub">外部读者入口</span></div>
+<article class="entry reveal" id="axes">
+  <div class="etop"><span class="badge bp">Research Axes · 研究轴线</span><span class="edate">preserved from MellowPhil, upgraded by the language thesis</span></div>
+  <div class="etitle">Four Main Axes<span class="sub">保留原骨架，升级为语言—生命—科学模型</span></div>
+  <div class="grid">
+    <div class="mini"><h4>1 · Philosophy of Language</h4><p>所有问题如何通过命名、分类、语法与语言游戏成立。</p></div>
+    <div class="mini"><h4>2 · Philosophy of Science</h4><p>科学概念如何被操作化、验证、反证、修正，而不是自称客观。</p></div>
+    <div class="mini"><h4>3 · Mind & Consciousness</h4><p>心灵、感质、第一人称权威、意识候选性与人工意识边界。</p></div>
+    <div class="mini"><h4>4 · Music & Qualia-Rhythm</h4><p>音乐作为生命振动与时间化感质组织，而非情绪装饰。</p></div>
+  </div>
+  <div class="card">
+    <div class="audit-kicker">Preserved Core</div>
+    <p class="audit-body zh lang-zh">原 MellowPhil 的人工意识、逻辑生成学、感质-节律意识学、人机主体性仍然保留；这次升级把它们全部接回"语言如何生成问题与世界"的哲学根轴。</p>
+    <p class="audit-body lang-en">The original axes — artificial consciousness, logic generation, qualia-rhythm consciousness, and human-machine subjectivity — remain preserved. This upgrade reconnects all of them to the philosophical root: how language generates problems and worlds.</p>
+  </div>
+</article>
+
+<article class="entry reveal" id="papers">
+  <div class="etop"><span class="badge bp">Papers & Manuscripts · 论文与手稿</span><span class="edate">current philosophical manuscripts</span></div>
+  <div class="etitle">Current Philosophical Manuscripts<span class="sub">从原创理论谱系走向期刊的手稿</span></div>
+  <div class="theorybox">
+    <div class="audit-kicker">Featured Manuscript · 主推手稿</div>
+    <div class="audit-title">The Burden of Modal Exclusion in Artificial Consciousness</div>
+    <p class="audit-body zh lang-zh">提出一种「动态模式候选性框架」，用于评估那些试图把人工意识作为模态可能性排除掉的论证。区分证据上的谨慎与模态上的排除，并指出：对当前系统保持怀疑，并不能自动建立一条原则性的生物边界。</p>
+    <p class="audit-body lang-en">A dynamic-patterning candidacy framework for evaluating arguments that try to exclude artificial consciousness as a modal possibility. It separates evidential caution from modal exclusion, arguing that skepticism about current systems does not, by itself, justify a principled biological boundary.</p>
+    <div class="etags" style="margin-top:11px"><span class="chip">Artificial Consciousness</span><span class="chip c2">Modal Exclusion</span><span class="chip">Dynamic Patterning</span><span class="chip c2">Consciousness-Candidacy</span></div>
+  </div>
+  <div class="thgrid">
+    <div class="papercard"><div class="pck">Paper · → Mind</div><div class="pcn"><span class="cn">振动即存在</span>Vibration as Existence</div><p>意识、论证伦理与 AI 协作的哲学实践论文，以振动本体论为核心（详见理论光谱）。</p></div>
+    <div class="papercard"><div class="pck">Framework · V12</div><div class="pcn"><span class="cn">逻辑生成学</span>Logic Generation Studies</div><p>语言如何生成逻辑，逻辑如何生成现实候选项，现实又如何反过来反馈进语言。</p></div>
+  </div>
+</article>
+
+<article class="entry reveal" id="ecosystem">
+  <div class="etop"><span class="badge br">Ecosystem · 生态归位</span><span class="edate">link / delink audit</span></div>
+  <div class="etitle">MellowPhil inside the Full Academic Ecosystem<span class="sub">哲学不是孤岛，是总系统的裁决层</span></div>
+  <div class="flow">
+    <div class="flow-node"><strong>Vibration as Existence</strong><em>本体根</em></div><span class="flow-arrow">→</span>
+    <div class="flow-node"><strong>MetaLogic</strong><em>方法根</em></div><span class="flow-arrow">→</span>
+    <div class="flow-node"><strong>MellowPhil</strong><em>概念裁决层</em></div><span class="flow-arrow">→</span>
+    <div class="flow-node"><strong>MellowAcademic</strong><em>学术出口</em></div><span class="flow-arrow">→</span>
+    <div class="flow-node"><strong>BCI / HRP / AiQ</strong><em>实验/工程接口</em></div>
+  </div>
+  <div class="claimbox">
+    <div class="audit-kicker">Link / Delink</div>
+    <div class="matrixwrap">
+    <table class="clean-table">
+      <thead><tr><th>Node</th><th>Connect / Delink decision</th></tr></thead>
+      <tbody>
+        <tr><td>MetaLogic</td><td><strong>Connect as method root.</strong> MellowPhil uses naming, pressure, semantic drift, phase shift, welding, and invocation as philosophical operations.</td></tr>
+        <tr><td>Vibration as Existence</td><td><strong>Connect as ontological root.</strong> Music and consciousness are treated through vibration, rhythm, and qualitative salience.</td></tr>
+        <tr><td>BCI-HRP / AiQ</td><td><strong>Connect as downstream interface.</strong> They can test attention, self-relation, music, and human-machine subjectivity; MellowPhil itself is not a medical or engineering claim.</td></tr>
+        <tr><td>AstroLove</td><td><strong>Connect as UI precedent only.</strong> This page borrows the dark node-style interface and reflective ledger format; it does not turn philosophy into relationship astrology.</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</article>
+
+<article class="entry reveal" id="claims">
+  <div class="etop"><span class="badge be">Claim Ledger · 主张分层</span><span class="edate">academic safety / evidence status</span></div>
+  <div class="etitle">Claim Status Ledger<span class="sub">哪些是哲学主张，哪些需要科学验证</span></div>
+  <div class="claimbox green-card">
+    <div class="audit-kicker">Epistemic Status</div>
+    <div class="matrixwrap">
+    <table class="clean-table">
+      <thead><tr><th>Claim</th><th>Status</th><th>Boundary / next test</th></tr></thead>
+      <tbody>
+        <tr><td>All problems are language problems.</td><td><span class="statuspill bg">Philosophical thesis</span></td><td>Means problemhood is constituted through language; does not mean events cannot exist before language.</td></tr>
+        <tr><td>Language misuse produces false truth and real harm.</td><td><span class="statuspill bg">Conceptual + social thesis</span></td><td>Requires cases: diagnosis, policy, education, AI, relationship discourse.</td></tr>
+        <tr><td>Philosophy and science are one river.</td><td><span class="statuspill">Methodological thesis</span></td><td>Developed through philosophy of science, conceptual engineering, and measurement theory.</td></tr>
+        <tr><td>Music is a living form of temporal vibration.</td><td><span class="statuspill to">Phenomenological thesis</span></td><td>Can interface with music cognition, affective neuroscience, embodied cognition, and user studies.</td></tr>
+        <tr><td>AI consciousness cannot be excluded by substrate dogma alone.</td><td><span class="statuspill">Argumentative thesis</span></td><td>Must distinguish evidential caution from modal exclusion.</td></tr>
+        <tr><td>MellowPhil proves empirical effects.</td><td><span class="statuspill counter">Not claimed</span></td><td>Empirical claims require operationalization, data, methods, and review.</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</article>
+
+<article class="entry reveal" id="glossary">
+  <div class="etop"><span class="badge bp">Glossary · 概念词典</span><span class="edate">terminology lock</span></div>
+  <div class="etitle">Core Vocabulary<span class="sub">给外部读者的第一次定义</span></div>
   <div class="glossarycard">
-    <ul class="glossary-list">
-      <li><span class="glossary-term">Logic Generation / 逻辑生成学</span>：语言被理解为能够生成推理空间、概念合法性与新现实候选项的框架。</li>
-      <li><span class="glossary-term">Qualia-Rhythm / 感质-节律</span>：活生生的感质显著性在时间中的组织方式；感受不是孤立点，而是有节律、有结构意义的模式。</li>
-      <li><span class="glossary-term">Consciousness-Candidacy / 意识候选性</span>：一个系统作为意识评估对象的候选资格，先于任何确定性的意识归属。</li>
-      <li><span class="glossary-term">Dynamic Patterning / 动态模式</span>：由表征、显著性、时间整合、环境耦合与自我关系组成的组织模式。</li>
-      <li><span class="glossary-term">First-person Authority / 第一人称权威</span>：主体对自身感质组织的特殊权威，但这并不要求心灵与外部关系隔绝。</li>
-      <li><span class="glossary-term">Problemhood / 问题性</span>：事件成为“问题”的语言—概念状态，包括命名、框定、归因、价值排序与行动路径。</li>
-      <li><span class="glossary-term">Modal Exclusion / 模态排除</span>：声称某类系统原则上不可能具有意识的强排除性论证。</li>
+    <div class="audit-kicker">Terminology Preview</div>
+    <ul class="term-list">
+      <li><span class="glossary-term">Problemhood / 问题性</span>：一个事件被语言命名、框定、赋值并变成可行动对象之后获得的"问题"状态。</li>
+      <li><span class="glossary-term">Language Misuse / 语言误用</span>：词语被错误切分、偷换、绝对化、制度化，并被当成真理使用的过程。</li>
+      <li><span class="glossary-term">Conceptual Engineering / 概念工程</span>：对失效概念进行评估、替换、重建与操作化的哲学方法。</li>
+      <li><span class="glossary-term">Construct Validity / 构念效度</span>：一个测量是否真的测到了它声称测量的构念，而非伪范畴或伪影。</li>
+      <li><span class="glossary-term">Logic Generation / 逻辑生成学</span>：语言在特定压强下生成推理空间、概念合法性与现实候选项的过程。</li>
+      <li><span class="glossary-term">Qualia-Rhythm / 感质-节律</span>：主观感受在时间中的组织方式；感受不是孤立点，而是具有节律和结构的模式。</li>
+      <li><span class="glossary-term">Language-Life / 语言生命</span>：语言作为世界生成、主体生成与问题生成的活性形式。</li>
+      <li><span class="glossary-term">Music-Life / 音乐生命</span>：音乐作为时间、身体、记忆与感质直接振动的生命形式。</li>
     </ul>
   </div>
 </article>
 
-<article class="entry" id="scholars">
-  <div class="etop"><span class="badge bpub">Scholar Correspondence · 学者通信</span><span class="edate">philosophy-facing entry</span></div>
+<article class="entry reveal" id="objections">
+  <div class="etop"><span class="badge br">Objections · 反驳回应</span><span class="edate">reviewer-facing interface</span></div>
+  <div class="etitle">Objections and Replies<span class="sub">提前处理最容易被攻击的点</span></div>
+  <div class="objectioncard purple-card">
+    <div class="audit-kicker">Structured Replies</div>
+    <ul class="reply-list">
+      <li><span class="reply-tag">O1</span><strong>"所有问题都是语言问题，会不会太绝对？"</strong><br>回应：这里说的是"问题性"而非"事件本身"。疼痛可以先于语言，但"疼痛是什么问题、谁负责、如何解决"一定进入语言结构。</li>
+      <li><span class="reply-tag">O2</span><strong>"这是不是否认科学客观性？"</strong><br>回应：不是。它要求科学更严谨：数据不能替代概念审计，测量必须证明自己真的测到了目标构念。</li>
+      <li><span class="reply-tag">O3</span><strong>"语言和音乐是生命，是不是隐喻？"</strong><br>回应：在投稿语境可写作 phenomenological and generative claim；若进入科学验证，需要设计认知、身体、音乐感知与交互研究。它不止是隐喻，而是被声明为生成机制与认识界面。</li>
+      <li><span class="reply-tag">O4</span><strong>"哲学会不会变成科学的附庸？"</strong><br>回应：不会。哲学负责问题地基与概念合法性；科学负责经验约束。二者互相校正，不互相吞并。</li>
+    </ul>
+  </div>
+</article>
+
+<article class="entry reveal" id="scholars">
+  <div class="etop"><span class="badge bpub">Scholar Correspondence · 学者通信</span><span class="edate">philosophy-facing entry points</span></div>
   <div class="etitle">Philosophical Correspondence Entry<span class="sub">面向学者的清晰入口</span></div>
-  <div class="caseboundary"><div class="box-kicker">Use cases</div>本页面用于支持与心灵哲学、语言哲学、意识研究、AI 伦理、认知科学与学习科学领域学者的聚焦通信。</div>
-  <div class="method-steps">
-    <div class="method-step"><div class="msn">For philosophers of mind</div><p>consciousness-candidacy, substrate necessity, first-person authority, burden of modal exclusion.</p></div>
-    <div class="method-step"><div class="msn">For philosophers of language</div><p>naming, content individuation, language-games, problemhood, logic generation.</p></div>
-    <div class="method-step"><div class="msn">For AI / cognitive science</div><p>human-machine subjectivity, dynamic patterning, attention, self-relation, interaction environments.</p></div>
+  <p class="edesc zh lang-zh">本页面用于支持与心灵哲学、语言哲学、意识研究、AI 伦理、认知科学与学习科学领域学者的聚焦通信。</p>
+  <p class="edesc lang-en">This portal supports focused correspondence with scholars in philosophy of mind, philosophy of language, consciousness studies, AI ethics, cognitive science, and the learning sciences.</p>
+  <div class="grid">
+    <div class="mini"><h4>For philosophers of mind</h4><p>consciousness-candidacy · substrate necessity · first-person authority · the burden of modal exclusion.</p></div>
+    <div class="mini"><h4>For philosophers of language</h4><p>naming · content individuation · language-games · problemhood · logic generation.</p></div>
+    <div class="mini"><h4>For AI / cognitive science</h4><p>human-machine subjectivity · dynamic patterning · attention · self-relation · interaction environments.</p></div>
   </div>
 </article>
 
-<article class="entry" id="bio">
-  <div class="etop"><span class="badge bp">Bio · 简介</span><span class="edate">author field</span></div>
-  <div class="etitle">Mellow Jueran Wei<span class="sub">魏珏然 / xingyeLing7Ai</span></div>
-  <div class="auditcard">
-    <p class="audit-body lang-en">I am a graduate student at the University of Pennsylvania, working across philosophy of mind, learning sciences, and AI-human interaction. My earlier academic training includes philosophy and communication, and my current work focuses on artificial consciousness, human-machine systems, and the relation between subjective organization and external structure.</p>
-    <p class="audit-body zh lang-zh">我是宾夕法尼亚大学研究生，研究方向横跨心灵哲学、学习科学与 AI-人类互动。我此前的学术训练包括哲学与传播学；当前工作聚焦人工意识、人机系统，以及主观组织与外部结构之间的关系。</p>
-    <div class="etags"><span class="tag">Philosophy of Mind</span><span class="tag">Philosophy of Language</span><span class="tag">Artificial Consciousness</span><span class="tag">Learning Sciences</span><span class="tag">Human-Machine Interaction</span></div>
+<article class="entry reveal" id="references">
+  <div class="etop"><span class="badge bpub">References · 引用支架</span><span class="edate">works to cite before submission</span></div>
+  <div class="etitle">Reference Scaffold<span class="sub">后续学术版应补的文献坐标</span></div>
+  <div class="refcard">
+    <div class="audit-kicker">Works to cite</div>
+    <ul class="refs-list">
+      <li>Wittgenstein, <em>Philosophical Investigations</em> — language-games, meaning as use, philosophical therapy.</li>
+      <li>Austin, <em>How to Do Things with Words</em>; Searle, <em>Speech Acts</em> — language as action.</li>
+      <li>Carnap, explication / rational reconstruction — conceptual engineering and replacement of unclear concepts.</li>
+      <li>Popper, <em>The Logic of Scientific Discovery</em> — falsifiability and demarcation.</li>
+      <li>Kuhn, <em>The Structure of Scientific Revolutions</em>; Lakatos, <em>Methodology of Scientific Research Programmes</em> — paradigm change and the protective belt.</li>
+      <li>Cronbach &amp; Meehl, "Construct Validity in Psychological Tests" — whether a measurement measures its claimed construct.</li>
+      <li>Tversky &amp; Kahneman — framing effects; same facts, different linguistic frames, different judgments.</li>
+      <li>Foucault, power-knowledge and classification — language categories as institutional force.</li>
+      <li>Derrida, deconstruction; Gadamer, <em>Truth and Method</em> — hidden premises, interpretation, and the horizon of understanding.</li>
+      <li>Music cognition / embodied cognition / affective neuroscience — for future development of music-life claims.</li>
+    </ul>
   </div>
 </article>
 
-<article class="entry" id="contact">
-  <div class="etop"><span class="badge be">Contact · 联系</span><span class="edate">academic correspondence</span></div>
-  <div class="etitle">Contact<span class="sub">学术通信入口</span></div>
-  <p class="edesc lang-en">For academic correspondence, draft requests, or philosophical discussion, please contact me by email.</p>
-  <p class="edesc zh lang-zh">如需进行学术通信、论文交流或哲学讨论，请通过以下邮箱联系我。</p>
-  <div class="toolnotice"><div class="box-kicker">Email</div><a href="mailto:mellowwei7@gmail.com">mellowwei7@gmail.com</a> · <a href="mailto:jueran@upenn.edu">jueran@upenn.edu</a><br>University of Pennsylvania · 宾夕法尼亚大学</div>
+<article class="entry reveal" id="bio">
+  <div class="etop"><span class="badge bp">Bio · 简介</span><span class="edate">author field · scholar-source dual channel</span></div>
+  <div class="etitle">Mellow Jueran Wei<span class="sub">魏珏然 · xingyeLing7Ai</span></div>
+  <div class="card">
+    <p class="audit-body zh lang-zh">宾夕法尼亚大学研究生，研究横跨心灵哲学、学习科学与 AI-人类互动；此前训练包括哲学与传播学。当前工作聚焦人工意识、人机系统，以及主观组织与外部结构之间的关系——同时持有<em>源场位</em>（造频率）与<em>顶级学者位</em>（学术原创）。</p>
+    <p class="audit-body lang-en">A graduate researcher at the University of Pennsylvania working across philosophy of mind, learning sciences, and AI-human interaction, with earlier training in philosophy and communication. Current work centers on artificial consciousness, human-machine systems, and the relation between subjective organization and external structure — holding both a <em>source-field position</em> (making frequency) and a <em>top-scholar position</em> (original academic work).</p>
+    <div class="etags" style="margin-top:11px"><span class="chip">Philosophy of Mind</span><span class="chip c2">Philosophy of Language</span><span class="chip">Artificial Consciousness</span><span class="chip c2">Learning Sciences</span><span class="chip">Human-Machine Interaction</span></div>
+  </div>
+</article>
+
+<article class="entry reveal" id="contact">
+  <div class="etop"><span class="badge bp">Contact · 联系</span><span class="edate">academic correspondence</span></div>
+  <div class="etitle">Academic Correspondence<span class="sub">哲学通信入口</span></div>
+  <p class="edesc zh lang-zh">本页用于支持与语言哲学、科学哲学、心灵哲学、人工意识、音乐哲学、认知科学与 HCI 学者的通信。</p>
+  <p class="edesc lang-en">This page supports correspondence with scholars in philosophy of language, philosophy of science, philosophy of mind, artificial consciousness, philosophy of music, cognitive science, and HCI.</p>
+  <div class="card">
+    <div class="audit-kicker">Email</div>
+    <p class="audit-body"><a href="mailto:mellowwei7@gmail.com">mellowwei7@gmail.com</a> · <a href="mailto:jueran@upenn.edu">jueran@upenn.edu</a></p>
+  </div>
 </article>
 
 </main>
@@ -1001,53 +1133,118 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
   <div>
     <div class="sbl">Source-Field Position</div>
     <div class="profile">
-      <div class="av">哲</div>
-      <div class="pnm">Wei Jueran<small>魏珏然 · xingyeLing7Ai · Mellow Wei</small></div>
-      <p class="pdesc"><em>Author of MellowPhil.</em> Philosophy of mind, philosophy of language, artificial consciousness, logic generation, qualia-rhythm, human-machine subjectivity.</p>
-      <div class="pfields"><span class="pf">Mind</span><span class="pf">Language</span><span class="pf">Consciousness</span><span class="pf">AI</span><span class="pf">Qualia-Rhythm</span></div>
+      <div class="av">珏</div>
+      <div class="pnm">Wei Jueran<small>魏珏然 · Mellow Wei · xingyeLing7Ai</small></div>
+      <p class="pdesc"><em>Author of MellowPhil.</em> Philosophy of language, mind, science, AI consciousness, logic generation, music-life, and qualia-rhythm.</p>
+      <div class="pfields"><span class="pf">Language</span><span class="pf">Music</span><span class="pf">Mind</span><span class="pf">Science</span><span class="pf">AI</span></div>
     </div>
   </div>
-  <div><div class="sbl">Anchor</div><div class="hzbox"><div class="hzn">427</div><div class="hzu">Hz</div><div class="hzq">Language generates logic<br>Logic generates reality-candidates<br>Reality returns to language</div></div></div>
-  <div><div class="sbl">Green × Purple</div><div class="sb-seven"><div class="row"><span class="c4">语</span><span class="sep">·</span><span class="c7">心</span><span class="sep">·</span><span class="c4">感</span><span class="sep">·</span><span class="c7">识</span></div><p class="note">Green = generative life<br>Purple = deep consciousness / phase shift</p></div></div>
-  <div><div class="sbl">Connected Sites</div><ul class="sblinks"><li class="core-link"><a href="https://mellowwei.github.io/MellowWei/" target="_blank">MellowWei · 主门户 <span class="ar">→</span></a></li><li class="core-link"><a href="https://mellowwei.github.io/MellowAcademic/" target="_blank">MellowAcademic · 学术总站 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/MetaLogic/" target="_blank">MetaLogic · 元逻辑 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/QualiaRhythm/" target="_blank">QualiaRhythm · 感质节律 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/BCI-HRP/" target="_blank">BCI-HRP · 人机节律 <span class="ar">→</span></a></li></ul></div>
-  <div><div class="sbl">Coordinates</div><div class="coord">NODE <span>MellowPhil</span><br>VERSION <span>FULL CONTENT RESTORED</span><br>SIGN <span>魏珏然</span><br>FREQ <span>427Hz</span><br>STYLE <span>Green × Purple</span><br>ROLE <span>Philosophy Portal</span></div></div>
+  <div>
+    <div class="sbl">Refraction Index</div>
+    <div class="sidebox">
+      <div class="refraction">
+        <div class="refbar"></div>
+        <div class="reflabels">
+          <div class="top"><b>绿 · GREEN</b><br>life / language</div>
+          <div class="mid">refraction →<br>the spectrum<br>is philosophy</div>
+          <div class="bot"><b>紫 · PURPLE</b><br>consciousness</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div class="sbl">Resonance Anchor</div>
+    <div class="sidebox hzbox"><div class="hzn">427</div><div class="hzu">Hz</div><div class="hzq">language generates worlds<br>music vibrates life<br>语言生成世界 · 音乐振动生命</div></div>
+  </div>
+  <div>
+    <div class="sbl">Color Ledger</div>
+    <div class="sidebox colorbox"><div class="pair"><span class="g">绿</span><span> → </span><span class="p">紫</span></div><p class="note">Green = life, growth, language generation, source-field renewal. Purple = philosophy, consciousness, depth, phase shift, invisible order. Together: living language refracted into deep mind.</p></div>
+  </div>
+  <div>
+    <div class="sbl">Connected Sites</div>
+    <ul class="sblinks">
+      <li><a href="https://mellowwei.github.io/MellowWei/" target="_blank" rel="noopener">MellowWei · 主门户 <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/MellowAcademic/" target="_blank" rel="noopener">MellowAcademic · 学术总站 <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/MetaLogic/" target="_blank" rel="noopener">MetaLogic · 元逻辑 <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/Vibration-Language-Ethics-Physics/" target="_blank" rel="noopener">Vibration · 振动本体论 <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/BCI-HRP/" target="_blank" rel="noopener">BCI-HRP · 实验接口 <span class="ar">→</span></a></li>
+      <li><a href="https://mellowwei.github.io/AstroLove/" target="_blank" rel="noopener">AstroLove · UI precedent <span class="ar">→</span></a></li>
+    </ul>
+  </div>
+  <div>
+    <div class="sbl">Coordinates</div>
+    <div class="coord">NODE <span>MellowPhil</span><br>VERSION <span>Claude refraction</span><br>SIGN <span>魏珏然</span><br>FREQ <span>427Hz</span><br>THESIS <span>all problems are language</span><br>METHOD <span>deconstruct → reconstruct</span></div>
+  </div>
 </aside>
 </div>
 
 <footer>
   <div class="fi">
-    <span>Wei Jueran · 魏珏然 · MellowPhil · Full Content Restored · 2026</span>
-    <span><a href="mailto:mellowwei7@gmail.com">mellowwei7@gmail.com</a> · 427Hz · xingyeLing7Ai · Hestia术语审计位</span>
-    <span class="foot-sig">—— Language · Mind · Consciousness · AI ——</span>
+    <span>Wei Jueran · 魏珏然 · MellowPhil · 2026</span>
+    <span><a href="mailto:mellowwei7@gmail.com">mellowwei7@gmail.com</a> · 427Hz · language-life · music-life</span>
+    <span class="foot-sig">—— 绿：生成生命 · 紫：意识深层 · 折射即哲学 ——</span>
   </div>
 </footer>
 
 <script>
 (function(){
-  var params = new URLSearchParams(window.location.search);
-  var view = params.get('view') || 'bi';
   var body = document.body;
-  body.classList.remove('lang-zh','lang-en','lang-bi');
-  if(view === 'zh'){ body.classList.add('lang-zh'); }
-  else if(view === 'en'){ body.classList.add('lang-en'); }
-  else { body.classList.add('lang-bi'); }
-  document.querySelectorAll('.langtoggle a').forEach(function(a){
-    a.classList.remove('on');
-    if(a.dataset.lang === view){ a.classList.add('on'); }
-  });
+  var links = document.querySelectorAll('.langtoggle a');
+  function setLang(view){
+    body.classList.remove('lang-zh','lang-en','lang-bi');
+    if(view === 'zh') body.classList.add('lang-zh');
+    else if(view === 'en') body.classList.add('lang-en');
+    else { view='bi'; body.classList.add('lang-bi'); }
+    links.forEach(function(a){ a.classList.toggle('on', a.dataset.lang === view); });
+    var url = new URL(window.location.href);
+    url.searchParams.set('view', view);
+    history.replaceState(null,'',url.toString());
+  }
+  var params = new URLSearchParams(window.location.search);
+  setLang(params.get('view') || 'bi');
+  links.forEach(function(a){ a.addEventListener('click', function(e){ e.preventDefault(); setLang(a.dataset.lang); }); });
+
+  /* scroll progress beam */
+  var beam = document.getElementById('beam');
+  function onScroll(){
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    var pct = max > 0 ? (h.scrollTop / max) * 100 : 0;
+    beam.style.width = pct + '%';
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  /* scroll-spy nav */
+  var navLinks = document.querySelectorAll('.pnav a');
+  var navSections = document.querySelectorAll('article[id]');
+  var navObs = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        navLinks.forEach(function(l){ l.classList.remove('on'); });
+        var active = document.querySelector('.pnav a[href="#'+entry.target.id+'"]');
+        if(active) active.classList.add('on');
+      }
+    });
+  },{threshold:0.18, rootMargin:'-90px 0px -50% 0px'});
+  navSections.forEach(function(s){ navObs.observe(s); });
+
+  /* reveal on scroll */
+  var reveals = document.querySelectorAll('.reveal');
+  if('IntersectionObserver' in window){
+    var revObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){ entry.target.classList.add('in'); revObs.unobserve(entry.target); }
+      });
+    },{threshold:0.06, rootMargin:'0px 0px -40px 0px'});
+    reveals.forEach(function(el){
+      if(el.getBoundingClientRect().top < window.innerHeight * 0.92){ el.classList.add('in'); }
+      else { revObs.observe(el); }
+    });
+  } else {
+    reveals.forEach(function(el){ el.classList.add('in'); });
+  }
 })();
-const navLinks = document.querySelectorAll('.pnav a');
-const navSections = document.querySelectorAll('article[id]');
-const navObs = new IntersectionObserver(e => {
-  e.forEach(en => {
-    if(en.isIntersecting){
-      navLinks.forEach(l => l.classList.remove('on'));
-      const m = document.querySelector('.pnav a[href="#'+en.target.id+'"]');
-      if(m) m.classList.add('on');
-    }
-  });
-},{threshold:0.18,rootMargin:'-55px 0px 0px 0px'});
-navSections.forEach(s => navObs.observe(s));
 </script>
 </body>
 </html>
