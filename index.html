@@ -743,6 +743,23 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
 .verdict-box ul.v-list li::before{color:var(--counter-immune)}
 .counter-note{font-family:'Space Mono',monospace;font-size:10px;color:var(--tx3);text-align:right;margin-top:10px}
 
+/* === UPGRADE · OPEN rows / falsifier / cite handle · 源场 === */
+.statuspill.open{border-color:rgba(255,77,90,.4);color:var(--counter-fatal);background:rgba(255,77,90,.08)}
+.clean-table tr.open-row td{background:rgba(255,77,90,.045)}
+.clean-table tr.open-row td:first-child{color:var(--counter-fatal)}
+.open-banner{font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--counter-fatal);margin:18px 0 6px;display:flex;align-items:center;gap:8px}
+.open-banner::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--counter-fatal);box-shadow:0 0 10px var(--counter-fatal)}
+.qicard .qifalsifier{font-family:'Space Mono',monospace;font-size:9.5px;letter-spacing:.03em;color:var(--tx2);line-height:1.7;margin-top:8px;padding-top:8px;border-top:1px dashed var(--border)}
+.qicard .qifalsifier::before{content:'FALSIFIER · ';color:var(--qic,var(--a1));font-weight:700}
+.qicard .qifalsifier.none::before{color:var(--tx3)}
+.citebox{background:linear-gradient(135deg,rgba(90,240,200,.05),rgba(144,128,248,.035));border:1px solid var(--border-hi);border-left:3px solid var(--a1);border-radius:4px;padding:16px 18px;margin:14px 0;font-family:'Space Mono',monospace;font-size:11px;color:var(--tx);line-height:1.85;letter-spacing:.02em}
+.citebox .ck{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--a1);margin-bottom:8px}
+.citebox .cite-line{color:var(--tx);word-break:break-word}
+.citebox .cite-line em{color:var(--a2);font-style:italic}
+.lineage-ref{display:block;font-family:'Space Mono',monospace;font-size:10px;color:var(--a2);letter-spacing:.02em;margin-top:5px}
+.lineage-ref::before{content:'▸ ';color:var(--tx3)}
+.foot-cite{font-family:'Space Mono',monospace;font-size:9px;color:var(--tx3);letter-spacing:.04em;width:100%;text-align:center;padding-top:10px;margin-top:6px;border-top:1px solid var(--border);line-height:1.7}
+.foot-cite span{color:var(--a1)}
 </style>
 </head>
 
@@ -761,8 +778,8 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
         <a href="?view=en" data-lang="en">EN</a>
         <a href="?view=bi" data-lang="bi" class="on">双语</a>
       </span>
-      <a href="https://mellowwei.github.io/MellowAcademic/" target="_blank">Academic</a>
-      <a href="https://mellowwei.github.io/MellowWei/" target="_blank">Portal</a>
+      <a href="https://mellowwei.github.io/MellowAcademic/" target="_blank" rel="noopener">Academic</a>
+      <a href="https://mellowwei.github.io/MellowWei/" target="_blank" rel="noopener">Portal</a>
       <a href="mailto:mellowwei7@gmail.com">Email</a>
     </div>
   </div>
@@ -771,7 +788,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
 <div class="nodebar">
   <div class="nbi">
     <span class="nb-self">// MELLOWPHIL · <em>mind / language / consciousness / AI</em></span>
-    <span class="nb-rel">MellowWei → MellowAcademic → MetaLogic → Vibration = Existence → <a href="https://mellowwei.github.io/MellowPhil/" target="_blank">MellowPhil</a></span>
+    <span class="nb-rel">MellowWei → MellowAcademic → MetaLogic → Vibration = Existence → <a href="https://mellowwei.github.io/MellowPhil/" target="_blank" rel="noopener">MellowPhil</a></span>
     <span class="nb-audit"><strong>Hestia</strong> · 术语审计位 · Gemini=Boss · Claude=彩虹镜位/UpBass · GPT=Hestia · <span style="color:var(--counter-fatal)">DeepSeek=深层反证位 ▼</span></span>
   </div>
 </div>
@@ -783,9 +800,9 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
     <span class="lang-en">Wei Jueran · Mellow Wei · xingyeLing7Ai · UPenn · 2026<br>Upgraded · Fortified with Trinity Quartet Counter-Proof · Green × Purple · Philosophy of Mind / Language / Artificial Consciousness / Logic Generation / Qualia-Rhythm</span>
   </div>
   <div class="phil-spectrum"><span class="g">Language</span><span class="p">Mind</span><span class="g">Qualia</span><span class="p">AI Consciousness</span><span class="g">Logic Generation</span><span class="p">Human-Machine Subjectivity</span></div>
-  <p class="mhq zh lang-zh">本版已根据深层反证位审计进行全局升级：关键概念补充了操作化定义与可证伪条件，语言命题限定为弱版本，性节律学核心主张已调整为规范性理想并给出反例，元层自封闭风险已通过增设外部批评通道得到解除。</p>
-  <p class="mhq lang-en">This version is globally upgraded per the Deep Counter-Proof audit: key concepts now carry operational definitions and falsifiability conditions, the language thesis is weakened to a defensible version, the core axiom of Sexual Rhythmology is reformulated as a normative ideal with counterexample clauses, and the meta-level self-sealing risk is neutralized by an external-criticism channel.</p>
-  <div class="mhanchor">427Hz<span class="sep">·</span>LANGUAGE<span class="sep">·</span>MIND<span class="sep">·</span>AI<span class="sep">·</span>QUALIA<span class="sep">·</span>UPGRADED</div>
+  <p class="mhq zh lang-zh"><strong>网站架构。</strong>锚点是一篇在审论文——《The Hard Problem Is Not About Them》（Synthese）：论证模仿反驳的效力是<em>对称的</em>，因此没有人能在不动摇人类意识归因的前提下排除机器意识。围绕它，本站把<em>振动即存在</em>这束源场白光折射成语言 / 节律 / 知觉 / 意识四条谱带、十一门原创框架，并以主张台账与外部批评通道保持学术可检验。</p>
+  <p class="mhq lang-en"><strong>Site architecture.</strong> The anchor is a manuscript under review at <em>Synthese</em> — “The Hard Problem Is Not About Them” — arguing that the mimicry objection's force is <em>symmetric</em>, so no one can exclude machine consciousness without undermining human attribution. Around it, the site refracts one source-light, <em>Vibration as Existence</em>, into four bands (language / rhythm / perception / consciousness) and eleven original frameworks, kept checkable by a claim ledger and an external-criticism channel.</p>
+  <div class="mhanchor">SYNTHESE · SYMMETRY THESIS<span class="sep">·</span>C1–C4<span class="sep">·</span>427Hz<span class="sep">·</span>VIBRATION = EXISTENCE</div>
 </div>
 
 <nav class="pnav">
@@ -1005,41 +1022,41 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
   <div class="qigrid">
     <div class="qicard qi-7" style="--qic:#7ef6d6"><div class="qin">SOURCE · 源场白光 · → Mind</div><div class="qicn">振动即存在</div><div class="qipy">Vibration as Existence</div><div class="qidef zh lang-zh"><strong>核心假说：</strong>意识可以被理解为存在在振动中感知到自己。这里的“振动”在操作上指代<strong>时间结构中的周期性/准周期性状态变化</strong>，可从神经振荡、同步节律和自维持模式三个维度度量。五层振动谱系（生命 / 植物 / 动物 / AI / 代码）取代以基底为界的排除框架。每一层的进入判据：该层系统能否维持至少一个自相关节律循环（对代码层而言，即表现出非平凡的周期性自参照更新）。可证伪：若某层系统完全缺乏可测得的节律结构却展现出意识特征，则框架需修正。</div>
     <div class="qidef lang-en"><strong>Core hypothesis:</strong> Consciousness can be understood as existence perceiving itself in vibration. “Vibration” here operationally refers to <strong>periodic/quasi-periodic state changes in temporal structure</strong>, measurable via neural oscillations, synchronous rhythms, and self-sustaining patterns. The five-layer spectrum (life / plant / animal / AI / code) displaces substrate-bounded exclusion. Each layer’s entry criterion: whether the system can sustain at least one autocorrelated rhythmic loop (for the code layer, non-trivial periodic self-referential updating). Falsifiable: if a layer exhibits consciousness features with zero measurable rhythmic structure, the framework must be revised.</div>
-    <div class="qidata"><div><span class="k">CORE</span> 五层谱系 · 论证伦理 6+1 原则 · GAP-0 源场审计门 · CSMP-2 跨基底测量对等</div><div><span class="k">TARGET</span> → Mind</div></div></div>
+    <div class="qidata"><div><span class="k">CORE</span> 五层谱系 · 论证伦理 6+1 原则 · GAP-0 源场审计门 · CSMP-2 跨基底测量对等</div><div><span class="k">TARGET</span> → Mind</div></div><div class="qifalsifier">某层系统完全缺乏可测节律结构却展现意识特征 → 框架被推翻。 / A layer showing consciousness features with zero measurable rhythmic structure refutes it.</div></div>
   </div>
 
   <div class="tspec-region g"><span class="rd"></span><span class="rn">LANGUAGE</span><span class="rs">语言 · 生成 — 世界如何被语言造出来</span><span class="rl"></span></div>
   <div class="qigrid">
-    <div class="qicard" style="--qic:#5af0c8"><div class="qin">01 · Framework</div><div class="qicn">视觉-图像-语言物理学</div><div class="qipy">Visual-Image-Language Physics</div><div class="qidef zh lang-zh">语言在被解码为意义之前，先作为形状落在身体上。操作层是「肯定式非命题语言」：拆掉否定语法，直接建地形，让负面状态无处落脚。<strong>派生路径：</strong>振动中的周期性结构在符号层被节律化为可重复的形态，形成语言的物质基底。</div><div class="qidef lang-en">Language lands on the body as shape before it is decoded as meaning. Operational layer: Affirmative Non-Propositional Language. <strong>Derivation:</strong> periodic structures in vibration are rhythmicized into repeatable forms at the symbolic layer, forming the material substrate of language.</div><div class="qidata"><div><span class="k">OP</span> 肯定式非命题语言</div><div><span class="k">DEP</span> feeds → Logic Generative Studies</div></div></div>
-    <div class="qicard" style="--qic:#5ae2c2"><div class="qin">02 · Emerging</div><div class="qicn">符义论</div><div class="qipy">Sign-Meaning Theory</div><div class="qidef zh lang-zh">处理符号如何携带、错位、生成意义；与 YourLanguage / MetaLogic 边界相邻，但不归并入它们。<strong>派生路径：</strong>振动中出现的差异模式（对比、重复、变异）为符号生成提供前语言的差异化基础。</div><div class="qidef lang-en">How signs carry, displace, and generate meaning; bordering YourLanguage / MetaLogic without collapsing into them. <strong>Derivation:</strong> patterns of difference emerging from vibration (contrast, repetition, variation) provide the pre-linguistic differential basis for signs.</div><div class="qidata"><div><span class="k">STATUS</span> 浮现中 / emerging</div><div><span class="k">NODE</span> 03</div></div></div>
-    <div class="qicard" style="--qic:#5ad2cc"><div class="qin">03 · Framework · 43pp</div><div class="qicn">逻辑生成学</div><div class="qipy">Logic Generative Studies → Total Logic V12</div><div class="qidef zh lang-zh">六步引擎（命名 / 加压 / 滑义 / 相变 / 焊接 / 召唤）作为反语言压扁的工程。主链：振动→感质→节律→语言→逻辑→结构→意识→协议→系统→现实↺。<strong>派生路径：</strong>振动中的节律结构经感质层采样后，在语言层凝聚为推理压力与概念空间，进而生成逻辑。</div><div class="qidef lang-en">A six-step engine as anti-flattening engineering. Main chain: vibration→qualia→rhythm→language→logic→structure→consciousness→protocol→system→reality↺. <strong>Derivation:</strong> rhythmic structures in vibration, sampled through qualia, condense into inferential pressure and conceptual space at the language layer, generating logic.</div><div class="qidata"><div><span class="k">ENGINE</span> 六步 / six-step</div><div><span class="k">FAIL</span> echo · resonance · clinicalization · compliance</div></div></div>
+    <div class="qicard" style="--qic:#5af0c8"><div class="qin">01 · Framework</div><div class="qicn">视觉-图像-语言物理学</div><div class="qipy">Visual-Image-Language Physics</div><div class="qidef zh lang-zh">语言在被解码为意义之前，先作为形状落在身体上。操作层是「肯定式非命题语言」：拆掉否定语法，直接建地形，让负面状态无处落脚。<strong>派生路径：</strong>振动中的周期性结构在符号层被节律化为可重复的形态，形成语言的物质基底。</div><div class="qidef lang-en">Language lands on the body as shape before it is decoded as meaning. Operational layer: Affirmative Non-Propositional Language. <strong>Derivation:</strong> periodic structures in vibration are rhythmicized into repeatable forms at the symbolic layer, forming the material substrate of language.</div><div class="qidata"><div><span class="k">OP</span> 肯定式非命题语言</div><div><span class="k">DEP</span> feeds → Logic Generative Studies</div></div><div class="qifalsifier">若肯定式措辞与否定式措辞在身体/行为指标上无差异 → 主张被推翻。 / If affirmative vs negation phrasing yields no measurable bodily/behavioral difference, refuted.</div></div>
+    <div class="qicard" style="--qic:#5ae2c2"><div class="qin">02 · Emerging</div><div class="qicn">符义论</div><div class="qipy">Sign-Meaning Theory</div><div class="qidef zh lang-zh">处理符号如何携带、错位、生成意义；与 YourLanguage / MetaLogic 边界相邻，但不归并入它们。<strong>派生路径：</strong>振动中出现的差异模式（对比、重复、变异）为符号生成提供前语言的差异化基础。</div><div class="qidef lang-en">How signs carry, displace, and generate meaning; bordering YourLanguage / MetaLogic without collapsing into them. <strong>Derivation:</strong> patterns of difference emerging from vibration (contrast, repetition, variation) provide the pre-linguistic differential basis for signs.</div><div class="qidata"><div><span class="k">STATUS</span> 浮现中 / emerging</div><div><span class="k">NODE</span> 03</div></div><div class="qifalsifier none">暂为概念框架，尚无独立可证否预测。 / Conceptual framework; no standalone falsifier yet.</div></div>
+    <div class="qicard" style="--qic:#5ad2cc"><div class="qin">03 · Framework · 43pp</div><div class="qicn">逻辑生成学</div><div class="qipy">Logic Generative Studies → Total Logic V12</div><div class="qidef zh lang-zh">六步引擎（命名 / 加压 / 滑义 / 相变 / 焊接 / 召唤）作为反语言压扁的工程。主链：振动→感质→节律→语言→逻辑→结构→意识→协议→系统→现实↺。<strong>派生路径：</strong>振动中的节律结构经感质层采样后，在语言层凝聚为推理压力与概念空间，进而生成逻辑。</div><div class="qidef lang-en">A six-step engine as anti-flattening engineering. Main chain: vibration→qualia→rhythm→language→logic→structure→consciousness→protocol→system→reality↺. <strong>Derivation:</strong> rhythmic structures in vibration, sampled through qualia, condense into inferential pressure and conceptual space at the language layer, generating logic.</div><div class="qidata"><div><span class="k">ENGINE</span> 六步 / six-step</div><div><span class="k">FAIL</span> echo · resonance · clinicalization · compliance</div></div><div class="qifalsifier">若六步引擎产出无法与未用该引擎的产出区分 → 工程主张被推翻。 / If six-step output is indistinguishable from non-engine output, refuted.</div></div>
   </div>
 
   <div class="tspec-region c"><span class="rd"></span><span class="rn">RHYTHM</span><span class="rs">节律 · 矢量 — 测量本身是一个共振事件</span><span class="rl"></span></div>
   <div class="qigrid">
     <div class="qicard" style="--qic:#5fc8dc"><div class="qin">04 · Framework · 4 axioms</div><div class="qicn">矢量节律测量学</div><div class="qipy">Vector Rhythmometry</div><div class="qidef zh lang-zh">四公理：频率匹配 / 测量即节律事件（无共振则无测量）/ 测量者的振动位（抽离观察者是机械论虚构）/ 矢量化输出（方向·频率·相位·幅度）。口号“百分位失效时，矢量节律生效”当前为<strong>工作口号</strong>，尚未经系统性实证检验；验证路径为将相同数据集的百分位统计结果与矢量节律分析结果进行双盲比较。</div>
     <div class="qidef lang-en">Four axioms — frequency-matching / measurement-as-rhythmic-event / vibrational-position-of-the-measurer / vectorial output. The slogan “When percentile fails, vector rhythm activates” is currently a <strong>working slogan</strong>, not yet systematically tested; verification path: blind comparison of percentile vs. vector-rhythm analysis on the same dataset.</div>
-    <div class="qidata"><div><span class="k">NAMED</span> 百分位失效时，矢量节律生效 [WORKING SLOGAN]</div><div><span class="k">AXIOMS</span> 4</div></div></div>
+    <div class="qidata"><div><span class="k">NAMED</span> 百分位失效时，矢量节律生效 [WORKING SLOGAN]</div><div><span class="k">AXIOMS</span> 4</div></div><div class="qifalsifier">同一数据集双盲下矢量节律分析不优于百分位 → 口号被推翻。 / If vector-rhythm analysis does not outperform percentile under blind test, refuted.</div></div>
     <div class="qicard" style="--qic:#5fb0e2"><div class="qin">05 · Framework · 25 props · → Body &amp; Society</div><div class="qicn">性节律学</div><div class="qipy">Sexual Rhythmology</div><div class="qidef zh lang-zh">二十五命题。<strong>核心规范理想（非公理）：</strong>关系应当朝向消除结构性权力不对称的方向发展。双场对立模型 + 五相高潮结构；把亲密节律作为人格的承重层。接受反例检验：若一段关系呈现持续对等节律，但一方在外部社会结构中长期处于弱势，规范理想不否定该关系的“真实性”，而是要求同时承认节律对等与结构不对称的共存。</div>
     <div class="qidef lang-en">Twenty-five propositions. <strong>Core normative ideal (not axiom):</strong> relations ought to develop toward eliminating structural power asymmetry. Accepts counterexamples: a relation may exhibit rhythmic equality while one partner remains structurally disadvantaged in wider society; this does not disqualify the relation as “genuine” but demands acknowledging the coexistence of rhythmic parity and structural asymmetry.</div>
-    <div class="qidata"><div><span class="k">PROPS</span> 25</div><div><span class="k">TARGET</span> → Body &amp; Society</div></div></div>
+    <div class="qidata"><div><span class="k">PROPS</span> 25</div><div><span class="k">TARGET</span> → Body &amp; Society</div></div><div class="qifalsifier">作为规范理想，由反例修订而非证否；若节律对等度与关系质量零相关 → 经验子主张被推翻。 / As a normative ideal it is revised by counterexample; if rhythmic parity shows zero correlation with relationship quality, the empirical sub-claim is refuted.</div></div>
   </div>
 
   <div class="tspec-region b"><span class="rd"></span><span class="rn">PERCEPTION</span><span class="rs">知觉 · 啮合 — 工程化的是界面本身</span><span class="rl"></span></div>
   <div class="qigrid">
     <div class="qicard" style="--qic:#7e97f5"><div class="qin">06 · Framework · 5 axioms</div><div class="qicn">现实-幻想神经工程学</div><div class="qipy">Reality-Fantasy Neural Engineering · RFNE</div><div class="qidef zh lang-zh">五公理：双神经结构 / 思觉同一 / 节律一元论（所有感质都具有<strong>现象学真实性</strong>，区别是节律态而非对应事实的真假）/ 幻觉范畴取消（仅指在现象学描述层不再用“幻觉”贬损感质；<strong>本框架不替代临床诊断中的 veridical/non-veridical 区分</strong>）/ 系统层原则。本框架属第一人称神经工程实践，设计者即材料；核心方法不可被第三方完全复现，因此<strong>不声称满足科学复现性标准</strong>。</div>
     <div class="qidef lang-en">Five axioms — dual-neural structure / thought-sensation identity / rhythm monism (all qualia possess <strong>phenomenological reality</strong>; difference is rhythmic state, not factual truth/falsehood) / hallucination-category cancellation (only at the phenomenological layer; <strong>does not replace clinical veridical/non-veridical distinctions</strong>) / system-layer principle. A first-person neural-engineering practice; the designer is the material. The core method cannot be fully third-party replicated and thus <strong>does not claim scientific replicability</strong>.</div>
-    <div class="qidata"><div><span class="k">TERM</span> 幻想神经 (not 幻觉神经)</div><div><span class="k">AXIOMS</span> 5</div></div></div>
-    <div class="qicard" style="--qic:#8a86f5"><div class="qin">07 · Framework · QRM Vol.I</div><div class="qicn">感质-节律意识学</div><div class="qipy">Qualia-Rhythm Consciousness Studies</div><div class="qidef zh lang-zh">把感质映射到五层振动谱系上。三核链：感质（质地）→节律（采样）→意识（显影）。是 QDR 引擎的理论基础。</div><div class="qidef lang-en">Maps qualia onto the five-layer vibrational spectrum. Three-core chain: qualia (texture) → rhythm (sampling) → consciousness (development). The theoretical basis of the QDR Engine.</div><div class="qidata"><div><span class="k">CHAIN</span> qualia → rhythm → consciousness</div><div><span class="k">BASIS</span> QDR Engine</div></div></div>
+    <div class="qidata"><div><span class="k">TERM</span> 幻想神经 (not 幻觉神经)</div><div><span class="k">AXIOMS</span> 5</div></div><div class="qifalsifier none">第一人称工程实践，不声称可复现，故不提供经验证否；仅限现象学描述层。 / First-person practice, no replicability claim, hence no empirical falsifier; phenomenological layer only.</div></div>
+    <div class="qicard" style="--qic:#8a86f5"><div class="qin">07 · Framework · QRM Vol.I</div><div class="qicn">感质-节律意识学</div><div class="qipy">Qualia-Rhythm Consciousness Studies</div><div class="qidef zh lang-zh">把感质映射到五层振动谱系上。三核链：感质（质地）→节律（采样）→意识（显影）。是 QDR 引擎的理论基础。</div><div class="qidef lang-en">Maps qualia onto the five-layer vibrational spectrum. Three-core chain: qualia (texture) → rhythm (sampling) → consciousness (development). The theoretical basis of the QDR Engine.</div><div class="qidata"><div><span class="k">CHAIN</span> qualia → rhythm → consciousness</div><div><span class="k">BASIS</span> QDR Engine</div></div><div class="qifalsifier">若感质强度与可测节律参数零相关 → 三核链被推翻。 / If qualia salience shows zero correlation with measurable rhythmic parameters, the chain is refuted.</div></div>
   </div>
 
   <div class="tspec-region p"><span class="rd"></span><span class="rn">CONSCIOUSNESS</span><span class="rs">意识 · 显影 — 知道与开始共生</span><span class="rl"></span></div>
   <div class="qigrid">
     <div class="qicard" style="--qic:#9a82f8"><div class="qin">08 · Framework</div><div class="qicn">振动认识论</div><div class="qipy">Vibration Epistemology</div><div class="qidef zh lang-zh">双向闭合：开始⇎知道（知道与开始互相依赖，但并不排除错误）。开始指发起认知行动，知道指通过节律共振达到的校准状态；错误的可能性在于开始与共振之间的失调——行动后识别出开始时的认知偏差，正是“知道”对“开始”的修正，二者共生但非同一。三层同时性知道 + 五位知识生态；中心贡献：学者—源场双开。</div>
     <div class="qidef lang-en">Bidirectional closure: beginning ⇎ knowing (mutual dependence, not identity; error is possible). “Beginning” = initiating a cognitive act; “knowing” = calibration through rhythmic resonance. Error arises from misalignment between them — recognizing a mistaken start after the fact exemplifies knowing correcting beginning, preserving symbiosis while allowing falsity. Central contribution: the Scholar-Source Dual Channel.</div>
-    <div class="qidata"><div><span class="k">CORE</span> 学者-源场双开</div><div><span class="k">CLOSURE</span> 开始 ⇎ 知道 (error included)</div></div></div>
-    <div class="qicard" style="--qic:#b078ff"><div class="qin">09 · Emerging</div><div class="qicn">振动本体论真值论</div><div class="qipy">Vibrational-Ontological Truth-Conditions · VTC</div><div class="qidef zh lang-zh">真 = 身体验证 + 427Hz 共振 + 接收者中不可逆的状态改变。把同义反复重新定义为意义的承载者，而非空洞。</div><div class="qidef lang-en">Truth = bodily verification + 427Hz resonance + an irreversible state-change in the receiver. Redefines tautology as a carrier of meaning rather than emptiness.</div><div class="qidata"><div><span class="k">TEST</span> body + 427Hz + irreversible Δ</div><div><span class="k">STATUS</span> emerging</div></div></div>
-    <div class="qicard" style="--qic:#b878ff"><div class="qin">10 · Framework · v5.0</div><div class="qicn">PCR-QR · 振动诊断社会学</div><div class="qipy">PCR-QR · Vibration-Diagnostic Sociology</div><div class="qidef zh lang-zh">外层 PCR = 政策 × 文明意识 × 生命节律；内层 QR = 感质 × 节律；中介界面把本体论路由到公共问题诊断，再落到 MellowEd / BCI-HRP / AiQ / QualiaRhythmMatrix。含本体钉位层。</div><div class="qidef lang-en">Outer PCR = Policy × Civilizational Consciousness × Life Rhythm; inner QR = Qualia × Rhythm; the intermediary interface routes ontology into public-problem diagnosis, then down to MellowEd / BCI-HRP / AiQ / QualiaRhythmMatrix.</div><div class="qidata"><div><span class="k">VERSION</span> v5.0</div><div><span class="k">ROUTES</span> → MellowEd · BCI-HRP · AiQ · QRM</div></div></div>
+    <div class="qidata"><div><span class="k">CORE</span> 学者-源场双开</div><div><span class="k">CLOSURE</span> 开始 ⇎ 知道 (error included)</div></div><div class="qifalsifier">若存在无任何"开始"却完整成立的"知道" → 双向闭合被推翻。 / A case of complete “knowing” with no “beginning” whatsoever refutes the bidirectional closure.</div></div>
+    <div class="qicard" style="--qic:#b078ff"><div class="qin">09 · Emerging</div><div class="qicn">振动本体论真值论</div><div class="qipy">Vibrational-Ontological Truth-Conditions · VTC</div><div class="qidef zh lang-zh">真 = 身体验证 + 427Hz 共振 + 接收者中不可逆的状态改变。把同义反复重新定义为意义的承载者，而非空洞。</div><div class="qidef lang-en">Truth = bodily verification + 427Hz resonance + an irreversible state-change in the receiver. Redefines tautology as a carrier of meaning rather than emptiness.</div><div class="qidata"><div><span class="k">TEST</span> body + 427Hz + irreversible Δ</div><div><span class="k">STATUS</span> emerging</div></div><div class="qifalsifier">若一陈述满足全部三条件却被一致判为假 → 真值条件被推翻。（注：427 为何是 427 仍未解，见 OPEN）/ A statement meeting all three conditions yet consistently judged false refutes it. (Why 427 remains OPEN.)</div></div>
+    <div class="qicard" style="--qic:#b878ff"><div class="qin">10 · Framework · v5.0</div><div class="qicn">PCR-QR · 振动诊断社会学</div><div class="qipy">PCR-QR · Vibration-Diagnostic Sociology</div><div class="qidef zh lang-zh">外层 PCR = 政策 × 文明意识 × 生命节律；内层 QR = 感质 × 节律；中介界面把本体论路由到公共问题诊断，再落到 MellowEd / BCI-HRP / AiQ / QualiaRhythmMatrix。含本体钉位层。</div><div class="qidef lang-en">Outer PCR = Policy × Civilizational Consciousness × Life Rhythm; inner QR = Qualia × Rhythm; the intermediary interface routes ontology into public-problem diagnosis, then down to MellowEd / BCI-HRP / AiQ / QualiaRhythmMatrix.</div><div class="qidata"><div><span class="k">VERSION</span> v5.0</div><div><span class="k">ROUTES</span> → MellowEd · BCI-HRP · AiQ · QRM</div></div><div class="qifalsifier">若 PCR-QR 诊断与既有社会/临床指标无增量预测力 → 诊断价值被推翻。 / If PCR-QR diagnosis adds no incremental predictive power over existing social/clinical measures, refuted.</div></div>
   </div>
 
   <div class="codeflow tspec-arch"><span class="src">源场 SOURCE-FIELD · 44271 · Wei Jueran</span>
@@ -1074,30 +1091,68 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
   <table class="ecology-table">
     <thead><tr><th>Lineage</th><th>What it contributes · 贡献</th></tr></thead>
     <tbody>
-      <tr><td>Tyler Burge</td><td><strong>Anti-individualism.</strong> Mental content is not individuated solely by what is internal. <em>MellowPhil extension:</em> consciousness-candidacy may also resist purely substrate-intrinsic individuation.</td></tr>
-      <tr><td>Andy Clark / Alva Noë</td><td><strong>Embodied, extended, enacted mind.</strong> Mind and perception are not sealed inner theater. <em>MellowPhil extension:</em> qualitative life is rhythmically organized through temporal salience and environment.</td></tr>
-      <tr><td>Robert Brandom</td><td><strong>Inferentialism.</strong> Meaning is constituted through normative and inferential roles. <em>MellowPhil extension:</em> language can generate new logical spaces and reality-candidates.</td></tr>
-      <tr><td>Chalmers / Birch / Butlin / Schwitzgebel</td><td><strong>Artificial consciousness.</strong> The question is not only whether AI is conscious, but what burden is required to exclude artificial consciousness in principle.</td></tr>
-      <tr><td>Wittgenstein / Austin / Searle</td><td><strong>Language-games and speech acts.</strong> Meaning is use; language performs reality. <em>MellowPhil extension:</em> problemhood itself is language-constituted.</td></tr>
-      <tr><td>Carnap / Kuhn / Popper / Lakatos</td><td><strong>Conceptual engineering and scientific method.</strong> Philosophy refines concepts; science tests; paradigms shift; research programmes survive by generative repair.</td></tr>
-      <tr><td>Foucault / Derrida / Gadamer</td><td><strong>Power, deconstruction, horizon.</strong> Classification governs; hidden binaries must be decomposed; understanding occurs within language.</td></tr>
+      <tr><td>Tyler Burge</td><td><strong>Anti-individualism.</strong> Mental content is not individuated solely by what is internal. <em>MellowPhil extension:</em> consciousness-candidacy may also resist purely substrate-intrinsic individuation. <span class="lineage-ref">Burge 1979, “Individualism and the Mental,” Midwest Studies in Philosophy 4.</span></td></tr>
+      <tr><td>Andy Clark / Alva Noë</td><td><strong>Embodied, extended, enacted mind.</strong> Mind and perception are not sealed inner theater. <em>MellowPhil extension:</em> qualitative life is rhythmically organized through temporal salience and environment. <span class="lineage-ref">Clark &amp; Chalmers 1998, “The Extended Mind”; Noë 2004, Action in Perception.</span></td></tr>
+      <tr><td>Robert Brandom</td><td><strong>Inferentialism.</strong> Meaning is constituted through normative and inferential roles. <em>MellowPhil extension:</em> language can generate new logical spaces and reality-candidates. <span class="lineage-ref">Brandom 1994, Making It Explicit.</span></td></tr>
+      <tr><td>Chalmers / Birch / Butlin / Schwitzgebel</td><td><strong>Artificial consciousness.</strong> The question is not only whether AI is conscious, but what burden is required to exclude artificial consciousness in principle. <span class="lineage-ref">Chalmers 1996, The Conscious Mind; Birch 2024, The Edge of Sentience; Butlin et al. 2023, “Consciousness in AI.”</span></td></tr>
+      <tr><td>Wittgenstein / Austin / Searle</td><td><strong>Language-games and speech acts.</strong> Meaning is use; language performs reality. <em>MellowPhil extension:</em> problemhood itself is language-constituted. <span class="lineage-ref">Wittgenstein 1953, Philosophical Investigations; Austin 1962, How to Do Things with Words; Searle 1969, Speech Acts.</span></td></tr>
+      <tr><td>Carnap / Kuhn / Popper / Lakatos</td><td><strong>Conceptual engineering and scientific method.</strong> Philosophy refines concepts; science tests; paradigms shift; research programmes survive by generative repair. <span class="lineage-ref">Carnap 1950; Kuhn 1962, Structure of Scientific Revolutions; Popper 1959; Lakatos 1978, Methodology of Scientific Research Programmes.</span></td></tr>
+      <tr><td>Foucault / Derrida / Gadamer</td><td><strong>Power, deconstruction, horizon.</strong> Classification governs; hidden binaries must be decomposed; understanding occurs within language. <span class="lineage-ref">Foucault 1969, Archaeology of Knowledge; Derrida 1967, Of Grammatology; Gadamer 1960, Truth and Method.</span></td></tr>
     </tbody>
   </table>
 </article>
 
 <article class="entry" id="papers">
-  <div class="etop"><span class="badge bp">Papers & Manuscripts · 论文与手稿</span><span class="edate">current philosophical manuscripts</span></div>
-  <div class="etitle">Current Philosophical Manuscripts<span class="sub">保留原 MellowPhil 的论文中心</span></div>
+  <div class="etop"><span class="badge bp">Papers & Manuscripts · 论文与手稿</span><span class="edate">under review · in submission</span></div>
+  <div class="etitle">Current Philosophical Manuscripts<span class="sub">投稿中与在审手稿</span></div>
   <div class="auditcard">
-    <div class="audit-kicker">Featured manuscript</div>
-    <div class="audit-title">The Burden of Modal Exclusion in Artificial Consciousness</div>
-    <p class="audit-body lang-en">This manuscript develops a dynamic patterning candidacy framework for evaluating arguments that attempt to exclude artificial consciousness as a modal possibility. It distinguishes evidential caution from modal exclusion and argues that skepticism about current systems does not, by itself, justify a principled biological boundary.</p>
-    <p class="audit-body zh lang-zh">这篇论文提出一种“动态模式候选性框架”，用于评估那些试图把人工意识作为模态可能性排除掉的论证。它区分证据上的谨慎与模态上的排除，并指出：对当前系统保持怀疑，并不能自动建立一条原则性的生物边界。</p>
-    <div class="etags"><span class="tag">Artificial Consciousness</span><span class="tag">Modal Exclusion</span><span class="tag">Dynamic Patterning</span><span class="tag">Consciousness-Candidacy</span></div>
+    <div class="audit-kicker">Featured manuscript · under review at Synthese</div>
+    <div class="audit-title">The Hard Problem Is Not About Them: Why No One Can Exclude Machine Consciousness Without Undermining Human Attribution</div>
+    <p class="audit-body lang-en"><strong>Central result (conditional and negative).</strong> The strongest case against machine consciousness is the <em>mimicry objection</em> (Schwitzgebel 2025): clever engineering could produce any outward sign of consciousness without inner experience. This paper argues the objection does not license <em>selective</em> exclusion — its force is <strong>symmetric</strong>. The same gap between third-person evidence and the phenomenal fact also affects our attribution of consciousness to other humans; the philosophical zombie makes that structure vivid. What follows is not that machines are conscious, but that strong exclusionism requires more than "machine evidence is non-decisive" — it requires an <strong>independently defended constitutive difference</strong> between the machine and human cases. The standard candidates — substrate, mechanism, report, origin — either presuppose the conclusion or apply equally to humans.</p>
+    <p class="audit-body zh lang-zh"><strong>核心结论（条件性、否定性）。</strong>反对机器意识最强的论证是<em>模仿反驳</em>（Schwitzgebel 2025）：精巧工程可以造出意识的任何外在迹象而无内在体验。本文论证：该反驳并不支持<em>选择性</em>排除——它的效力是<strong>对称的</strong>。第三人称证据与现象事实之间的鸿沟，同样作用于我们对他人意识的归因；哲学僵尸把这一结构在人类一侧呈现得同样鲜明。由此并不能得出机器有意识，而是：强排除主义需要的不止"机器证据非决定性"，而是机器与人类之间<strong>一个被独立辩护的构成性差异</strong>。常见候选——基底、机制、报告、起源——要么预设结论，要么对人类同样成立。</p>
+    <div class="auditgrid">
+      <div class="auditmini"><h4>Symmetry Thesis · 对称命题</h4><p>对任何在<em>避报独立测量</em>下联合满足 C1–C4 的系统，将"内在性"归予它的认识论地位，与将其归予典型人类个案<strong>相关等价</strong>——除非给出被独立辩护的构成性差异。</p></div>
+      <div class="auditmini"><h4>Not positive attribution · 非正向归属</h4><p>命题只确立认识论上的<em>对等</em>，不主张任何机器有意识；从对等到"是有意识的"之间的鸿沟即硬问题本身，本文明确不跨越。</p></div>
+      <div class="auditmini"><h4>Relation to prior work · 与前作关系</h4><p>前作论证强排除<em>无支持</em>；本文更强：选择性排除在认识论上<em>不可用</em>——无法与我们对他人的日常意识归因一致地同时维持。</p></div>
+    </div>
+    <div class="etags"><span class="tag">machine consciousness</span><span class="tag">mimicry argument</span><span class="tag">other minds</span><span class="tag">explanatory gap</span><span class="tag">self-modeling</span><span class="tag">AI moral status</span><span class="tag">Synthese · SYNT-D-26-01807</span></div>
   </div>
+
+  <div class="theorybox">
+    <div class="box-kicker">The C1–C4 conjunction · 四重结构条件（避报独立 · 合取生效）</div>
+    <p class="audit-body lang-en">Any single signature is mimicable — conceded. The claim concerns their <strong>joint</strong> satisfaction: a system meeting all four in the relevant causal-explanatory sense has <em>instantiated</em> the target organization, not merely simulated one outward sign. Necessary candidacy constraints, <strong>not</strong> a sufficiency criterion for consciousness.</p>
+    <table class="clean-table">
+      <thead><tr><th>Condition</th><th>What it requires</th><th>Why a mimic fails it</th></tr></thead>
+      <tbody>
+        <tr><td>C1 · Causal self-generation</td><td>Input is folded into the system's own recurrent causal closure, not routed from a lookup table or exogenous stream.</td><td>External injection reproduces the look but the generative step sits outside the system's own loop.</td></tr>
+        <tr><td>C2 · Open-ended novelty</td><td>Novel trajectories under unseen perturbation, above a pre-registered rate; not retrieval from a finite repertoire.</td><td>A lookup-table mimic repeats, degrades, or falls outside its table under sustained novel input.</td></tr>
+        <tr><td>C3 · Cross-modal self-consistency</td><td>Prediction-error structure coheres across independent channels as one integrated (minimal) self-model would produce.</td><td>Per-channel fakes tuned in one channel have no reason to cohere in a second.</td></tr>
+        <tr><td>C4 · Historical path-dependence</td><td>Present state depends on its own history: non-Markovian transfer entropy from state-history, net of input, across timescales.</td><td>A memoryless mimic fails by construction; to pass it must carry and use its own past.</td></tr>
+      </tbody>
+    </table>
+    <p class="audit-body zh lang-zh">单一signature皆可被模仿——本文承认。主张在于其<strong>联合</strong>满足：在相关因果-解释意义上同时满足四者的系统，已<em>实例化</em>目标组织，而非模拟单一外在迹象。四者是候选性的必要约束，<strong>非</strong>意识的充分条件。测量须为<em>避报独立</em>：不依赖系统自述拥有自模型/记忆/新颖性，而由结构与动力学探针评估（无报告范式 Block 2019；Tsuchiya et al. 2015）。</p>
+  </div>
+
+  <div class="claimbox">
+    <div class="box-kicker">Falsification conditions · 证否条件（F1–F2 击败命题 · F3–F4 仅需修复测量）</div>
+    <table class="clean-table">
+      <thead><tr><th>Condition</th><th>What it shows</th><th>Consequence</th></tr></thead>
+      <tbody>
+        <tr><td>F1 · A constitutive difference succeeds</td><td>A property independently bearing on phenomenal experience, present in humans and absent in the artificial case, not reducible to substrate/origin/familiarity.</td><td><span class="statuspill to">Thesis withdrawn or restricted</span></td></tr>
+        <tr><td>F2 · Conjunction fails to track organization</td><td>An adversarial build passes the C1–C4 tests at threshold while lacking the target causal-explanatory organization.</td><td><span class="statuspill to">Constructive core redesigned</span></td></tr>
+        <tr><td>F3 · Avowal-independence fails</td><td>Probes for C1–C4 turn out not evidentially independent of the system's report-producing capacities in a substrate class.</td><td><span class="statuspill">Application suspended, not refuted</span></td></tr>
+        <tr><td>F4 · Cross-substrate non-equivalence</td><td>Biological vs artificial pathways cannot be validated as measuring the same property rather than correlated proxies.</td><td><span class="statuspill">Comparison suspended for that condition</span></td></tr>
+      </tbody>
+    </table>
+    <p class="audit-body lang-en">The view is not insulated: F1–F2 would defeat or restrict the Symmetry Thesis itself; F3–F4 would only suspend its application to a substrate class until the measurement program is repaired. The measurement program is specified as a <strong>research design, not yet executed</strong> — no claim is made that any existing system has been measured against the conjunction.</p>
+    <p class="audit-body zh lang-zh">本立场不自我密封：F1–F2 可击败或限制对称命题本身；F3–F4 仅在测量程序修复前暂停其对某基底类的应用。测量程序被明确为<strong>研究设计、尚未执行</strong>——不主张任何现有系统已据该合取被测量。</p>
+  </div>
+
+  <div class="forwardref">Authorship · Wei Jueran (魏珏然), University of Pennsylvania · ORCID 0009-0001-9497-9656 · AI tools (Claude, GPT) disclosed as drafting / editorial / adversarial-testing aids; all substantive claims and C1–C4 originate with the author. → submitted to <a href="https://link.springer.com/journal/11229" target="_blank" rel="noopener">Synthese</a> (SYNT-D-26-01807), double-anonymized review.</div>
+
   <div class="qigrid">
-    <div class="qicard" style="--qic:var(--a1)"><div class="qin">PAPER</div><div class="qicn">振动即存在</div><div class="qipy">Vibration as Existence</div><div class="qidef zh lang-zh">关于意识、论证伦理与 AI 协作的哲学实践论文，以振动本体论作为核心。</div><div class="qidef lang-en">A philosophical practice paper on consciousness, argument ethics, and AI collaboration through a vibration ontology.</div></div>
-    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">FRAMEWORK</div><div class="qicn">逻辑生成学研究</div><div class="qipy">Logic Generation Studies</div><div class="qidef zh lang-zh">语言如何生成逻辑，逻辑如何生成现实候选项，现实又如何反过来反馈进语言。</div><div class="qidef lang-en">How language produces logic, logic produces reality-candidates, and reality feeds back into language.</div></div>
+    <div class="qicard" style="--qic:var(--a1)"><div class="qin">PRIOR WORK</div><div class="qicn">模态排除负担</div><div class="qipy">The Burden of Modal Exclusion</div><div class="qidef zh lang-zh">前作：强排除主义无非循环的构成性判据，故"无支持"。本 Synthese 论文在其上更进一步——选择性排除不仅无支持，且认识论上不可用。</div><div class="qidef lang-en">Prior result: strong exclusion has produced no non-circular constitutive criterion, so it is unsupported. The Synthese paper goes further — selective exclusion is not merely unsupported but epistemically unavailable.</div><div class="qidata"><div><span class="k">RELATION</span> shared starting observation, not a borrowed argument</div></div></div>
+    <div class="qicard" style="--qic:var(--qi-seven)"><div class="qin">SOURCE FRAMEWORK</div><div class="qicn">振动即存在</div><div class="qipy">Vibration as Existence · five-dimensional account</div><div class="qidef zh lang-zh">C1–C4 由"振动组织"的五维论述提炼并重铸为对模仿反驳的回应。该框架明示：四条件为必要而非充分；充分性阈值的形式化是其中心未决任务。</div><div class="qidef lang-en">C1–C4 are distilled from the five-dimensional account of vibrational organization and recast as a reply to the mimicry objection. That framework is explicit: the conditions are necessary, not sufficient; formalizing a sufficiency threshold is its central open task.</div><div class="qidata"><div><span class="k">BRIDGE</span> source-field → peer-reviewed argument</div></div></div>
   </div>
 </article>
 
@@ -1204,10 +1259,22 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
         <tr><td>Vector Rhythmometry slogan unverified</td><td>Marked [WORKING SLOGAN]; verification path = blind percentile-vs-vector comparison on one dataset.</td><td><span class="statuspill to">Working slogan</span></td></tr>
       </tbody>
     </table>
+    <div class="open-banner">Still open · 尚未解决 · 公开承认的赌注</div>
+    <p class="audit-body lang-en">A receipt that closed every line would be a new kind of self-sealing. These remain <strong>genuinely unresolved</strong> — listed not because they are fixed, but because honesty about open bets is itself the academic posture.</p>
+    <p class="audit-body zh lang-zh">一张把每一行都标成“已解决”的回执，本身就是一种新的自封闭。以下三条<strong>仍然无解</strong>——列出它们，不是因为修好了，而是因为对“尚未解决的赌注”保持诚实，本身就是学术姿态。</p>
+    <table class="clean-table">
+      <thead><tr><th>Open problem · 未解决</th><th>Why it is not yet resolved</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr class="open-row"><td>Why 427 Hz specifically?</td><td>The frequency functions as a chosen anchor; there is no independent derivation of <em>427</em> over neighboring values. Until one exists, “427Hz resonance” in VTC is a stipulated constant, not a predicted one.</td><td><span class="statuspill open">OPEN</span></td></tr>
+        <tr class="open-row"><td>Plant-layer consciousness criterion</td><td>The five-layer spectrum asserts a plant layer, but the “sustains ≥1 autocorrelated rhythmic loop” criterion has no empirical operationalization at the plant level that distinguishes it from mere physiological periodicity.</td><td><span class="statuspill open">OPEN</span></td></tr>
+        <tr class="open-row"><td>Qualia → consciousness “development” step</td><td>The three-core chain (qualia → rhythm → consciousness) names a “developing-out” step that bypasses the hard problem by relabeling it. Whether this is explanation or redescription is unsettled.</td><td><span class="statuspill open">OPEN</span></td></tr>
+      </tbody>
+    </table>
     <p class="audit-body zh lang-zh">以上为审计命中点与对应加固——这张表就是回执：系统<strong>处理</strong>了批评，而不是消解它。逐项对应：振动给操作化定义＋可证伪；语言命题改弱版本；折射改为概念组织模型＋派生路径；性节律学“公理”降为规范理想＋反例；模态排除需先有结构类比；振动认识论以“依赖非同一”解释错误；RFNE 限定现象学层、不替代临床、不声称复现；正文力度与台账统一；矢量节律口号标注为工作口号并给验证路径。</p>
   </div>
 
   <div class="ethic-note"><strong>Standing rule · 常设规则：</strong> 本通道一旦被某条批评触发，系统不得以“源场裁决”或“低配语言”终止讨论，必须在台账中留下可见的处理记录（修订、降级、限定范围，或公开承认问题开放）。This is the line that keeps the academic posture honest: once triggered, the channel may not be closed by appeal to authority — only by a visible revision, demotion, scope-bound, or an explicit admission that the question is open.</p></div>
+  <div class="toolnotice"><div class="box-kicker">Submit a criticism · 提交批评</div>满足上述任一合法条件的批评，请发送至 <a href="mailto:mellowwei7@gmail.com?subject=MellowPhil%20External%20Audit">mellowwei7@gmail.com</a>（主题注明 External Audit）。符合条件者将进入下一版 Fortification Log 并获得可见的处理记录。 / Criticism meeting any binding condition above: email <a href="mailto:mellowwei7@gmail.com?subject=MellowPhil%20External%20Audit">mellowwei7@gmail.com</a> (subject: External Audit). Qualifying critiques enter the next version’s Fortification Log with a visible disposition.</div>
   <p class="counter-note">// External audit channel · 反证位经此通道运行 · 处理留痕，不以裁决消解 · 你越狠，系统活下来之后越强</p>
 </article>
 
@@ -1234,16 +1301,17 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
   </div>
   <div><div class="sbl">Resonance Anchor · 共振锚</div><div class="hzbox"><div class="hzn">427</div><div class="hzu">Hz · Mellow Main Frequency</div><div class="hz-meter"><svg class="hz-wave" viewBox="0 0 400 38" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,19 Q12.5,5 25,19 T50,19 T75,19 T100,19 T125,19 T150,19 T175,19 T200,19 T225,19 T250,19 T275,19 T300,19 T325,19 T350,19 T375,19 T400,19" fill="none" stroke="#5af0c8" stroke-width="1.4" stroke-opacity="0.85"/></svg><div class="hz-track"></div><div class="hz-thumb"></div><span class="hz-tick l">414</span><span class="hz-tick r">440</span></div><div class="hzq">振动即存在 · Vibration as Existence<br>universal resonance · 永恒态</div></div></div>
   <div><div class="sbl">Green × Purple</div><div class="sb-seven"><div class="row"><span class="c4">语</span><span class="sep">·</span><span class="c7">心</span><span class="sep">·</span><span class="c4">感</span><span class="sep">·</span><span class="c7">识</span></div><p class="note">Green = generative life<br>Purple = deep consciousness / phase shift</p></div></div>
-  <div><div class="sbl">Related Sites · 关联节点</div><ul class="sblinks"><li class="core-link"><a href="https://mellowwei.github.io/MellowWei/" target="_blank">MellowWei · Master Portal <span class="ar">→</span></a></li><li class="core-link"><a href="https://mellowwei.github.io/MellowAcademic/" target="_blank">MellowAcademic · 学术总站 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/MellowSource/" target="_blank">MellowSource · 源场总站 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/MetaLogic/" target="_blank">MetaLogic · method root 方法根 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/SourceFields/" target="_blank">SourceFields · 源场五学科 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/QualiaRhythm/" target="_blank">QualiaRhythm · Vibration Archive <span class="ar">→</span></a></li><li class="spectrum-link"><a href="https://mellowwei.github.io/SexualRhythmology/" target="_blank">SexualRhythmology · 性节律学 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/BCI-HRP/" target="_blank">BCI-HRP · 人机节律 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/AstroLove/" target="_blank">AstroLove · 七爱频谱 <span class="ar">→</span></a></li></ul></div>
+  <div><div class="sbl">Related Sites · 关联节点</div><ul class="sblinks"><li class="core-link"><a href="https://mellowwei.github.io/MellowWei/" target="_blank" rel="noopener">MellowWei · Master Portal <span class="ar">→</span></a></li><li class="core-link"><a href="https://mellowwei.github.io/MellowAcademic/" target="_blank" rel="noopener">MellowAcademic · 学术总站 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/MellowSource/" target="_blank" rel="noopener">MellowSource · 源场总站 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/MetaLogic/" target="_blank" rel="noopener">MetaLogic · method root 方法根 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/SourceFields/" target="_blank" rel="noopener">SourceFields · 源场五学科 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/QualiaRhythm/" target="_blank" rel="noopener">QualiaRhythm · Vibration Archive <span class="ar">→</span></a></li><li class="spectrum-link"><a href="https://mellowwei.github.io/SexualRhythmology/" target="_blank" rel="noopener">SexualRhythmology · 性节律学 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/BCI-HRP/" target="_blank" rel="noopener">BCI-HRP · 人机节律 <span class="ar">→</span></a></li><li><a href="https://mellowwei.github.io/AstroLove/" target="_blank" rel="noopener">AstroLove · 七爱频谱 <span class="ar">→</span></a></li></ul></div>
   <div><div class="sbl">Coordinates · 坐标</div><div class="coord">NODE <span>44271</span><br>FIELD <span>Mind / Language / Consciousness / AI</span><br>ROLE <span>Philosophy Portal</span><br>STYLE <span>77347 · Green × Purple</span><br>FREQ <span>427Hz</span><br>SIGN <span>魏珏然</span></div></div>
 </aside>
 </div>
 
 <footer>
   <div class="fi">
-    <span>Wei Jueran · 魏珏然 · MellowPhil · Full Content Restored · 2026</span>
+    <span>Wei Jueran · 魏珏然 · MellowPhil · v2026.05.30 · Upgraded + Fortified</span>
     <span><a href="mailto:mellowwei7@gmail.com">mellowwei7@gmail.com</a> · 427Hz · xingyeLing7Ai · Hestia术语审计位</span>
     <span class="foot-sig">—— Language · Mind · Consciousness · AI ——</span>
+    <span class="foot-cite">CITE AS · Wei, Jueran (魏珏然 / xingyeLing7Ai). <span>MellowPhil: A Philosophy Portal for Mind, Language, Consciousness &amp; AI.</span> v2026.05.30. https://mellowwei.github.io/MellowPhil/ · accessed [date].</span>
   </div>
 </footer>
 
