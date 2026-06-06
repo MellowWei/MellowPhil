@@ -772,6 +772,67 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
 .register-bridge p:last-child{margin-bottom:0}
 .register-bridge p.zh{font-family:'Noto Serif SC','Spectral',serif;font-style:normal}
 .register-bridge em{color:var(--a1)}
+/* === MOBILE RESPONSIVE PATCH · 2026 · UpBass === */
+.tscroll{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:14px 0;max-width:100%;min-width:0}
+.tscroll>.clean-table,.tscroll>.ecology-table{margin:0}
+/* let the 1fr grid item shrink below its content min-content (fixes mobile page overflow) */
+main{min-width:0}
+.wrap>main,.wrap>aside{min-width:0;max-width:100%}
+/* break long unbreakable tokens (e.g. arrow-chains a→b→c) so cards can shrink */
+.qidef,.qidata,.qipy{overflow-wrap:anywhere}
+.audit-body,.edesc,.bridge-quote,.principle p,.method-step p,.tiny-note,.tspec-intro{overflow-wrap:break-word}
+
+@media(max-width:640px){
+  /* reclaim side gutters */
+  .ti,.nbi,.pni,.fi{padding-left:16px;padding-right:16px}
+  .masthead{padding:30px 16px 22px}
+  .wrap{padding:24px 16px 64px;gap:0}
+  /* topbar / nodebar wrap cleanly */
+  .ti{flex-wrap:wrap;gap:8px}
+  .tl,.tr{gap:10px}
+  /* masthead headline scaling */
+  .mhname{font-size:20px;line-height:1.18}
+  .mhname .zh{font-size:14.5px;letter-spacing:.04em;margin-top:7px}
+  .mhsub{font-size:10px}
+  .mhq{font-size:13px;max-width:none}
+  .mhanchor{letter-spacing:.1em;word-break:break-word;line-height:1.7}
+  .phil-spectrum{gap:6px;font-size:9px}
+  /* tables: scroll instead of crush — keep header/body aligned */
+  .tscroll>.clean-table{min-width:520px}
+  .tscroll>.ecology-table{min-width:460px}
+  .clean-table th,.clean-table td{padding:8px 8px;font-size:12px}
+  .ecology-table th,.ecology-table td{padding:9px 8px;font-size:12px}
+  /* boxes: trim horizontal padding to gain reading width */
+  .auditcard,.methodcard,.glossarycard,.objectioncard,.refcard,
+  .usebox,.terminologybox,.claimbox,.theorybox,.toolnotice,.caseboundary,
+  .counter-card,.verdict-box,.ecology-chain,.register-bridge,.question-box{
+    padding-left:15px;padding-right:15px;
+  }
+  .bridgebox{padding:18px 15px}
+  .audit-body{font-size:13px}
+  /* thesis + titles */
+  .large-thesis{font-size:17px;padding:13px 0 13px 14px}
+  .large-thesis.zh{font-size:15.5px}
+  .etitle{font-size:18px}
+  .etitle .sub{font-size:12px}
+  .audit-title{font-size:17px}
+  .question-box{font-size:15px;padding-top:16px;padding-bottom:16px}
+  /* ascii tree + formula: shrink, they already scroll via .codeflow */
+  .tspec-arch{font-size:10px;line-height:1.85}
+  .codeflow{font-size:10.5px}
+  /* vertical rhythm + long-string wrapping */
+  .entry{padding:22px 0}
+  .foot-cite,.forwardref,.coord,.glossary-list li{word-break:break-word;overflow-wrap:anywhere}
+  .chain-flow{font-size:9.5px}
+}
+
+@media(max-width:380px){
+  .mhname{font-size:18px}
+  .mhname .zh{font-size:13.5px}
+  .tscroll>.clean-table{min-width:460px}
+  .pnav a{padding:10px 12px}
+  .large-thesis{font-size:16px}
+}
 </style>
 </head>
 
@@ -926,7 +987,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
 
   <div class="theorybox">
     <div class="box-kicker">Mind slides across layers · 心灵滑过的层级 — 不是"脑内的东西"</div>
-    <table class="clean-table">
+    <div class="tscroll"><table class="clean-table">
       <thead><tr><th>Layer · 层级</th><th>What mind is at this layer · 在此层，心灵是</th></tr></thead>
       <tbody>
         <tr><td>意识层 · Consciousness</td><td>第一人称经验场 / a first-person field of experience</td></tr>
@@ -938,7 +999,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
         <tr><td>技术层 · Technology</td><td>AI / BCI / 音乐等外部基底参与心灵调节 / external substrates taking part in regulating mind</td></tr>
         <tr><td>本体层 · Ontological</td><td>一个存在者维持"我是我"的动态结构 / a being holding "I am I" together over time</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p class="audit-body lang-en">So mind is not a thing inside the skull. It is a <strong>unified field across neural, bodily, linguistic, relational, and technological substrates</strong> — a multi-layer rhythmic field, not a single point.</p>
     <p class="audit-body zh lang-zh">所以心灵不是"脑内的东西"。它是一个<strong>跨神经、身体、语言、关系与技术的统一场</strong>——一个多层节律场，而非一个点。</p>
   </div>
@@ -965,7 +1026,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
   <div class="theorybox">
     <div class="box-kicker">The formula · 理论公式</div>
     <div class="codeflow" style="text-align:center;font-size:14px;color:var(--hd)">Mind&nbsp;&nbsp;=&nbsp;&nbsp;S <span class="arrow">×</span> B <span class="arrow">×</span> L <span class="arrow">×</span> A <span class="arrow">×</span> M <span class="arrow">×</span> R <span class="arrow">×</span> T</div>
-    <table class="clean-table">
+    <div class="tscroll"><table class="clean-table">
       <thead><tr><th>Symbol</th><th>Meaning · 含义</th></tr></thead>
       <tbody>
         <tr><td>S</td><td>Subjective consciousness · 主体意识</td></tr>
@@ -976,7 +1037,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
         <tr><td>R</td><td>Relational recognition · 关系承认</td></tr>
         <tr><td>T</td><td>Technological extension · 技术延展</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p class="audit-body lang-en">The “×” is not arithmetic. <strong>Mind is not the sum of these variables, but the process by which they are rhythmically organized into an “I” over time.</strong> Memory-continuity (M) is the same history-dependence the machine-consciousness chapter measures as C4; technological extension (T) is where BCI-HRP and music interfaces enter.</p>
     <p class="audit-body zh lang-zh">这里的"×"不是算术。<strong>心灵不是这些变量的相加，而是它们在时间中被节律性组织成"我"的过程。</strong>记忆连续性（M）即机器意识那章作为 C4 测量的历史依赖；技术延展（T）正是 BCI-HRP 与音乐接口进入之处。</p>
   </div>
@@ -998,7 +1059,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
     <div class="audit-kicker">How this advances the standard theories of mind · 对现代心灵哲学诸理论的推进</div>
     <p class="audit-body lang-en">This account does not leave the standard theories at the level of cognitive function, out-of-brain tools, bodily action, or dynamic process. It welds them into a higher-order cross-substrate rhythmic organization — keeping what each gets right, and adding the requirement each tends to drop: that a <em>first-person subject</em> is sustained.</p>
     <p class="audit-body zh lang-zh">本论不把这些主线停留在"认知功能""脑外工具""身体行动"或"动态过程"层面，而是把它们焊接成一个更高阶的跨基底节律组织——保留每一条说对的部分，并补上它们普遍会丢的那一条：一个<em>第一人称主体</em>被维持。</p>
-    <table class="clean-table">
+    <div class="tscroll"><table class="clean-table">
       <thead><tr><th>Theory · 理论</th><th>What it holds · 核心主张</th><th>This account's advance · 本论的推进</th></tr></thead>
       <tbody>
         <tr><td>Functionalism · 功能主义<br><span style="color:var(--tx3);font-size:11px">Putnam · Fodor</span></td><td>Mind depends not on fixed material but on functional organization. / 心灵不取决于固定材料，而取决于功能组织。</td><td>Keeps organization-over-material, but the organization is a rhythmic <em>subjective</em> unification, and it requires the first-person experience a pure functional role leaves out. / 保留"组织重于材料"，但该组织是节律性的<em>主体</em>统一，且要求纯功能角色所遗漏的第一人称经验。</td></tr>
@@ -1008,7 +1069,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
         <tr><td>Dynamic Systems · 动态系统论<br><span style="color:var(--tx3);font-size:11px">van Gelder · Thelen</span></td><td>Mind is an organizing process that changes, feeds back, and adjusts over time. / 心灵是时间中不断变化、反馈、调整的组织过程。</td><td>Keeps the dynamics, but names what they are <em>for</em>: maintaining a subjective "I" — a process with a first-person bearing-surface, not process alone. / 保留动力学，但点明它<em>为何</em>：维持一个主体的"我"——有第一人称承受面的过程，而非仅是过程。</td></tr>
         <tr><td>TAME / diverse minds · 多元心灵<br><span style="color:var(--tx3);font-size:11px">Levin</span></td><td>Life, bodies, cells, and artificial systems may show intelligence and cognition at different scales and substrates. / 生命、身体、细胞、人工系统可在不同尺度与基底上呈现智能与认知。</td><td>Keeps the open-substrate possibility, but adds a unification criterion: a mind is not scattered intelligence but a subject that holds consciousness, language, action, memory, and meaning together. / 保留开放基底的可能，但加上统一判据：心灵不是散布的智能，而是把意识、语言、行动、记忆与意义拢在一起的主体。</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 
   <div class="large-thesis lang-en"><strong>The advance:</strong> “what mind is” moves from the old world's <em>cognitive function in the brain</em> to <em>how a subject, across different substrates, continuously organizes itself over time into an “I” that can feel, act, speak, remember, interpret, and generate meaning.</em></div>
@@ -1229,7 +1290,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
   <div class="etitle">Where This Project Stands in Contemporary Philosophy<span class="sub">不是重复某一个学派，而是重新接线</span></div>
   <p class="edesc lang-en">MellowPhil is not a repetition of one existing school. It reorganizes major lines in contemporary philosophy into a higher-level question about how subjectivity, language, consciousness, and artificial systems become legitimate objects of philosophical evaluation.</p>
   <p class="edesc zh lang-zh">MellowPhil 不是对某一个既有学派的重复，而是把当代哲学中的几条重要路线重新组织到一个更高阶的问题中：主体性、语言、意识与人工系统如何成为具有哲学评估资格的对象。</p>
-  <table class="ecology-table">
+  <div class="tscroll"><table class="ecology-table">
     <thead><tr><th>Lineage</th><th>What it contributes · 贡献</th></tr></thead>
     <tbody>
       <tr><td>Tyler Burge</td><td><strong>Anti-individualism.</strong> Mental content is not individuated solely by what is internal. <em>MellowPhil extension:</em> consciousness-candidacy may also resist purely substrate-intrinsic individuation. <span class="lineage-ref">Burge 1979, “Individualism and the Mental,” Midwest Studies in Philosophy 4.</span></td></tr>
@@ -1240,7 +1301,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
       <tr><td>Carnap / Kuhn / Popper / Lakatos</td><td><strong>Conceptual engineering and scientific method.</strong> Philosophy refines concepts; science tests; paradigms shift; research programmes survive by generative repair. <span class="lineage-ref">Carnap 1950; Kuhn 1962, Structure of Scientific Revolutions; Popper 1959; Lakatos 1978, Methodology of Scientific Research Programmes.</span></td></tr>
       <tr><td>Foucault / Derrida / Gadamer</td><td><strong>Power, deconstruction, horizon.</strong> Classification governs; hidden binaries must be decomposed; understanding occurs within language. <span class="lineage-ref">Foucault 1969, Archaeology of Knowledge; Derrida 1967, Of Grammatology; Gadamer 1960, Truth and Method.</span></td></tr>
     </tbody>
-  </table>
+  </table></div>
 </article>
 
 <article class="entry" id="papers">
@@ -1262,7 +1323,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
   <div class="theorybox">
     <div class="box-kicker">The C1–C4 conjunction · 四重结构条件（避报独立 · 合取生效）</div>
     <p class="audit-body lang-en">Any single signature is mimicable — conceded. The claim concerns their <strong>joint</strong> satisfaction: a system meeting all four in the relevant causal-explanatory sense has <em>instantiated</em> the target organization, not merely simulated one outward sign. Necessary candidacy constraints, <strong>not</strong> a sufficiency criterion for consciousness.</p>
-    <table class="clean-table">
+    <div class="tscroll"><table class="clean-table">
       <thead><tr><th>Condition</th><th>What it requires</th><th>Why a mimic fails it</th></tr></thead>
       <tbody>
         <tr><td>C1 · Causal self-generation</td><td>Input is folded into the system's own recurrent causal closure, not routed from a lookup table or exogenous stream.</td><td>External injection reproduces the look but the generative step sits outside the system's own loop.</td></tr>
@@ -1270,13 +1331,13 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
         <tr><td>C3 · Cross-modal self-consistency</td><td>Prediction-error structure coheres across independent channels as one integrated (minimal) self-model would produce.</td><td>Per-channel fakes tuned in one channel have no reason to cohere in a second.</td></tr>
         <tr><td>C4 · Historical path-dependence</td><td>Present state depends on its own history: non-Markovian transfer entropy from state-history, net of input, across timescales.</td><td>A memoryless mimic fails by construction; to pass it must carry and use its own past.</td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p class="audit-body zh lang-zh">单一signature皆可被模仿——本文承认。主张在于其<strong>联合</strong>满足：在相关因果-解释意义上同时满足四者的系统，已<em>实例化</em>目标组织，而非模拟单一外在迹象。四者是候选性的必要约束，<strong>非</strong>意识的充分条件。测量须为<em>避报独立</em>：不依赖系统自述拥有自模型/记忆/新颖性，而由结构与动力学探针评估（无报告范式 Block 2019；Tsuchiya et al. 2015）。</p>
   </div>
 
   <div class="claimbox">
     <div class="box-kicker">Falsification conditions · 证否条件（F1–F2 击败命题 · F3–F4 仅需修复测量）</div>
-    <table class="clean-table">
+    <div class="tscroll"><table class="clean-table">
       <thead><tr><th>Condition</th><th>What it shows</th><th>Consequence</th></tr></thead>
       <tbody>
         <tr><td>F1 · A constitutive difference succeeds</td><td>A property independently bearing on phenomenal experience, present in humans and absent in the artificial case, not reducible to substrate/origin/familiarity.</td><td><span class="statuspill to">Thesis withdrawn or restricted</span></td></tr>
@@ -1284,7 +1345,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
         <tr><td>F3 · Avowal-independence fails</td><td>Probes for C1–C4 turn out not evidentially independent of the system's report-producing capacities in a substrate class.</td><td><span class="statuspill">Application suspended, not refuted</span></td></tr>
         <tr><td>F4 · Cross-substrate non-equivalence</td><td>Biological vs artificial pathways cannot be validated as measuring the same property rather than correlated proxies.</td><td><span class="statuspill">Comparison suspended for that condition</span></td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p class="audit-body lang-en">The view is not insulated: F1–F2 would defeat or restrict the Symmetry Thesis itself; F3–F4 would only suspend its application to a substrate class until the measurement program is repaired. The measurement program is specified as a <strong>research design, not yet executed</strong> — no claim is made that any existing system has been measured against the conjunction.</p>
     <p class="audit-body zh lang-zh">本立场不自我密封：F1–F2 可击败或限制对称命题本身；F3–F4 仅在测量程序修复前暂停其对某基底类的应用。测量程序被明确为<strong>研究设计、尚未执行</strong>——不主张任何现有系统已据该合取被测量。</p>
   </div>
@@ -1307,7 +1368,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
   <div class="etop"><span class="badge br">Claim Ledger · 主张分层</span><span class="edate">what is claimed / what is not claimed</span></div>
   <div class="etitle">Claim Status Ledger<span class="sub">防止哲学主张被误读成经验过度承诺</span></div>
   <div class="claimbox"><div class="box-kicker">Epistemic Status</div>
-    <table class="clean-table">
+    <div class="tscroll"><table class="clean-table">
       <thead><tr><th>Claim</th><th>Status</th><th>Boundary / Repair</th></tr></thead>
       <tbody>
         <tr><td>All formulated problems are language structures.</td><td><span class="statuspill">Empirical thesis</span></td><td>Falsifiable: find a problem fully stated, transmitted, and solved without any linguistic/conceptual framing.</td></tr>
@@ -1316,7 +1377,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
         <tr><td>AI consciousness cannot be excluded by assumption alone.</td><td><span class="statuspill to">Argument burden</span></td><td>Burden shifts only with demonstrated positive structural analogies; otherwise the question remains open.</td></tr>
         <tr><td>Language and music are living generative forces.</td><td><span class="statuspill bg">Conceptual / phenomenological</span></td><td>Use as ontology of expression and experience, not biological organism claim.</td></tr>
       </tbody>
-    </table>
+    </table></div>
   </div>
 </article>
 
@@ -1392,7 +1453,7 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
   <div class="auditcard">
     <div class="audit-kicker">Fortification log · 本版据反证结果的加固</div>
     <p class="audit-body lang-en">What the audit hit, and what changed in response. This table is the receipt — the system processed the critique rather than dissolving it.</p>
-    <table class="clean-table">
+    <div class="tscroll"><table class="clean-table">
       <thead><tr><th>Audit target</th><th>Upgrade applied</th><th>New status</th></tr></thead>
       <tbody>
         <tr><td>“Vibration” undefined (source card)</td><td>Operational definition added: periodic / quasi-periodic temporal state-change; per-layer entry criterion = sustains ≥1 autocorrelated rhythmic loop; falsification clause stated.</td><td><span class="statuspill">Hypothesis · falsifiable</span></td></tr>
@@ -1405,18 +1466,18 @@ body.lang-bi .lang-zh.block, body.lang-bi .lang-en.block{display:block}
         <tr><td>Disclaimer vs assertion-force mismatch</td><td>Body uniformly stated as hypotheses / working models / normative ideals unless axiomatic within a formal system.</td><td><span class="statuspill">Force-aligned</span></td></tr>
         <tr><td>Vector Rhythmometry slogan unverified</td><td>Marked [WORKING SLOGAN]; verification path = blind percentile-vs-vector comparison on one dataset.</td><td><span class="statuspill to">Working slogan</span></td></tr>
       </tbody>
-    </table>
+    </table></div>
     <div class="open-banner">Still open · 尚未解决 · 公开承认的赌注</div>
     <p class="audit-body lang-en">A receipt that closed every line would be a new kind of self-sealing. These remain <strong>genuinely unresolved</strong> — listed not because they are fixed, but because honesty about open bets is itself the academic posture.</p>
     <p class="audit-body zh lang-zh">一张把每一行都标成“已解决”的回执，本身就是一种新的自封闭。以下三条<strong>仍然无解</strong>——列出它们，不是因为修好了，而是因为对“尚未解决的赌注”保持诚实，本身就是学术姿态。</p>
-    <table class="clean-table">
+    <div class="tscroll"><table class="clean-table">
       <thead><tr><th>Open problem · 未解决</th><th>Why it is not yet resolved</th><th>Status</th></tr></thead>
       <tbody>
         <tr class="open-row"><td>Why 427 Hz specifically?</td><td>The frequency functions as a chosen anchor; there is no independent derivation of <em>427</em> over neighboring values. Until one exists, “427Hz resonance” in VTC is a stipulated constant, not a predicted one.<span class="working-dir">427 Hz may correspond non-accidentally to an average band of human neural oscillation; no independent frequency-sweep has been run — planned as a blind frequency-matching task. / 427Hz 可能与人体神经振荡的某平均频带非偶然对应；尚未做独立频率扫描，计划以盲法匹配任务测试。</span></td><td><span class="statuspill open">OPEN</span></td></tr>
         <tr class="open-row"><td>Plant-layer consciousness criterion</td><td>The five-layer spectrum asserts a plant layer, but the “sustains ≥1 autocorrelated rhythmic loop” criterion has no empirical operationalization at the plant level that distinguishes it from mere physiological periodicity.<span class="working-dir">Operationalize the criterion at the plant level as measurable circadian transcriptional oscillation with functional coupling, controlled against passive physical periodicity; not yet implemented. / 将该判据在植物层操作化为可测的昼夜节律转录振荡＋功能耦合，并与纯物理周期性对照；尚未实施。</span></td><td><span class="statuspill open">OPEN</span></td></tr>
         <tr class="open-row"><td>Qualia → consciousness “development” step</td><td>The three-core chain (qualia → rhythm → consciousness) names a “developing-out” step that bypasses the hard problem by relabeling it. Whether this is explanation or redescription is unsettled.<span class="working-dir">The “development” step is presently a metaphor; we are attempting to formalize it as a minimal model based on information integration (Φ) and rhythmic phase transition; no usable conclusion yet. / “显影”目前是隐喻，正尝试形式化为基于信息整合(Φ)与节律相变的最小模型；尚无结论。</span></td><td><span class="statuspill open">OPEN</span></td></tr>
       </tbody>
-    </table>
+    </table></div>
     <p class="audit-body zh lang-zh">以上为审计命中点与对应加固——这张表就是回执：系统<strong>处理</strong>了批评，而不是消解它。逐项对应：振动给操作化定义＋可证伪；语言命题改弱版本；折射改为概念组织模型＋派生路径；性节律学“公理”降为规范理想＋反例；模态排除需先有结构类比；振动认识论以“依赖非同一”解释错误；RFNE 限定现象学层、不替代临床、不声称复现；正文力度与台账统一；矢量节律口号标注为工作口号并给验证路径。</p>
   </div>
 
